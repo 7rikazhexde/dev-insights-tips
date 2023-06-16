@@ -9,23 +9,30 @@ MariaDBに関するTipsです。
 
 ### For Mac
 
-HomebrewでMacにMariaDBをインストールする手順と設定\
+HomebrewでMacにMariaDBをインストールする手順と設定
+
 [https://oopsoop.com/steps-and-settings-to-install-mariadb-on-mac/](https://oopsoop.com/steps-and-settings-to-install-mariadb-on-mac/)
 
-mysql関連インストール済みであれば下記記事を参考に削除する（動作確認済み）\
-どうしよう！困った時のMac上のMySQLのアンインストール＆再インストール、動作確認手順\
+mysql関連インストール済みであれば下記記事を参考に削除する（動作確認済み）
+
+どうしよう！困った時のMac上のMySQLのアンインストール＆再インストール、動作確認手順
+
 [https://qiita.com/akiko-pusu/items/aef52b723da2cb5dc596](https://qiita.com/akiko-pusu/items/aef52b723da2cb5dc596)
 
-mariadbをアンインストールする場合は下記記事参考\
-homebrewでインストールしたmariadbをアンインストールする\
+mariadbをアンインストールする場合は下記記事参考
+
+homebrewでインストールしたmariadbをアンインストールする
+
 [https://qiita.com/B73W56H84/items/61af451f71ce9263c68e](https://qiita.com/B73W56H84/items/61af451f71ce9263c68e)
 
 ### For RaspberryPi(Rasbian) / WSL(Ubuntu)
 
-【Ubuntu】MariaDBをインストールする：初期設定（セキュリティ、データベース）\
+【Ubuntu】MariaDBをインストールする：初期設定（セキュリティ、データベース）
+
 [https://office54.net/iot/linux/ubuntu-mariadb-install](https://office54.net/iot/linux/ubuntu-mariadb-install)
 
-Raspberry Pi にデータベースを構築する【MySQL，MariaDB】\
+Raspberry Pi にデータベースを構築する【MySQL，MariaDB】
+
 [https://nort-wmli.blogspot.com/2019/06/raspberry-pi-mysqlmariadb.html?m=1](https://nort-wmli.blogspot.com/2019/06/raspberry-pi-mysqlmariadb.html?m=1)
 
 ## mariaDBのインストール
@@ -144,13 +151,13 @@ Thanks for using MariaDB!
 ```
 % mysql -u root -p
 Enter password: [root passwordを入力する]
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Welcome to the MariaDB monitor.  Commands end with ; or g.
 Your MariaDB connection id is 31
 Server version: 10.8.3-MariaDB Homebrew
 
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+Type 'help;' or 'h' for help. Type 'c' to clear the current input statement.
 ```
 
 ## ユーザー一覧確認
@@ -177,7 +184,7 @@ MariaDB [(none)]> show databases;
 
 ## データベース作成
 
-### CREATE DATABASE \[DB名\];
+### CREATE DATABASE "DB名";
 
 ```bash
 MariaDB [(none)]> CREATE DATABASE myTestDB1;
@@ -236,7 +243,7 @@ Query OK, 0 rows affected (0.021 sec)
 
 ## データベースの削除
 
-### DROP DATABASE \[DB名\];
+### DROP DATABASE "DB名";
 
 ```bash
 MariaDB [myTestDB1]> drop database myTestDB2;
