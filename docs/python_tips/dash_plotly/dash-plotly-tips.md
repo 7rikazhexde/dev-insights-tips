@@ -14,7 +14,7 @@ Dash公式ページには[User Guide](https://dash.plotly.com/)があり、Dash 
 
 【Python】Dashを使用してPlotlyのDatasetsをDownloadするWebアプリについて
 
-https://7rikazhexde-techlog.hatenablog.com/entry/2023/01/08/222513
+[https://7rikazhexde-techlog.hatenablog.com/entry/2023/01/08/222513](https://7rikazhexde-techlog.hatenablog.com/entry/2023/01/08/222513)
 
 ### Dash Dev Tools
 
