@@ -1,0 +1,34 @@
+site_name: Dev Insights Tips
+repo_name: 7rikazhexde/dev-insights-tips
+repo_url: https://github.com/7rikazhexde/dev-insights-tips
+copyright: Copyright 2023 7rikazhexde
+
+theme:
+  name: material
+  palette:
+    # ライトモード
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: ダークモードに切り替え
+    # ダークモード
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: ライトモードに切り替え
+  font:
+    text: Noto Sans
+    code: Inconsolata
+  language: ja
+  #logo: img/python.svg
+  #favicon: img/python.svg
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant

@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "dev-insights-tips"
+version = "0.1.0"
+description = "A repository that gathers insights and tips for development. It aims to share information related to programming and development."
+authors = ["7rikaz_h785 <7rikaz.h785.stat2ltas41lcijad@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "dev_insights_tips"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mdformat = "^0.7.16"
+tomlkit = "^0.11.8"
+pre-commit = "^3.3.3"
+mkdocs-material = "^9.1.16"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.11.0"
+flake8 = "^6.0.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+mypy = "^1.3.0"
+flake8-pyproject = "^1.2.3"
+
+[tool.taskipy.tasks]
+mkdb = "poetry run mkdocs build"
+mkds = "poetry run mkdocs serve"
+mkddp = "poetry run mkdocs gh-deploy"
+isort = "poetry run isort ci"
+black = "poetry run black ci"
+flake8 = "poetry run flake8 ci"
+mypy = "poetry run mypy"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py310']
+
+[tool.isort]
+
+[tool.flake8]
+ignore = ["E402","E501","W503"]
+
+[tool.mypy]
+files = ["ci"]
+python_version = "3.10"
+strict = true
+warn_return_any = false
+ignore_missing_imports = true
+scripts_are_modules = true
