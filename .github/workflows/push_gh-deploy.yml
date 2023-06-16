@@ -1,10 +1,17 @@
+# GitHub Actions to automate deployment of project documentation
+# Reference: https://squidfunk.github.io/mkdocs-material/publishing-your-site/?h=git+hub#github-pages
+
 name: ci
 on:
   push:
     branches:
       - main
+
+env:
+  cache_id: ""
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

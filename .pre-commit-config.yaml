@@ -32,10 +32,10 @@ repos:
         args: ["-f", "requirements.txt", "-o", "requirements.txt"]
         verbose: true
         files: ^pyproject\.toml$
-      #- id: poetry-export
-      #  args: ["--dev", "-f", "requirements.txt", "-o", "requirements-dev.txt"]
-      #  verbose: true
-      #  files: ^pyproject\.toml$
+      - id: poetry-export
+        args: ["--dev", "-f", "requirements.txt", "-o", "requirements-dev.txt"]
+        verbose: true
+        files: ^pyproject\.toml$
 
   # Repository local hooks
   - repo: local
