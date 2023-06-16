@@ -1,0 +1,31 @@
+# pymysql-tips
+
+pymysqlに関するTipsです。
+主に、使い方をまとめてます。
+
+[Topに戻る](../../index.md)
+
+## 詳細とインストール
+
+下記参照\
+[https://pypi.org/project/pymysql/](https://pypi.org/project/pymysql/)
+
+## 使い方
+
+### 基本編
+
+公式ドキュメント\
+[https://pymysql.readthedocs.io/en/latest/](https://pymysql.readthedocs.io/en/latest/)
+
+参考記事: PythonでMySQLを操作する（PyMySQL）\
+[https://python-work.com/pymysql/](https://python-work.com/pymysql/)
+
+### 事例
+
+#### 【MESH + Flask + MariaDB】温度・湿度タグから取得した温度情報をローカルWebサーバ経由でデータベースに追加する方法
+
+[https://qiita.com/7rikazhexde/items/ec8fc8f90acf45703d53](https://qiita.com/7rikazhexde/items/ec8fc8f90acf45703d53)
+
+#### GoogleSpreadSheetからDLしたCSVファイルをMariaDBにレコード一括追加(BULK INSERT)する
+
+<script src="https://gist.github.com/7rikazhexde/ed55e9b55ac69742b8ed61d5ae06502c.js"></script>
