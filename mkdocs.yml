@@ -32,3 +32,4 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.instant
+    - content.code.copy
