@@ -1,10 +1,13 @@
 # dev-insights-tips
 
+## Description
+
 A repository that gathers insights and tips for development. It aims to share information related to programming and development.
 
 ## Table of Contents
 
 - [dev-insights-tips](#dev-insights-tips)
+  - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Tips link](#tips-link)
     - [git-tips](#git-tips)
@@ -17,6 +20,8 @@ A repository that gathers insights and tips for development. It aims to share in
 
 ### [git-tips](./git_tips/git-tips.md)
 
+### [markdown-tips](./markdown_tips/markdown-tips.md)
+
 ### [vscode-tips](./vscode_tips/vscode-tips.md)
 
 ### [tool-tips](./tool_tips/tool-tips.md)
@@ -24,7 +29,8 @@ A repository that gathers insights and tips for development. It aims to share in
 ### python-tips
 
 - [dash-plotly-tips](./python_tips/dash_plotly/dash-plotly-tips.md)
-
+- [pre-commit-tips](./python_tips/pre-commit/pre-commit-tips.md)
+- [post-commit-tips)](./python_tips/post-commit/post-commit-tips.md)
 - [pymysql-tips](./python_tips/pymysql/pymysql-tips.md)
 
 ### db-tips
