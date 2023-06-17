@@ -136,5 +136,3 @@ if __name__ == "__main__":  # pragma: no cover
     if create_tag_flag:
         update_poetry_project_version(new_ver, toml)
         subprocess.run(["git", "add", "pyproject.toml"])
-    git_add_if_diff("site")
-    git_add_if_diff("docs")

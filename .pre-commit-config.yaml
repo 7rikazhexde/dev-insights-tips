@@ -9,9 +9,11 @@ repos:
       # Remove spaces at end of lines except markdown
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
+        exclude: '(site|site/tool_tips|site/db_tips|site/search|site/git_tips|site/python_tips|site/vscode_tips|site/assets|site/tool_tips/tool\-tips|site/db_tips/mariadb|site/db_tips/mariadb/mariadb\-tips|site/git_tips/git\-tips|site/python_tips/pymysql|site/python_tips/dash_plotly|site/python_tips/pymysql/pymysql\-tips|site/python_tips/dash_plotly/dash\-plotly\-tips|site/vscode_tips/vscode\-tips|site/assets/images|site/assets/javascripts|site/assets/stylesheets|site/assets/javascripts/lunr|site/assets/javascripts/workers|site/assets/javascripts/lunr/min)/.*'
       # Make the last line of the file a newline code
       - id: end-of-file-fixer
       # Unify line break code to LF
+        exclude: '(site|site/tool_tips|site/db_tips|site/search|site/git_tips|site/python_tips|site/vscode_tips|site/assets|site/tool_tips/tool\-tips|site/db_tips/mariadb|site/db_tips/mariadb/mariadb\-tips|site/git_tips/git\-tips|site/python_tips/pymysql|site/python_tips/dash_plotly|site/python_tips/pymysql/pymysql\-tips|site/python_tips/dash_plotly/dash\-plotly\-tips|site/vscode_tips/vscode\-tips|site/assets/images|site/assets/javascripts|site/assets/stylesheets|site/assets/javascripts/lunr|site/assets/javascripts/workers|site/assets/javascripts/lunr/min)/.*'
       - id: mixed-line-ending
         args: [--fix=lf]
       # toml syntax check
@@ -29,25 +31,25 @@ repos:
       - id: poetry-lock
         verbose: true
       - id: poetry-export
-        args: ["-f", "requirements.txt", "-o", "requirements.txt"]
+        args: [-f, requirements.txt, -o, requirements.txt]
         verbose: true
         files: ^pyproject\.toml$
       - id: poetry-export
-        args: ["--dev", "-f", "requirements.txt", "-o", "requirements-dev.txt"]
+        args: [--dev, -f, requirements.txt, -o, requirements-dev.txt]
         verbose: true
         files: ^pyproject\.toml$
 
   # Repository local hooks
   - repo: local
     hooks:
-    -   id: isort
+      - id: isort
         name: isort
         stages: [commit]
         language: system
         entry: poetry run isort ci
         types: [python]
 
-    -   id: black
+      - id: black
         name: black
         stages: [commit]
         language: system
@@ -55,21 +57,21 @@ repos:
         types: [python]
         exclude: resources_bin.py
 
-    -   id: flake8
+      - id: flake8
         name: flake8
         stages: [commit]
         language: system
         entry: poetry run flake8 ci
         types: [python]
 
-    -   id: mypy
+      - id: mypy
         name: mypy
         stages: [commit]
         language: system
         entry: poetry run mypy
         types: [python]
 
-    -   id: mdformat
+      - id: mdformat
         name: mdformat
         stages: [commit]
         language: system
@@ -77,20 +79,20 @@ repos:
         types: [markdown]
 
     # Original script
-    - id: update-pyproject
-      name: mkdocs build
-      entry: poetry run python ci/run_mkdocs_cmd.py
-      language: system
-      verbose: true
-      pass_filenames: false
-      stages: [commit]
-      additional_dependencies: []
+      - id: update-pyproject
+        name: mkdocs build
+        entry: poetry run python ci/run_mkdocs_cmd.py
+        language: system
+        verbose: true
+        pass_filenames: false
+        stages: [commit]
+        additional_dependencies: []
 
-    - id: update-pyproject
-      name: Update pyproject.toml version
-      entry: poetry run python ci/update_pyproject_version.py
-      language: system
-      verbose: true
-      pass_filenames: false
-      stages: [commit]
-      additional_dependencies: []
+      - id: update-pyproject
+        name: Update pyproject.toml version
+        entry: poetry run python ci/update_pyproject_version.py
+        language: system
+        verbose: true
+        pass_filenames: false
+        stages: [commit]
+        additional_dependencies: []
