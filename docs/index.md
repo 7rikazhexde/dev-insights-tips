@@ -11,6 +11,7 @@ A repository that gathers insights and tips for development. It aims to share in
   - [Table of Contents](#table-of-contents)
   - [Tips link](#tips-link)
     - [git-tips](#git-tips)
+    - [markdown-tips](#markdown-tips)
     - [vscode-tips](#vscode-tips)
     - [tool-tips](#tool-tips)
     - [python-tips](#python-tips)
