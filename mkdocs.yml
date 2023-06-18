@@ -26,8 +26,6 @@ theme:
     text: Noto Sans
     code: Inconsolata
   language: ja
-  #logo: img/python.svg
-  #favicon: img/python.svg
   icon:
     repo: fontawesome/brands/github
   features:
@@ -41,6 +39,3 @@ theme:
     #- navigation.tabs
     #- navigation.top
     - navigation.tracking
-  # Page tree
-  nav:
-    - Home: index.md
