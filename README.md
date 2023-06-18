@@ -19,7 +19,7 @@ If you want to launch website in a local repository, do the following
 git clone https://github.com/7rikazhexde/dev-insights-tips.git
 ```
 
-> 🚨 **Note:**\
+> 🚨 **Note:**<br />
 > **This project assumes that you have installed Poetry**
 > **For Poetry installation, [check the official website](https://python-poetry.org/docs/#installing-with-the-official-installer).**
 
@@ -29,7 +29,7 @@ poetry install
 
 create `.git/hooks/pre-commit`
 
-> ℹ️ **Note:**
+> ℹ️ **Note:**<br />
 > **Create pre-commit and post-commit if you want to automate version updates of Pyproject.toml and tag.**
 > **[Reference](https://github.com/7rikazhexde/trial-test/issues/1)**
 
@@ -70,4 +70,4 @@ mkdocs serve
 Content is built using Github Actions and deployed to GitHub Pages.<br />
 Please check the following for the contents of the configuration file. (Basically, no change is necessary.)
 
-`.github/workflows/push_gh-deploy.yml`
+[.github/workflows/push_gh-deploy.yml](.github/workflows/push_gh-deploy.yml)
