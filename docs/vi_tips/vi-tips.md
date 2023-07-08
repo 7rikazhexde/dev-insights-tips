@@ -7,24 +7,32 @@ vi関連のtipsをまとめてます。
 ## 参考
 
 viエディタ入門
-https://vim.jp.net/
+
+[https://vim.jp.net/](https://vim.jp.net/)
 
 viコマンド（vimコマンド）リファレンス
-https://qiita.com/pe-ta/items/0510bee10bcfd88afeee
+
+[https://qiita.com/pe-ta/items/0510bee10bcfd88afeee](https://qiita.com/pe-ta/items/0510bee10bcfd88afeee)
 
 ## ウインドウ操作
 
 ### 横に分割
 
-`:sp`
+```bash
+:sp
+```
 
 ### ファイル編集
 
-`:E`
+```bash
+:E
+```
 
 ### ウインドウ切り替え
 
-`Ctrl + w`
+```bash
+[Ctrl] + [w]
+```
 
 Windowsの場合は↑,↓で切り替え
 
@@ -32,46 +40,74 @@ Windowsの場合は↑,↓で切り替え
 
 ### カーソルの左から入力開始
 
-`i`
+```bash
+i
+```
 
 ### 直前の操作をやめる(u: Undo の意味)
 
-`u`
+```bash
+u
+```
 
 ### 書込みを行わず終了(quit の意味)
 
-`:q`
+```bash
+:q
+```
 
 ### 書込みを行わず強制終了する
 
-`q!`
+```bash
+q!
+```
 
 ### 書込み後終了
 
-`:wq`
+```bash
+:wq
+```
 
 ### 書込み後強制終了
 
-`:wq!`
+```bash
+:wq!
+```
 
 ## 文字カーソル移動
 
 ### 先頭行へ移動
 
-`g + g` or `1 + G(shift + g)`
+```bash
+[g] + [g]
+```
+
+or
+
+```bash
+[1] + [G](shift + g)
+```
 
 ### 末尾に移動
 
-`G(shift + g)`
+```bash
+[G](shift + g)
+```
 
 ### 1語次へ移動
 
-`w`
+```bash
+w
+```
 
 ### 1語前へ移動
 
-`b`
+```bash
+b
+```
 
 ### 単語末尾へ
 
-`e`
+```bash
+e
+```
