@@ -10,22 +10,24 @@ A repository that gathers insights and tips for development. It aims to share in
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Tips link](#tips-link)
+    - [db-tips](#db-tips)
     - [git-tips](#git-tips)
     - [markdown-tips](#markdown-tips)
-    - [vscode-tips](#vscode-tips)
-    - [tool-tips](#tool-tips)
     - [python-tips](#python-tips)
-    - [db-tips](#db-tips)
+    - [tool-tips](#tool-tips)
+    - [ubuntu-tips](#ubuntu-tips)
+    - [vi-tips](#vi-tips)
+    - [vscode-tips](#vscode-tips)
 
 ## Tips link
+
+### db-tips
+
+- [mariadb-tips](./db_tips/mariadb/mariadb-tips.md)
 
 ### [git-tips](./git_tips/git-tips.md)
 
 ### [markdown-tips](./markdown_tips/markdown-tips.md)
-
-### [vscode-tips](./vscode_tips/vscode-tips.md)
-
-### [tool-tips](./tool_tips/tool-tips.md)
 
 ### python-tips
 
@@ -34,6 +36,12 @@ A repository that gathers insights and tips for development. It aims to share in
 - [post-commit-tips)](./python_tips/post-commit/post-commit-tips.md)
 - [pymysql-tips](./python_tips/pymysql/pymysql-tips.md)
 
-### db-tips
+### [tool-tips](./tool_tips/tool-tips.md)
 
-- [mariadb-tips](./db_tips/mariadb/mariadb-tips.md)
+### ubuntu-tips
+
+- [raspberrypi-ubuntu-tips.md](./ubuntu-tips/raspberrypi_ubuntu_tips/raspberrypi-ubuntu-tips.md)
+
+### [vi-tips](./vi_tips/vi-tips.md)
+
+### [vscode-tips](./vscode_tips/vscode-tips.md)
