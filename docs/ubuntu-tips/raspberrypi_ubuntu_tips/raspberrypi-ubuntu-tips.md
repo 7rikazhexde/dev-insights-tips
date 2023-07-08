@@ -8,7 +8,7 @@ raspberrypiでubuntuインストール時のtipsをまとめです。
 
 以下の内容についてはてなブログで手順をまとめたのでリンクを記載する。
 
-https://7rikazhexde-techlog.hatenablog.com/
+[https://7rikazhexde-techlog.hatenablog.com/](https://7rikazhexde-techlog.hatenablog.com/)
 
 ### 概要
 

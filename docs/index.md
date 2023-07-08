@@ -33,14 +33,14 @@ A repository that gathers insights and tips for development. It aims to share in
 
 - [dash-plotly-tips](./python_tips/dash_plotly/dash-plotly-tips.md)
 - [pre-commit-tips](./python_tips/pre-commit/pre-commit-tips.md)
-- [post-commit-tips)](./python_tips/post-commit/post-commit-tips.md)
+- [post-commit-tips](./python_tips/post-commit/post-commit-tips.md)
 - [pymysql-tips](./python_tips/pymysql/pymysql-tips.md)
 
 ### [tool-tips](./tool_tips/tool-tips.md)
 
 ### ubuntu-tips
 
-- [raspberrypi-ubuntu-tips.md](./ubuntu-tips/raspberrypi_ubuntu_tips/raspberrypi-ubuntu-tips.md)
+- [raspberrypi-ubuntu-tips](./ubuntu-tips/raspberrypi_ubuntu_tips/raspberrypi-ubuntu-tips.md)
 
 ### [vi-tips](./vi_tips/vi-tips.md)
 
