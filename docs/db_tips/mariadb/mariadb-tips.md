@@ -25,7 +25,7 @@ homebrewでインストールしたmariadbをアンインストールする
 
 [https://qiita.com/B73W56H84/items/61af451f71ce9263c68e](https://qiita.com/B73W56H84/items/61af451f71ce9263c68e)
 
-### For RaspberryPi(Rasbian) / WSL(Ubuntu)
+### For RaspberryPi(Rasbian/Ubuntu) / WSL2(Ubuntu)
 
 【Ubuntu】MariaDBをインストールする：初期設定（セキュリティ、データベース）
 
@@ -35,7 +35,7 @@ Raspberry Pi にデータベースを構築する【MySQL，MariaDB】
 
 [https://nort-wmli.blogspot.com/2019/06/raspberry-pi-mysqlmariadb.html?m=1](https://nort-wmli.blogspot.com/2019/06/raspberry-pi-mysqlmariadb.html?m=1)
 
-## mariaDBのインストール
+## MariaDBのインストール
 
 ### For Mac
 
@@ -64,13 +64,13 @@ Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
 Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 ```
 
-### For RaspberryPi(Rasbian) / WSL(Ubuntu)
+### For RaspberryPi(Rasbian/Ubuntu) / WSL2(Ubuntu)
 
 ```bash
 sudo apt install mariadb-server
 ```
 
-## 起動確認と初期設定
+## 起動確認と初期設定(Mac/WSL2/Ubuntuで差異なし)
 
 ```zsh
 % mysql --version
@@ -148,9 +148,27 @@ Thanks for using MariaDB!
 
 ## ログイン
 
+### For Mac
+
 ```
 % mysql -u root -p
-Enter password: [root passwordを入力する]
+Enter password: [New passwordを入力する]
+Welcome to the MariaDB monitor.  Commands end with ; or g.
+Your MariaDB connection id is 31
+Server version: 10.8.3-MariaDB Homebrew
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or 'h' for help. Type 'c' to clear the current input statement.
+```
+
+### For WSL2/Ubuntu
+
+Macでも可能
+
+```
+% sudo mysql -u root -p
+Enter password: [passwordを入力する]
 Welcome to the MariaDB monitor.  Commands end with ; or g.
 Your MariaDB connection id is 31
 Server version: 10.8.3-MariaDB Homebrew
@@ -206,7 +224,7 @@ MariaDB [(none)]> use myTestDB1
 Database changed
 ```
 
-## テーブルの新規追加
+## テーブルの追加(複数行跨ぎ)
 
 ### CREATE TABLE `` `[TABLE名]` ``;
 
@@ -291,10 +309,30 @@ MariaDB [myTestDB1]> show tables;
 MariaDB [(none)]> CREATE DATABASE ec_sol_db1;
 ```
 
-## 型定義
+## テーブル追加(1行でまとめて)
 
 ```bash
 MariaDB [(none)]> CREATE TABLE ec_sol_tbl1(id INT AUTO_INCREMENT, cameratype char(9), date DATETIME, num INT,  foo1 INT, foo2 INT, foo3 INT, foo4 INT, foo5 INT,PRIMARY KEY (id));
+```
+
+## データ型確認
+
+```bash
+MariaDB [ec_sol_db1]> describe ec_sol_tbl1;
++------------+----------+------+-----+---------+----------------+
+| Field      | Type     | Null | Key | Default | Extra          |
++------------+----------+------+-----+---------+----------------+
+| id         | int(11)  | NO   | PRI | NULL    | auto_increment |
+| cameratype | char(9)  | YES  |     | NULL    |                |
+| date       | datetime | YES  |     | NULL    |                |
+| num        | int(11)  | YES  |     | NULL    |                |
+| foo1       | int(11)  | YES  |     | NULL    |                |
+| foo2       | int(11)  | YES  |     | NULL    |                |
+| foo3       | int(11)  | YES  |     | NULL    |                |
+| foo4       | int(11)  | YES  |     | NULL    |                |
+| foo5       | int(11)  | YES  |     | NULL    |                |
++------------+----------+------+-----+---------+----------------+
+9 rows in set (0.005 sec)
 ```
 
 ## テーブルの中身確認
@@ -344,7 +382,7 @@ mysql -h [IPアドレス or ホスト名] -u [登録ユーザー名] -p
 
 ## 状態確認
 
-### For RaspberryPi / WSL(Ubuntu)
+### For RaspberryPi / WSL2(Ubuntu)
 
 ```bash
 sudo service mysql status
@@ -355,3 +393,17 @@ sudo service mysql status
 ```bash
 ps ax | grep mysql
 ```
+
+## スタート、停止、リスタート
+
+### For RaspberryPi / WSL2(Ubuntu)
+
+- sudo systemctl start mariadb
+- sudo systemctl stop mariadb
+- sudo systemctl restart mariadb
+
+### For Mac
+
+- brew services start mariadb
+- brew services stop mariadb
+- brew services restart mariadb
