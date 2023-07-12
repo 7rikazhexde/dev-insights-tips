@@ -58,8 +58,8 @@ extra:
           name: This page was helpful
           data: 1
           note: >-
-             Thank you for your feedback!<br>
-             Please use the comments (giscus) below to send us your feedback on this page.
+            Thank you for your feedback!<br>
+            Please use the comments(giscus) below to send us your feedback on this page.
           #note: >-
           #  Thanks for your feedback!<br>
           #  Please use the link below to provide feedback on this page.<br>
@@ -68,9 +68,7 @@ extra:
           name: This page could be improved
           data: 0
           note: >-
-             Thank you for your feedback!<br>
-             Please use the comments (giscus) below to send us your feedback on this page.
-          #note: >-
-          #  Thanks for your feedback!<br>
-          #  Please use the link below to provide feedback on this page.<br>
-          #  <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
+            Thank you for your feedback!<br>
+            Please use the comments(giscus) below to send me your feedback on this page or<br>
+            use the link below to provide feedback on this page.<br>
+            <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
