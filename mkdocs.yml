@@ -5,6 +5,7 @@ copyright: "&copy; 2023 7rikazhexde"
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     # ライトモード
     - media: "(prefers-color-scheme: light)"
@@ -39,3 +40,37 @@ theme:
     #- navigation.tabs
     #- navigation.top
     - navigation.tracking
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    property: G-4D30V35REY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+             Thank you for your feedback!<br>
+             Please use the comments (giscus) below to send us your feedback on this page.
+          #note: >-
+          #  Thanks for your feedback!<br>
+          #  Please use the link below to provide feedback on this page.<br>
+          #  <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+             Thank you for your feedback!<br>
+             Please use the comments (giscus) below to send us your feedback on this page.
+          #note: >-
+          #  Thanks for your feedback!<br>
+          #  Please use the link below to provide feedback on this page.<br>
+          #  <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
