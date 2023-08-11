@@ -1,0 +1,2105 @@
+<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
+<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
+<!-- 参考2: Adding a comment system -->
+<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../markdown/markdown-tips/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>git-tips - Dev Insights Tips</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-4D30V35REY"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-4D30V35REY",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-4D30V35REY",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git-tips" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../../" title="Dev Insights Tips" class="md-header__button md-logo" aria-label="Dev Insights Tips" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dev Insights Tips
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              git-tips
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label=""  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label=""  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="言語切り替え">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../../git/git-tips/" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+              
+                <li class="md-select__item">
+                  <a href="./" hreflang="ja" class="md-select__link">
+                    日本語
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/7rikazhexde/dev-insights-tips" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    7rikazhexde/dev-insights-tips
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="Dev Insights Tips" class="md-nav__button md-logo" aria-label="Dev Insights Tips" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Dev Insights Tips
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/7rikazhexde/dev-insights-tips" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    7rikazhexde/dev-insights-tips
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">はじめに</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          はじめに
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../database/">Database Tips</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Database Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/mariadb-tips/" class="md-nav__link">
+        mariadb tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Git Tips</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Git Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          git-tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        git-tips
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    基本的な流れ
+  </a>
+  
+    <nav class="md-nav" aria-label="基本的な流れ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    リポジトリの初期化またはクローン
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ファイルのステージング
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    コミット
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    リモートリポジトリの設定:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    プッシュ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    コマンド毎の詳細
+  </a>
+  
+    <nav class="md-nav" aria-label="コマンド毎の詳細">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-add" class="md-nav__link">
+    ステージング(git add)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reset" class="md-nav__link">
+    ステージングの取り消し(git reset)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-restore" class="md-nav__link">
+    ワーキングツリー内の変更を取り消す(git restoreコマンド)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-commit" class="md-nav__link">
+    git commitコマンド
+  </a>
+  
+    <nav class="md-nav" aria-label="git commitコマンド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    基本形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-typeemojis" class="md-nav__link">
+    commit typeとemojisを使用した例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-type" class="md-nav__link">
+    commit type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-message" class="md-nav__link">
+    commit message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-typegit-message" class="md-nav__link">
+    commit typeとgit messageを加えた例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    コミットメッセージのテンプレート
+  </a>
+  
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    コミットメッセージのテンプレートを指定する方法
+  </a>
+  
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレートを指定する方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    docs用のテンプレート例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    デフォルトで使用するコミットメッセージのテンプレート設定
+  </a>
+  
+    <nav class="md-nav" aria-label="デフォルトで使用するコミットメッセージのテンプレート設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitmessage" class="md-nav__link">
+    .gitmessageの作成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-git-commit-push-github" class="md-nav__link">
+    【GitHub】 git commit / push後の GitHubの表示について
+  </a>
+  
+    <nav class="md-nav" aria-label="【GitHub】 git commit / push後の GitHubの表示について">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-commitissue-issueurl" class="md-nav__link">
+    git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-commitgit-reset-git-revert" class="md-nav__link">
+    git commit後のコミットを取消する(git reset / git revert)
+  </a>
+  
+    <nav class="md-nav" aria-label="git commit後のコミットを取消する(git reset / git revert)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    直前のコミットを取消し、変更をステージングエリアに戻す
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    直前のコミットと変更を完全に取り消す
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    特定のコミットを取り消す
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    【GitHub】プロジェクトのフォークについて
+  </a>
+  
+    <nav class="md-nav" aria-label="【GitHub】プロジェクトのフォークについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    作法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    注意点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    やり方
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    フォーク元の変更を取り込む方法
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更を取り込む方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    フォーク元のリポジトリをリモートに追加する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    ローカルのフォークしたリポジトリを更新する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    フォーク元の変更をマージする
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更をマージする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    リベースする場合は以下のコマンドを実行する。
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    コンフリクトの解決
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    変更をプッシュする
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Markdown
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Markdown
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../markdown/markdown-tips/" class="md-nav__link">
+        markdown tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Python Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Python Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/dash-plotly-tips/" class="md-nav__link">
+        dash-plotly tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/pre-commit-tips/" class="md-nav__link">
+        pre-commit tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/post-commit-tips/" class="md-nav__link">
+        post-commit tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/pymysql-tips/" class="md-nav__link">
+        PyMySQL tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          RaspberryPi
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          RaspberryPi
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../raspberrypi/raspberrypi-ubuntu-tips/" class="md-nav__link">
+        Raspberry Pi Ubuntu tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/tools-tips/" class="md-nav__link">
+        tools tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          vi tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          vi tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vi/vi-tips/" class="md-nav__link">
+        vi tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          vscode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          vscode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vscode/vscode-tips/" class="md-nav__link">
+        Visual Studio Code(VsCode) tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    基本的な流れ
+  </a>
+  
+    <nav class="md-nav" aria-label="基本的な流れ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    リポジトリの初期化またはクローン
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ファイルのステージング
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    コミット
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    リモートリポジトリの設定:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    プッシュ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    コマンド毎の詳細
+  </a>
+  
+    <nav class="md-nav" aria-label="コマンド毎の詳細">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-add" class="md-nav__link">
+    ステージング(git add)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-reset" class="md-nav__link">
+    ステージングの取り消し(git reset)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-restore" class="md-nav__link">
+    ワーキングツリー内の変更を取り消す(git restoreコマンド)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-commit" class="md-nav__link">
+    git commitコマンド
+  </a>
+  
+    <nav class="md-nav" aria-label="git commitコマンド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    基本形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-typeemojis" class="md-nav__link">
+    commit typeとemojisを使用した例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-type" class="md-nav__link">
+    commit type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-message" class="md-nav__link">
+    commit message
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commit-typegit-message" class="md-nav__link">
+    commit typeとgit messageを加えた例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    コミットメッセージのテンプレート
+  </a>
+  
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    コミットメッセージのテンプレートを指定する方法
+  </a>
+  
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレートを指定する方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docs" class="md-nav__link">
+    docs用のテンプレート例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    デフォルトで使用するコミットメッセージのテンプレート設定
+  </a>
+  
+    <nav class="md-nav" aria-label="デフォルトで使用するコミットメッセージのテンプレート設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitmessage" class="md-nav__link">
+    .gitmessageの作成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-git-commit-push-github" class="md-nav__link">
+    【GitHub】 git commit / push後の GitHubの表示について
+  </a>
+  
+    <nav class="md-nav" aria-label="【GitHub】 git commit / push後の GitHubの表示について">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-commitissue-issueurl" class="md-nav__link">
+    git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-commitgit-reset-git-revert" class="md-nav__link">
+    git commit後のコミットを取消する(git reset / git revert)
+  </a>
+  
+    <nav class="md-nav" aria-label="git commit後のコミットを取消する(git reset / git revert)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    直前のコミットを取消し、変更をステージングエリアに戻す
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    直前のコミットと変更を完全に取り消す
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    特定のコミットを取り消す
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    【GitHub】プロジェクトのフォークについて
+  </a>
+  
+    <nav class="md-nav" aria-label="【GitHub】プロジェクトのフォークについて">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    作法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    注意点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    やり方
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    フォーク元の変更を取り込む方法
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更を取り込む方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    フォーク元のリポジトリをリモートに追加する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    ローカルのフォークしたリポジトリを更新する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    フォーク元の変更をマージする
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更をマージする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    リベースする場合は以下のコマンドを実行する。
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    コンフリクトの解決
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    変更をプッシュする
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+  
+  
+
+
+<h1 id="git-tips">git-tips</h1>
+<p>git関連のtipsです。</p>
+<h2 id="_1">基本的な流れ</h2>
+<p>Gitを使用してコードをリモートリポジトリにプッシュする一般的な流れは以下の通りです。</p>
+<h3 id="_2">リポジトリの初期化またはクローン</h3>
+<p>リモートリポジトリを既に持っている場合は、git clone コマンドを使用して既存のリポジトリをローカルに複製します。<br />
+新しいリポジトリを作成する場合は、<code>git init</code>コマンドを使用して新しいリポジトリを初期化します。</p>
+<h3 id="_3">ファイルのステージング</h3>
+<p>変更したファイルをステージングエリアに追加します。これは、変更をコミットする前の準備作業です。<br />
+すべての変更をステージングするには、<code>git add .</code>コマンドを使用します。<br />
+特定のファイルのみをステージングするには、<code>git add ファイル名</code>コマンドを使用します。</p>
+<h3 id="_4">コミット</h3>
+<p>ステージングエリアに追加した変更をコミットします。これにより、変更がリポジトリの履歴に記録されます。<br />
+<code>git commit -m "コミットメッセージ"</code>コマンドを使用してコミットを作成します。コミットメッセージはその変更の内容を説明するためのものです。</p>
+<h3 id="_5">リモートリポジトリの設定:</h3>
+<p>リモートリポジトリを追加します。通常、このリモートリポジトリは GitHub や GitLab などのホスティングサービス上にあります。
+<code>git remote add origin リモートリポジトリのURL</code> コマンドを使用してリモートリポジトリを追加します。"origin" はリモートリポジトリへの参照の名前です。</p>
+<h3 id="_6">プッシュ</h3>
+<p>ローカルのコミットをリモートリポジトリにプッシュします。これにより、リモートリポジトリに変更が反映されます。
+<code>git push origin ブランチ名</code> コマンドを使用して、指定したブランチの変更をリモートリポジトリにプッシュします。
+ここで ブランチ名 はプッシュする対象のブランチの名前です。デフォルトでは、通常は main や master といった名前になります。</p>
+<h2 id="_7">コマンド毎の詳細</h2>
+<h3 id="git-add">ステージング(git add)</h3>
+<p>git addは、Gitで変更したファイルをステージングエリア（インデックス）に追加するコマンドです。変更したファイル、フォルダは<code>git status</code>コマンドで確認できます。ステージングエリアにファイルを追加することで、Gitはその変更を次のコミットの対象として扱います。</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
+On<span class="w"> </span>branch<span class="w"> </span>main
+Your<span class="w"> </span>branch<span class="w"> </span>is<span class="w"> </span>ahead<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;origin/main&#39;</span><span class="w"> </span>by<span class="w"> </span><span class="m">1</span><span class="w"> </span>commit.
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git push&quot;</span><span class="w"> </span>to<span class="w"> </span>publish<span class="w"> </span>your<span class="w"> </span><span class="nb">local</span><span class="w"> </span>commits<span class="o">)</span>
+
+Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w"> </span><span class="k">for</span><span class="w"> </span>commit:
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>update<span class="w"> </span>what<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>committed<span class="o">)</span>
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git restore &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>discard<span class="w"> </span>changes<span class="w"> </span><span class="k">in</span><span class="w"> </span>working<span class="w"> </span>directory<span class="o">)</span>
+<span class="w">        </span>modified:<span class="w">   </span>folder/file3.txt
+<span class="w">        </span>modified:<span class="w">   </span>folder/file4.txt
+<span class="w">        </span>modified:<span class="w">   </span>file1.txt
+</code></pre></div>
+<p>この表示例では、以下の情報が含まれています：</p>
+<ul>
+<li>現在のブランチが <code>main</code>ブランチであることを示す行。</li>
+<li>ブランチが<code>origin/main</code>ブランチよりも 1コミット進んでいることを示す行。</li>
+<li>変更がステージングされていないファイルの一覧。<code>folder/file3.txt</code>,<code>folder/file4.txt</code>、<code>file1.txt</code>の変更がまだステージングされていません。</li>
+<li>変更がステージングされていないことを示すメッセージ。</li>
+</ul>
+<p>この出力から、ワーキングツリー内のファイルの変更状態がわかります。これらの変更をコミットする前に、必要な変更をステージングするために <code>git add</code>コマンドを使用することができます。</p>
+<p>git addコマンドは、次のように使用します。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/file3.txt
+</code></pre></div>
+<p>複数のファイルをステージングエリアに追加する場合は、<code>git add</code>コマンドに複数のファイルを指定することができる。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/file3.txt<span class="w"> </span>folder/file4.txt<span class="w"> </span>file1.txt
+</code></pre></div>
+<p>また、ディレクトリを指定することで、そのディレクトリ内のすべての変更を一度にステージングエリアに追加することもできる。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/
+</code></pre></div>
+<p>もし、変更したすべてのファイルをステージングしたい場合はプロジェクト以下(<strong>.はカレントディレクトリを指す</strong>)をコマンドを実行する</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
+</code></pre></div>
+<p>ステージングエリアに追加されたファイルは、<code>git commit</code>コマンドを実行することで、ローカルリポジトリにコミットすることができる。</p>
+<h3 id="git-reset">ステージングの取り消し(git reset)</h3>
+<p>ステージングエリア（インデックス）に追加したファイルを取り消す方法は、<code>git reset</code>コマンドを使用することができる。</p>
+<p>まず、<code>git status</code>コマンドで、ステージングエリアに追加されたファイルを確認します。</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
+On<span class="w"> </span>branch<span class="w"> </span>main
+Your<span class="w"> </span>branch<span class="w"> </span>is<span class="w"> </span>ahead<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;origin/main&#39;</span><span class="w"> </span>by<span class="w"> </span><span class="m">1</span><span class="w"> </span>commit.
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git push&quot;</span><span class="w"> </span>to<span class="w"> </span>publish<span class="w"> </span>your<span class="w"> </span><span class="nb">local</span><span class="w"> </span>commits<span class="o">)</span>
+
+Changes<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>committed:
+<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git restore --staged &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>unstage<span class="o">)</span>
+<span class="w">        </span>new<span class="w"> </span>file:<span class="w">   </span>folder/file3.txt
+<span class="w">        </span>modified:<span class="w">   </span>folder/file4.txt
+<span class="w">        </span>modified:<span class="w">   </span>file1.txt
+</code></pre></div>
+<p><code>git reset</code>コマンドを使用して、ステージングエリアに追加したファイルを取り消します。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>HEAD<span class="w"> </span>folder/file3.txt<span class="w"> </span>folder/file4.txt<span class="w"> </span>file1.txt
+</code></pre></div>
+<p><code>HEAD</code>は、最新のコミットを指す。<code>git reset</code>コマンドにHEADを指定することで、ステージングエリアに追加された変更を取り消すことができる。</p>
+<p>ファイル指定しない場合はステージングエリアからすべてのファイルを取り消すことができる。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>HEAD
+</code></pre></div>
+<p>このように、<code>git reset</code>コマンドを使用することで、ステージングエリアに追加したファイルの変更を取り消すことができる。ただし、取り消した変更は作業ディレクトリに残ります。必要に応じて、<code>git restore</code>コマンドを使用して作業ディレクトリの変更を取り消すこともできる。</p>
+<p>なお、git resetコマンドにHEADを指定しない場合、コミットの履歴は変更されませんが、ステージングエリアからファイルの変更を取り消すことができる。具体的には、ステージングエリアから取り消されたファイルの変更は、作業ディレクトリに戻される。<strong>ただし、コミットの履歴は変更されないため、注意が必要。</strong></p>
+<h2 id="git-restore">ワーキングツリー内の変更を取り消す(git restoreコマンド)</h2>
+<p><code>git restore</code>コマンドは、ワーキングツリーからステージングエリアに変更を戻したり、ステージングエリアからコミットに変更を戻すために使用される。具体的には、次のような使い方ができる。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>file.txt
+</code></pre></div>
+<p>ステージングエリアにある <code>file.txt</code>の変更が取り消され、<strong>ファイルは以前のコミットの状態に戻ります。</strong></p>
+<p><code>git add</code>コマンドでファイルをステージングエリアに追加したが、戻したい場合は、<code>git restore --staged</code>を使用します。</p>
+<p>例えば、<code>file1.txt</code>ファイルをステージングエリアに追加し、変更を戻したい場合は、次のようにする。</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>file1.txt<span class="w">     </span><span class="c1"># ステージングエリアに変更を追加</span>
+$<span class="w"> </span>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>file1.txt<span class="w">  </span><span class="c1"># ステージングエリアから変更を戻す</span>
+</code></pre></div>
+<p><code>--satge</code>オプションを指定することにより、ステージングエリアにある <code>file.txt</code>の<strong>変更は取り消されますが、ファイル自体は変更されたままです。</strong>
+つまり、変更はステージングエリア内に残ります。</p>
+<h2 id="git-commit">git commitコマンド</h2>
+<h3 id="_8">基本形</h3>
+<p>git commit コマンドは、ローカルリポジトリに変更をコミットするために使用されます。<br />
+以下は、基本的な git commit コマンドの例。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add new feature&quot;</span>
+</code></pre></div>
+<h3 id="commit-typeemojis">commit typeとemojisを使用した例</h3>
+<p>emojiの後ろにスペースを入れるかどうかは、コミットメッセージのスタイルやプロジェクトのガイドラインによります。一部のプロジェクトでは、コミットメッセージに絵文字の後ろにスペースを入れることを求める場合がありますが、一般的にはスペースを省略することが多いようです。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;:+1:feat: Add new feature&quot;</span>
+</code></pre></div>
+<h3 id="commit-type">commit type</h3>
+<p>commit typeは、コミットの目的を簡潔に表すために使用される、一般的な識別子のことを指す。<br />
+コミットタイプは、開発者がコードを修正する目的を他の開発者が理解しやすくするのに役立つ。</p>
+<p>一般的なコミットタイプには、以下のようなものがある。</p>
+<ul>
+<li>feat：新しい機能を追加した場合に使用します。</li>
+<li>fix：バグ修正のために使用します。</li>
+<li>docs：ドキュメントを変更した場合に使用します。</li>
+<li>style：コードのスタイルに関する変更（スペース、フォーマットなど）を行った場合に使用します。</li>
+<li>refactor：コードの機能を変更しない変更を行った場合に使用します。</li>
+<li>test：テストコードに関する変更を行った場合に使用します。</li>
+<li>chore：ビルドプロセスや補助ツールの変更を行った場合に使用します。</li>
+</ul>
+<p>例えば、README.mdファイルを修正する場合、コミットタイプは「docs」となる。そのため、コミットメッセージは以下のようになる。</p>
+<div class="highlight"><pre><span></span><code>docs:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+</code></pre></div>
+<p>これにより、他の開発者は、このコミットがREADME.mdファイルのドキュメントを更新したことを理解できる。</p>
+<h3 id="commit-message">commit message</h3>
+<p>コミットメッセージには、詳細を追加するために使用できるいくつかの要素がある。</p>
+<ul>
+<li>Scope：コミットが影響を受ける範囲を示すオプションの要素。この要素は、コミットが変更を加えたファイルやモジュール、機能などを指定するために使用できる。</li>
+</ul>
+<p>README.mdファイルの修正に関する場合、スコープはREADMEとなります。そのため、コミットメッセージは以下のようになる。</p>
+<div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+</code></pre></div>
+<ul>
+<li>Subject：コミットの簡潔な要約を示す必須要素。コミットメッセージの最初の行に書かれる。</li>
+</ul>
+<p>例：README.mdファイルの修正に関する場合、サブジェクトは更新された情報に関するものになる。そのため、コミットメッセージは以下のようになる。</p>
+<div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+</code></pre></div>
+<ul>
+<li>Body：コミットの詳細を示すオプションの要素。
+  この要素は、コミットが行った変更の詳細や、背景、理由などを記述するために使用される</li>
+</ul>
+<p>例：README.mdファイルの修正に関する場合、ボディには、新しい情報についての詳細な説明が含めることができる。そのため、コミットメッセージは以下のようになる。</p>
+<div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+
+Add<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>section<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md<span class="w"> </span>file<span class="w"> </span>describing<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>features
+that<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>application.<span class="w"> </span>This<span class="w"> </span>should<span class="w"> </span><span class="nb">help</span><span class="w"> </span>users<span class="w"> </span>to
+better<span class="w"> </span>understand<span class="w"> </span>how<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>application<span class="w"> </span>and<span class="w"> </span>take<span class="w"> </span>advantage<span class="w"> </span>of
+its<span class="w"> </span>latest<span class="w"> </span>features.
+</code></pre></div>
+<ul>
+<li>Footer：コミットに関するメタデータを示すオプションの要素。
+  この要素は、関連するIssue番号、重要な変更、破壊的な変更などを示すために使用される。</li>
+</ul>
+<p>例：README.mdファイルの修正に関する場合、フッターには、関連するIssue番号を含めることができる。そのため、コミットメッセージは以下のようにな。</p>
+<div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+
+Add<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>section<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md<span class="w"> </span>file<span class="w"> </span>describing<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>features
+that<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>application.<span class="w"> </span>This<span class="w"> </span>should<span class="w"> </span><span class="nb">help</span><span class="w"> </span>users<span class="w"> </span>to
+better<span class="w"> </span>understand<span class="w"> </span>how<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>application<span class="w"> </span>and<span class="w"> </span>take<span class="w"> </span>advantage<span class="w"> </span>of
+its<span class="w"> </span>latest<span class="w"> </span>features.
+
+Issue<span class="w"> </span><span class="c1">#123</span>
+</code></pre></div>
+<h3 id="commit-typegit-message">commit typeとgit messageを加えた例</h3>
+<p>この例では、スコープとして "search" を指定し、"feat" というコミットタイプを使用して、新しい機能が追加されたことを示している。ボディでは、変更内容の詳細が説明され、フッターでは関連する問題番号が "Closes #1234" として記述されている。これにより、このコミットがどの問題に関連しているのかを明確に示し、チーム全体でのコラボレーションをスムーズに進めることができ。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat(search): add fuzzy search to search bar</span>
+
+<span class="s2">This commit adds fuzzy search functionality to the search bar component. Fuzzy search allows users to find search results even if they make spelling mistakes or typos. This feature will enhance the user experience and make it easier to find what they are looking for.</span>
+
+<span class="s2">Closes #1234&quot;</span>
+</code></pre></div>
+<h3 id="_9">コミットメッセージのテンプレート</h3>
+<h4 id="_10">コミットメッセージのテンプレートを指定する方法</h4>
+<p>git commit コマンドでは、-t オプションを使用して、コミットメッセージのテンプレートを指定することができる。</p>
+<h5 id="docs">docs用のテンプレート例</h5>
+<p>この例のテンプレートには、スコープ、コミットタイプ、変更内容、テスト方法などが含まれており、より詳細なコミットメッセージを作成することができる。</p>
+<p>docs_gtの中身</p>
+<div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+
+Add<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>section<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md<span class="w"> </span>file<span class="w"> </span>describing<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>features
+that<span class="w"> </span>have<span class="w"> </span>been<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>application.<span class="w"> </span>This<span class="w"> </span>should<span class="w"> </span><span class="nb">help</span><span class="w"> </span>users<span class="w"> </span>to
+better<span class="w"> </span>understand<span class="w"> </span>how<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>the<span class="w"> </span>application<span class="w"> </span>and<span class="w"> </span>take<span class="w"> </span>advantage<span class="w"> </span>of
+its<span class="w"> </span>latest<span class="w"> </span>features.
+
+Issue<span class="w"> </span><span class="c1">#[]</span>
+Closes<span class="w"> </span><span class="c1">#[]</span>
+Refs<span class="w"> </span><span class="c1">#[]</span>
+</code></pre></div>
+<p>コミット時に-tオプションで指定</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span>~./git_message_template/docs_gt
+</code></pre></div>
+<h4 id="_11">デフォルトで使用するコミットメッセージのテンプレート設定</h4>
+<p>commit.template にパスを指定することで、そのパスで指定したファイルがデフォルトのコミットメッセージのテンプレートとして使用できる。</p>
+<p>参考：<a href="https://zenn.dev/ianchen0419/articles/99564425e43dd4">Gitコミットスタイル</a></p>
+<h5 id="gitmessage">.gitmessageの作成</h5>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/.git_message_template
+touch<span class="w"> </span>~/.git_message_template/.gitmessage
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># ==== Prefix ====</span>
+<span class="c1"># fix       バグ修正、クリティカルなバグ修正なら hotfix</span>
+<span class="c1"># feat      feat は feature の略</span>
+<span class="c1"># docs      ドキュメントのみ修正</span>
+<span class="c1"># style     空白、セミコロン、行、コーディングフォーマットなどの修正</span>
+<span class="c1"># refactor  整理 （リファクタリング等）</span>
+<span class="c1"># test      テスト追加や間違っていたテストの修正</span>
+<span class="c1"># chore     ビルドツールやライブラリで自動生成されたものをコミットするとき</span>
+
+<span class="c1"># ==== Emojis ====</span>
+<span class="c1"># :bug:         バグ修正 (fix)</span>
+<span class="c1"># :+1:          機能改善 (fix/feat)</span>
+<span class="c1"># :sparkles:    部分的な機能追加 (feat)</span>
+<span class="c1"># :tada:        盛大に祝うべき大きな機能追加 (feat)</span>
+<span class="c1"># :rocket:      パフォーマンス改善 (feat)</span>
+<span class="c1"># :lock:        新機能の公開範囲の制限 (feat)</span>
+<span class="c1"># :cop:         セキュリティ関連の改善 (feat)</span>
+<span class="c1"># :note:        ドキュメント修正 (docs)</span>
+<span class="c1"># :shirt:       Lintエラーの修正やコードスタイルの修正 (style)</span>
+<span class="c1"># :recycle:     リファクタリング (refactor)</span>
+<span class="c1"># :shower:      不要な機能・使われなくなった機能の削除 (refactor)</span>
+<span class="c1"># :green_heart: テストやCIの修正・改善 (test)</span>
+<span class="c1"># :up:          依存パッケージなどのアップデート (chore)</span>
+</code></pre></div>
+<p><code>git config --global</code>コマンドでGitのグローバル設定で、コミット時に使用されるテンプレートファイルのパスを指定する。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.template<span class="w"> </span>~/.git_message_template/.gitmessage
+</code></pre></div>
+<p>commit.template を設定すると、git commit コマンドを実行したときにテンプレートが自動的に読み込まれ、編集可能なコミットメッセージの初期テキストとして表示されるようになる。<br />
+vscodeの場合は変更をステージ後コミットするとCOMMIT_EDITMSG上にデフォルトで表示されるようになる。</p>
+<p>なお、commit.template は --template オプションと同様に、git commit コマンド実行時に -t オプションで別のテンプレートファイルを指定すると、commit.template の設定は上書きされる。</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span><span class="nv">$HOME</span>/.git_message_template/.docs_gt
+Aborting<span class="w"> </span>commit<span class="p">;</span><span class="w"> </span>you<span class="w"> </span>did<span class="w"> </span>not<span class="w"> </span>edit<span class="w"> </span>the<span class="w"> </span>message.<span class="w"> </span><span class="c1"># 上書き保存しない場合</span>
+
+$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span><span class="nv">$HOME</span>/.git_message_template/.docs_gt
+<span class="o">[</span>main<span class="w"> </span>e4db099<span class="o">]</span><span class="w"> </span>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
+<span class="w"> </span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">106</span><span class="w"> </span>insertions<span class="o">(</span>+<span class="o">)</span>,<span class="w"> </span><span class="m">1</span><span class="w"> </span>deletion<span class="o">(</span>-<span class="o">)</span>
+</code></pre></div>
+<h4 id="github-git-commit-push-github">【GitHub】 git commit / push後の GitHubの表示について</h4>
+<h5 id="git-commitissue-issueurl">git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される</h5>
+<p><a href="https://github.com/7rikazhexde/twitter-video-dl-for-sc/commit/08c13970a84804e48c80d589002189e452cb8183">参考</a></p>
+<h2 id="git-commitgit-reset-git-revert">git commit後のコミットを取消する(git reset / git revert)</h2>
+<p><code>git commit</code>後のコミットを取消する場合、一般的には <code>git reset</code>コマンドを使用します。ただし、注意が必要であり、コミットを取り消すことは他の開発者やリモートリポジトリとの連携に影響を与える可能性があります。以下に、コミットの取消方法を説明します。</p>
+<h3 id="_12">直前のコミットを取消し、変更をステージングエリアに戻す</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> </span>HEAD^
+</code></pre></div>
+<p>このコマンドは直前のコミットを取り消し、コミットメッセージを保持したまま変更をステージングエリアに戻します。この後、変更を修正して再コミットすることができます。</p>
+<h3 id="_13">直前のコミットと変更を完全に取り消す</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD^
+</code></pre></div>
+<p>このコマンドは直前のコミットとその変更を完全に取り消し、ワーキングツリーも変更前の状態に戻します。注意が必要で、取り消したコミットと変更は復元できません。</p>
+<h3 id="_14">特定のコミットを取り消す</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>&lt;commit-hash&gt;
+</code></pre></div>
+<p><code>git revert</code> コマンドは、指定したコミットの変更を取り消す新しいコミットを作成します。これにより、変更を取り消すだけでなく、履歴にも記録されます。他の開発者との連携を維持しつつ、変更を取り消す方法です。</p>
+<h2 id="github">【GitHub】プロジェクトのフォークについて</h2>
+<p>GitHubでのプロジェクトのフォークは、オリジナルのリポジトリをコピーして自分のGitHubアカウントに持ってくることができる。<br />
+以下は、フォークする際の作法、注意点、やり方。</p>
+<h3 id="_15">作法</h3>
+<ul>
+<li>原則として、フォークするプロジェクトのライセンスを確認し、適切にクレジットを表示することが望ましい。</li>
+<li>フォークしたプロジェクトに対してコントリビュートする際は、オリジナルのプロジェクトと同じように、適切な開発プロセスを行うようにする。</li>
+</ul>
+<h3 id="_16">注意点</h3>
+<ul>
+<li>フォーク元のプロジェクトを含め、ライセンスについてしっかりと理解し、遵守するようこと。</li>
+<li>フォーク元のプロジェクトがアップデートされた場合、定期的に同期をとることで、最新のコードを利用することができる。</li>
+</ul>
+<h3 id="_17">やり方</h3>
+<ol>
+<li>GitHubにログインし、フォークしたいプロジェクトのリポジトリにアクセスする。</li>
+<li>右上にある「Fork」ボタンをクリックする。</li>
+<li>自分のGitHubアカウントで、フォークしたリポジトリのコピーが作成される。</li>
+<li>コピーしたリポジトリに対して、必要な修正を行い、コミットする。</li>
+</ol>
+<h2 id="_18">フォーク元の変更を取り込む方法</h2>
+<h3 id="_19">フォーク元のリポジトリをリモートに追加する</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>&lt;フォーク元のリポジトリのURL&gt;
+</code></pre></div>
+<h3 id="_20">ローカルのフォークしたリポジトリを更新する</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>upstream
+</code></pre></div>
+<h3 id="_21">フォーク元の変更をマージする</h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>upstream/&lt;変更を取り込むブランチ名&gt;
+</code></pre></div>
+<h4 id="_22">リベースする場合は以下のコマンドを実行する。</h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>upstream/&lt;変更を取り込むブランチ名&gt;
+</code></pre></div>
+<h3 id="_23">コンフリクトの解決</h3>
+<p>変更をマージまたはリベースする際にコンフリクトが発生した場合は、手動で解決する必要があります。コンフリクトの解決方法は、変更の内容に応じて異なります。</p>
+<h3 id="_24">変更をプッシュする</h3>
+<p>変更をマージまたはリベースした後は、フォークしたリポジトリに変更をプッシュする。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>&lt;リモート先のブランチ名&gt;
+</code></pre></div>
+<p>これらの手順に従うことで、フォーク元の変更を自分のフォークしたリポジトリに取り込むことができる。</p>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9h4m4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21H9m0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03V19Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12h-4M15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3h9m0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97V5Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thank you for your feedback!<br> Please use the comments(giscus) below to send us your feedback on this page.
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thank you for your feedback!<br> Please use the comments(giscus) below to send me your feedback on this page or<br> use the link below to provide feedback on this page.<br> <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
+<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
+<!-- 参考2: Adding a comment system -->
+<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
+
+                
+
+  <!-- Giscus -->
+  <h2 id="__comments">コメント</h2>
+  <!-- Replace with generated snippet -->
+  <!--
+  <script src="https://giscus.app/client.js"
+        data-repo="7rikazhexde/dev-insights-tips"
+        data-repo-id="R_kgDOJwRtyQ"
+        data-category="[カテゴリ名を記述]"
+        data-category-id="[カテゴリIDを記述]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="ja"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+  -->
+  <script src="https://giscus.app/client.js"
+        data-repo="7rikazhexde/dev-insights-tips"
+        data-repo-id="R_kgDOJwRtyQ"
+        data-category="[ENTER CATEGORY NAME HERE]"
+        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+  </script>
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 7rikazhexde
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">同意</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">サイトの設定</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

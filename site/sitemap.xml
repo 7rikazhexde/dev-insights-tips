@@ -1,3 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+         <loc>None./</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
+         
+    </url>
+    <url>
+         <loc>Nonedatabase/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/database/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/database/"/>
+         
+    </url>
+    <url>
+         <loc>Nonedatabase/mariadb-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/database/mariadb-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/database/mariadb-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonegit/git-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/git/git-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/git/git-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonegit/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/git/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/git/"/>
+         
+    </url>
+    <url>
+         <loc>Nonemarkdown/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/markdown/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/markdown/"/>
+         
+    </url>
+    <url>
+         <loc>Nonemarkdown/markdown-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/markdown/markdown-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/markdown/markdown-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonepython/dash-plotly-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/python/dash-plotly-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/python/dash-plotly-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonepython/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/python/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/python/"/>
+         
+    </url>
+    <url>
+         <loc>Nonepython/post-commit-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/python/post-commit-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/python/post-commit-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonepython/pre-commit-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/python/pre-commit-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/python/pre-commit-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonepython/pymysql-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/python/pymysql-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/python/pymysql-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Noneraspberrypi/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/raspberrypi/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/raspberrypi/"/>
+         
+    </url>
+    <url>
+         <loc>Noneraspberrypi/raspberrypi-ubuntu-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/raspberrypi/raspberrypi-ubuntu-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/raspberrypi/raspberrypi-ubuntu-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonesample/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/sample/"/>
+         
+    </url>
+    <url>
+         <loc>Nonesample/sample-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample/sample-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/sample/sample-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonetools/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/tools/"/>
+         
+    </url>
+    <url>
+         <loc>Nonetools/tools-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/tools/tools-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/tools/tools-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonevi/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/vi/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/vi/"/>
+         
+    </url>
+    <url>
+         <loc>Nonevi/vi-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/vi/vi-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/vi/vi-tips/"/>
+         
+    </url>
+    <url>
+         <loc>Nonevscode/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/vscode/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/vscode/"/>
+         
+    </url>
+    <url>
+         <loc>Nonevscode/vscode-tips/</loc>
+         <lastmod>2023-08-11</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/vscode/vscode-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/vscode/vscode-tips/"/>
+         
+    </url>
 </urlset>
