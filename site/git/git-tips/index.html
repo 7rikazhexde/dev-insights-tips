@@ -1,11 +1,6 @@
-<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-<!-- 参考2: Adding a comment system -->
-<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
-
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -24,7 +19,7 @@
     
     
       
-        <title>git-tips - Dev Insights Tips</title>
+        <title>git tips - Dev Insights Tips</title>
       
     
     
@@ -89,7 +84,7 @@
       
         
         <a href="#git-tips" class="md-skip">
-          Skip to content
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -103,7 +98,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="../.." title="Dev Insights Tips" class="md-header__button md-logo" aria-label="Dev Insights Tips" data-md-component="logo">
       
   
@@ -123,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              git-tips
+              git tips
             
           </span>
         </div>
@@ -160,21 +155,21 @@
       <div class="md-header__option">
         <div class="md-select">
           
-          <button class="md-header__button md-icon" aria-label="Select language">
+          <button class="md-header__button md-icon" aria-label="言語切り替え">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
           </button>
           <div class="md-select__inner">
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="./" hreflang="en" class="md-select__link">
-                    English
+                  <a href="./" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
               
                 <li class="md-select__item">
-                  <a href="../../ja/git/git-tips/" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../en/git/git-tips/" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
               
@@ -191,14 +186,14 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="検索">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -208,7 +203,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -219,7 +214,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/7rikazhexde/dev-insights-tips" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/7rikazhexde/dev-insights-tips" title="リポジトリへ" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -252,7 +247,7 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Dev Insights Tips" class="md-nav__button md-logo" aria-label="Dev Insights Tips" data-md-component="logo">
       
@@ -264,7 +259,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/7rikazhexde/dev-insights-tips" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/7rikazhexde/dev-insights-tips" title="リポジトリへ" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -305,14 +300,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../..">Introduction</a>
+          <a href="../..">はじめに</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          Introduction
+          はじめに
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -454,17 +449,17 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          git-tips
+          git tips
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        git-tips
+        git tips
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -473,49 +468,49 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-flow" class="md-nav__link">
-    Basic Flow
+  <a href="#_1" class="md-nav__link">
+    基本的な流れ
   </a>
   
-    <nav class="md-nav" aria-label="Basic Flow">
+    <nav class="md-nav" aria-label="基本的な流れ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initialize-or-clone-the-repository" class="md-nav__link">
-    Initialize or clone the repository
+  <a href="#_2" class="md-nav__link">
+    リポジトリの初期化またはクローン
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#staging" class="md-nav__link">
-    Staging
+  <a href="#_3" class="md-nav__link">
+    ファイルのステージング
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit" class="md-nav__link">
-    Commit
+  <a href="#_4" class="md-nav__link">
+    コミット
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remote-repository-settings" class="md-nav__link">
-    Remote Repository Settings
+  <a href="#_5" class="md-nav__link">
+    リモートリポジトリの設定:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#push" class="md-nav__link">
-    Push
+  <a href="#_6" class="md-nav__link">
+    プッシュ
   </a>
   
 </li>
@@ -526,23 +521,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#details-for-each-command" class="md-nav__link">
-    Details for each command
+  <a href="#_7" class="md-nav__link">
+    コマンド毎の詳細
   </a>
   
-    <nav class="md-nav" aria-label="Details for each command">
+    <nav class="md-nav" aria-label="コマンド毎の詳細">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#staginggit-add" class="md-nav__link">
-    Staging(git add)
+  <a href="#git-add" class="md-nav__link">
+    ステージング(git add)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#undo-staging-git-reset" class="md-nav__link">
-    Undo staging (git reset)
+  <a href="#git-reset" class="md-nav__link">
+    ステージングの取り消し(git reset)
   </a>
   
 </li>
@@ -553,30 +548,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#revert-changes-in-the-working-tree-git-restore-command" class="md-nav__link">
-    Revert changes in the working tree (git restore command)
+  <a href="#git-restore" class="md-nav__link">
+    ワーキングツリー内の変更を取り消す(git restoreコマンド)
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#git-commit" class="md-nav__link">
-    git commit
+    git commitコマンド
   </a>
   
-    <nav class="md-nav" aria-label="git commit">
+    <nav class="md-nav" aria-label="git commitコマンド">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-form" class="md-nav__link">
-    basic form
+  <a href="#_8" class="md-nav__link">
+    基本形
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-using-commit-type-and-emojis" class="md-nav__link">
-    Example using commit type and emojis
+  <a href="#commit-typeemojis" class="md-nav__link">
+    commit typeとemojisを使用した例
   </a>
   
 </li>
@@ -596,31 +591,31 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-of-adding-commit-type-and-git-message" class="md-nav__link">
-    Example of adding commit type and git message
+  <a href="#commit-typegit-message" class="md-nav__link">
+    commit typeとgit messageを加えた例
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit-message-templates" class="md-nav__link">
-    Commit Message Templates
+  <a href="#_9" class="md-nav__link">
+    コミットメッセージのテンプレート
   </a>
   
-    <nav class="md-nav" aria-label="Commit Message Templates">
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレート">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-specify-a-commit-message-template" class="md-nav__link">
-    How to specify a commit message template
+  <a href="#_10" class="md-nav__link">
+    コミットメッセージのテンプレートを指定する方法
   </a>
   
-    <nav class="md-nav" aria-label="How to specify a commit message template">
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレートを指定する方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-template-for-docs" class="md-nav__link">
-    Example template for docs
+  <a href="#docs" class="md-nav__link">
+    docs用のテンプレート例
   </a>
   
 </li>
@@ -631,16 +626,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#template-settings-for-commit-messages-to-be-used-by-default" class="md-nav__link">
-    Template settings for commit messages to be used by default
+  <a href="#_11" class="md-nav__link">
+    デフォルトで使用するコミットメッセージのテンプレート設定
   </a>
   
-    <nav class="md-nav" aria-label="Template settings for commit messages to be used by default">
+    <nav class="md-nav" aria-label="デフォルトで使用するコミットメッセージのテンプレート設定">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-a-gitmessage" class="md-nav__link">
-    Creating a .gitmessage
+  <a href="#gitmessage" class="md-nav__link">
+    .gitmessageの作成
   </a>
   
 </li>
@@ -651,16 +646,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#githubabout-the-display-of-github-after-git-commit-push" class="md-nav__link">
-    【GitHub】About the display of GitHub after git commit / push
+  <a href="#github-git-commit-push-github" class="md-nav__link">
+    【GitHub】 git commit / push後の GitHubの表示について
   </a>
   
-    <nav class="md-nav" aria-label="【GitHub】About the display of GitHub after git commit / push">
+    <nav class="md-nav" aria-label="【GitHub】 git commit / push後の GitHubの表示について">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#when-you-write-the-issue-number-with-of-the-forked-source-on-git-commit-it-is-automatically-converted-to-a-url-with-the-title-account-name-issue-number" class="md-nav__link">
-    When you write the issue number (with #) of the forked source on git commit, it is automatically converted to a URL with the title "account name# issue number"
+  <a href="#git-commitissue-issueurl" class="md-nav__link">
+    git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される
   </a>
   
 </li>
@@ -672,40 +667,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#undo-a-commit-after-git-commit-git-reset-git-revert" class="md-nav__link">
-    Undo a commit after git commit (git reset / git revert)
-  </a>
-  
-    <nav class="md-nav" aria-label="Undo a commit after git commit (git reset / git revert)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#undo-the-previous-commit-and-return-the-changes-to-the-staging-area" class="md-nav__link">
-    Undo the previous commit and return the changes to the staging area
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#completely-undo-last-commit-and-changes" class="md-nav__link">
-    Completely undo last commit and changes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#undo-a-specific-commit" class="md-nav__link">
-    Undo a specific commit
-  </a>
   
 </li>
         
@@ -715,30 +676,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#githubabout-project-forking" class="md-nav__link">
-    【GitHub】About Project Forking
+  <a href="#git-commitgit-reset-git-revert" class="md-nav__link">
+    git commit後のコミットを取消する(git reset / git revert)
   </a>
   
-    <nav class="md-nav" aria-label="【GitHub】About Project Forking">
+    <nav class="md-nav" aria-label="git commit後のコミットを取消する(git reset / git revert)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etiquette" class="md-nav__link">
-    Etiquette
+  <a href="#_12" class="md-nav__link">
+    直前のコミットを取消し、変更をステージングエリアに戻す
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    Note
+  <a href="#_13" class="md-nav__link">
+    直前のコミットと変更を完全に取り消す
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#_14" class="md-nav__link">
+    特定のコミットを取り消す
   </a>
   
 </li>
@@ -749,38 +710,72 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-incorporate-changes-in-the-fork-source" class="md-nav__link">
-    How to incorporate changes in the fork source
+  <a href="#github" class="md-nav__link">
+    【GitHub】プロジェクトのフォークについて
   </a>
   
-    <nav class="md-nav" aria-label="How to incorporate changes in the fork source">
+    <nav class="md-nav" aria-label="【GitHub】プロジェクトのフォークについて">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add-the-forked-repository-to-the-remote" class="md-nav__link">
-    Add the forked repository to the remote
+  <a href="#_15" class="md-nav__link">
+    作法
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-local-forked-repositories" class="md-nav__link">
-    Update local forked repositories
+  <a href="#_16" class="md-nav__link">
+    注意点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#merge-changes-from-the-fork-source" class="md-nav__link">
-    Merge changes from the fork source
+  <a href="#_17" class="md-nav__link">
+    やり方
   </a>
   
-    <nav class="md-nav" aria-label="Merge changes from the fork source">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    フォーク元の変更を取り込む方法
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更を取り込む方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#to-rebase-execute-the-following-command" class="md-nav__link">
-    To rebase, execute the following command
+  <a href="#_19" class="md-nav__link">
+    フォーク元のリポジトリをリモートに追加する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    ローカルのフォークしたリポジトリを更新する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    フォーク元の変更をマージする
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更をマージする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    リベースする場合は以下のコマンドを実行する。
   </a>
   
 </li>
@@ -791,15 +786,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#conflict-resolution" class="md-nav__link">
-    Conflict Resolution
+  <a href="#_23" class="md-nav__link">
+    コンフリクトの解決
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#push-changes" class="md-nav__link">
-    Push changes
+  <a href="#_24" class="md-nav__link">
+    変更をプッシュする
   </a>
   
 </li>
@@ -1006,14 +1001,14 @@
       
       
         <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          RaspberryPi
+          Raspberry Pi
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
-          RaspberryPi
+          Raspberry Pi
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1215,7 +1210,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -1224,49 +1219,49 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-flow" class="md-nav__link">
-    Basic Flow
+  <a href="#_1" class="md-nav__link">
+    基本的な流れ
   </a>
   
-    <nav class="md-nav" aria-label="Basic Flow">
+    <nav class="md-nav" aria-label="基本的な流れ">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initialize-or-clone-the-repository" class="md-nav__link">
-    Initialize or clone the repository
+  <a href="#_2" class="md-nav__link">
+    リポジトリの初期化またはクローン
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#staging" class="md-nav__link">
-    Staging
+  <a href="#_3" class="md-nav__link">
+    ファイルのステージング
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit" class="md-nav__link">
-    Commit
+  <a href="#_4" class="md-nav__link">
+    コミット
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remote-repository-settings" class="md-nav__link">
-    Remote Repository Settings
+  <a href="#_5" class="md-nav__link">
+    リモートリポジトリの設定:
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#push" class="md-nav__link">
-    Push
+  <a href="#_6" class="md-nav__link">
+    プッシュ
   </a>
   
 </li>
@@ -1277,23 +1272,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#details-for-each-command" class="md-nav__link">
-    Details for each command
+  <a href="#_7" class="md-nav__link">
+    コマンド毎の詳細
   </a>
   
-    <nav class="md-nav" aria-label="Details for each command">
+    <nav class="md-nav" aria-label="コマンド毎の詳細">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#staginggit-add" class="md-nav__link">
-    Staging(git add)
+  <a href="#git-add" class="md-nav__link">
+    ステージング(git add)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#undo-staging-git-reset" class="md-nav__link">
-    Undo staging (git reset)
+  <a href="#git-reset" class="md-nav__link">
+    ステージングの取り消し(git reset)
   </a>
   
 </li>
@@ -1304,30 +1299,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#revert-changes-in-the-working-tree-git-restore-command" class="md-nav__link">
-    Revert changes in the working tree (git restore command)
+  <a href="#git-restore" class="md-nav__link">
+    ワーキングツリー内の変更を取り消す(git restoreコマンド)
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#git-commit" class="md-nav__link">
-    git commit
+    git commitコマンド
   </a>
   
-    <nav class="md-nav" aria-label="git commit">
+    <nav class="md-nav" aria-label="git commitコマンド">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic-form" class="md-nav__link">
-    basic form
+  <a href="#_8" class="md-nav__link">
+    基本形
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-using-commit-type-and-emojis" class="md-nav__link">
-    Example using commit type and emojis
+  <a href="#commit-typeemojis" class="md-nav__link">
+    commit typeとemojisを使用した例
   </a>
   
 </li>
@@ -1347,31 +1342,31 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-of-adding-commit-type-and-git-message" class="md-nav__link">
-    Example of adding commit type and git message
+  <a href="#commit-typegit-message" class="md-nav__link">
+    commit typeとgit messageを加えた例
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#commit-message-templates" class="md-nav__link">
-    Commit Message Templates
+  <a href="#_9" class="md-nav__link">
+    コミットメッセージのテンプレート
   </a>
   
-    <nav class="md-nav" aria-label="Commit Message Templates">
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレート">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-specify-a-commit-message-template" class="md-nav__link">
-    How to specify a commit message template
+  <a href="#_10" class="md-nav__link">
+    コミットメッセージのテンプレートを指定する方法
   </a>
   
-    <nav class="md-nav" aria-label="How to specify a commit message template">
+    <nav class="md-nav" aria-label="コミットメッセージのテンプレートを指定する方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-template-for-docs" class="md-nav__link">
-    Example template for docs
+  <a href="#docs" class="md-nav__link">
+    docs用のテンプレート例
   </a>
   
 </li>
@@ -1382,16 +1377,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#template-settings-for-commit-messages-to-be-used-by-default" class="md-nav__link">
-    Template settings for commit messages to be used by default
+  <a href="#_11" class="md-nav__link">
+    デフォルトで使用するコミットメッセージのテンプレート設定
   </a>
   
-    <nav class="md-nav" aria-label="Template settings for commit messages to be used by default">
+    <nav class="md-nav" aria-label="デフォルトで使用するコミットメッセージのテンプレート設定">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-a-gitmessage" class="md-nav__link">
-    Creating a .gitmessage
+  <a href="#gitmessage" class="md-nav__link">
+    .gitmessageの作成
   </a>
   
 </li>
@@ -1402,16 +1397,16 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#githubabout-the-display-of-github-after-git-commit-push" class="md-nav__link">
-    【GitHub】About the display of GitHub after git commit / push
+  <a href="#github-git-commit-push-github" class="md-nav__link">
+    【GitHub】 git commit / push後の GitHubの表示について
   </a>
   
-    <nav class="md-nav" aria-label="【GitHub】About the display of GitHub after git commit / push">
+    <nav class="md-nav" aria-label="【GitHub】 git commit / push後の GitHubの表示について">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#when-you-write-the-issue-number-with-of-the-forked-source-on-git-commit-it-is-automatically-converted-to-a-url-with-the-title-account-name-issue-number" class="md-nav__link">
-    When you write the issue number (with #) of the forked source on git commit, it is automatically converted to a URL with the title "account name# issue number"
+  <a href="#git-commitissue-issueurl" class="md-nav__link">
+    git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される
   </a>
   
 </li>
@@ -1423,40 +1418,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#undo-a-commit-after-git-commit-git-reset-git-revert" class="md-nav__link">
-    Undo a commit after git commit (git reset / git revert)
-  </a>
-  
-    <nav class="md-nav" aria-label="Undo a commit after git commit (git reset / git revert)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#undo-the-previous-commit-and-return-the-changes-to-the-staging-area" class="md-nav__link">
-    Undo the previous commit and return the changes to the staging area
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#completely-undo-last-commit-and-changes" class="md-nav__link">
-    Completely undo last commit and changes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#undo-a-specific-commit" class="md-nav__link">
-    Undo a specific commit
-  </a>
   
 </li>
         
@@ -1466,30 +1427,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#githubabout-project-forking" class="md-nav__link">
-    【GitHub】About Project Forking
+  <a href="#git-commitgit-reset-git-revert" class="md-nav__link">
+    git commit後のコミットを取消する(git reset / git revert)
   </a>
   
-    <nav class="md-nav" aria-label="【GitHub】About Project Forking">
+    <nav class="md-nav" aria-label="git commit後のコミットを取消する(git reset / git revert)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etiquette" class="md-nav__link">
-    Etiquette
+  <a href="#_12" class="md-nav__link">
+    直前のコミットを取消し、変更をステージングエリアに戻す
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    Note
+  <a href="#_13" class="md-nav__link">
+    直前のコミットと変更を完全に取り消す
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#_14" class="md-nav__link">
+    特定のコミットを取り消す
   </a>
   
 </li>
@@ -1500,38 +1461,72 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-incorporate-changes-in-the-fork-source" class="md-nav__link">
-    How to incorporate changes in the fork source
+  <a href="#github" class="md-nav__link">
+    【GitHub】プロジェクトのフォークについて
   </a>
   
-    <nav class="md-nav" aria-label="How to incorporate changes in the fork source">
+    <nav class="md-nav" aria-label="【GitHub】プロジェクトのフォークについて">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#add-the-forked-repository-to-the-remote" class="md-nav__link">
-    Add the forked repository to the remote
+  <a href="#_15" class="md-nav__link">
+    作法
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-local-forked-repositories" class="md-nav__link">
-    Update local forked repositories
+  <a href="#_16" class="md-nav__link">
+    注意点
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#merge-changes-from-the-fork-source" class="md-nav__link">
-    Merge changes from the fork source
+  <a href="#_17" class="md-nav__link">
+    やり方
   </a>
   
-    <nav class="md-nav" aria-label="Merge changes from the fork source">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    フォーク元の変更を取り込む方法
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更を取り込む方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#to-rebase-execute-the-following-command" class="md-nav__link">
-    To rebase, execute the following command
+  <a href="#_19" class="md-nav__link">
+    フォーク元のリポジトリをリモートに追加する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    ローカルのフォークしたリポジトリを更新する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    フォーク元の変更をマージする
+  </a>
+  
+    <nav class="md-nav" aria-label="フォーク元の変更をマージする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    リベースする場合は以下のコマンドを実行する。
   </a>
   
 </li>
@@ -1542,15 +1537,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#conflict-resolution" class="md-nav__link">
-    Conflict Resolution
+  <a href="#_23" class="md-nav__link">
+    コンフリクトの解決
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#push-changes" class="md-nav__link">
-    Push changes
+  <a href="#_24" class="md-nav__link">
+    変更をプッシュする
   </a>
   
 </li>
@@ -1579,31 +1574,30 @@
   
 
 
-<h1 id="git-tips">git-tips</h1>
-<p>This section summarizes information related to git.</p>
-<h2 id="basic-flow">Basic Flow</h2>
-<p>The general flow of pushing code to a remote repository using Git is as follows.</p>
-<h3 id="initialize-or-clone-the-repository">Initialize or clone the repository</h3>
-<p>If you already have a remote repository, use the <code>git clone</code> command to clone the existing repository locally.<br />
-To create a new repository, use the <code>git init</code> command to initialize the new repository.</p>
-<h3 id="staging">Staging</h3>
-<p>Add the modified file to the staging area.<br />
-This is preparatory work before committing your changes.<br />
-To stage all changes, use the <code>git add .</code>command to stage all changes.<br />
-To stage only specific files, use the <code>git add filename</code> command.</p>
-<h3 id="commit">Commit</h3>
-<p>Commit the changes you have added to the staging area. This will record the changes in the repository history.<br />
-Use the <code>git commit -m "commit message"</code> command to create a commit. The commit message is a description of the change.</p>
-<h3 id="remote-repository-settings">Remote Repository Settings</h3>
-<p>Add a remote repository. Usually, this remote repository is on a hosting service such as GitHub or GitLab.<br />
-Use the <code>git remote add origin remote repository URL</code> command to add a remote repository. origin" is the name of the reference to the remote repository.</p>
-<h3 id="push">Push</h3>
-<p>Push local commits to the remote repository. This will push changes to the remote repository.
-Use the <code>git push origin branch name</code> command to push changes on a specified branch to the remote repository.
-Here, branch name is the name of the branch you are pushing to. By default, this is usually main or master.</p>
-<h2 id="details-for-each-command">Details for each command</h2>
-<h3 id="staginggit-add">Staging(git add)</h3>
-<p>git add is a command that adds files you have modified in Git to the staging area (index). You can see the files and folders you have changed with the <code>git status</code> command. By adding a file to the staging area, Git treats that change as the subject of the next commit.</p>
+<h1 id="git-tips">git tips<a class="headerlink" href="#git-tips" title="Permanent link">&para;</a></h1>
+<p>git関連のtipsです。</p>
+<h2 id="_1">基本的な流れ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Gitを使用してコードをリモートリポジトリにプッシュする一般的な流れは以下の通りです。</p>
+<h3 id="_2">リポジトリの初期化またはクローン<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>リモートリポジトリを既に持っている場合は、git clone コマンドを使用して既存のリポジトリをローカルに複製します。<br />
+新しいリポジトリを作成する場合は、<code>git init</code>コマンドを使用して新しいリポジトリを初期化します。</p>
+<h3 id="_3">ファイルのステージング<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>変更したファイルをステージングエリアに追加します。これは、変更をコミットする前の準備作業です。<br />
+すべての変更をステージングするには、<code>git add .</code>コマンドを使用します。<br />
+特定のファイルのみをステージングするには、<code>git add ファイル名</code>コマンドを使用します。</p>
+<h3 id="_4">コミット<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>ステージングエリアに追加した変更をコミットします。これにより、変更がリポジトリの履歴に記録されます。<br />
+<code>git commit -m "コミットメッセージ"</code>コマンドを使用してコミットを作成します。コミットメッセージはその変更の内容を説明するためのものです。</p>
+<h3 id="_5">リモートリポジトリの設定:<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>リモートリポジトリを追加します。通常、このリモートリポジトリは GitHub や GitLab などのホスティングサービス上にあります。
+<code>git remote add origin リモートリポジトリのURL</code> コマンドを使用してリモートリポジトリを追加します。"origin" はリモートリポジトリへの参照の名前です。</p>
+<h3 id="_6">プッシュ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>ローカルのコミットをリモートリポジトリにプッシュします。これにより、リモートリポジトリに変更が反映されます。
+<code>git push origin ブランチ名</code> コマンドを使用して、指定したブランチの変更をリモートリポジトリにプッシュします。
+ここで ブランチ名 はプッシュする対象のブランチの名前です。デフォルトでは、通常は main や master といった名前になります。</p>
+<h2 id="_7">コマンド毎の詳細<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="git-add">ステージング(git add)<a class="headerlink" href="#git-add" title="Permanent link">&para;</a></h3>
+<p>git addは、Gitで変更したファイルをステージングエリア（インデックス）に追加するコマンドです。変更したファイル、フォルダは<code>git status</code>コマンドで確認できます。ステージングエリアにファイルを追加することで、Gitはその変更を次のコミットの対象として扱います。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
 On<span class="w"> </span>branch<span class="w"> </span>main
 Your<span class="w"> </span>branch<span class="w"> </span>is<span class="w"> </span>ahead<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;origin/main&#39;</span><span class="w"> </span>by<span class="w"> </span><span class="m">1</span><span class="w"> </span>commit.
@@ -1616,31 +1610,30 @@ Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w">
 <span class="w">        </span>modified:<span class="w">   </span>folder/file4.txt
 <span class="w">        </span>modified:<span class="w">   </span>file1.txt
 </code></pre></div>
-<p>This example display contains the following information</p>
+<p>この表示例では、以下の情報が含まれています：</p>
 <ul>
-<li>A line indicating that the current branch is <code>main</code>.</li>
-<li>A line indicating that the branch is one commit ahead of the <code>origin/main</code> branch.</li>
-<li>A list of files whose changes have not been staged. Lines indicating that changes to <code>folder/file3.txt</code>,<code>folder/file4.txt</code>, and <code>file1.txt</code> have not yet been staged.</li>
-<li>A message indicating that the changes have not been staged.</li>
+<li>現在のブランチが <code>main</code>ブランチであることを示す行。</li>
+<li>ブランチが<code>origin/main</code>ブランチよりも 1コミット進んでいることを示す行。</li>
+<li>変更がステージングされていないファイルの一覧。<code>folder/file3.txt</code>,<code>folder/file4.txt</code>、<code>file1.txt</code>の変更がまだステージングされていません。</li>
+<li>変更がステージングされていないことを示すメッセージ。</li>
 </ul>
-<p>From this output, you can see the change status of the files in the working tree. Before committing these changes, you can use the <code>git add</code> command to stage the necessary changes.</p>
-<p>Translated with www.DeepL.com/Translator (free version)</p>
-<p>The <code>git add</code> command is used as follows</p>
+<p>この出力から、ワーキングツリー内のファイルの変更状態がわかります。これらの変更をコミットする前に、必要な変更をステージングするために <code>git add</code>コマンドを使用することができます。</p>
+<p>git addコマンドは、次のように使用します。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/file3.txt
 </code></pre></div>
-<p>If multiple files are to be added to the staging area, multiple files can be specified in the <code>git add</code> command.</p>
+<p>複数のファイルをステージングエリアに追加する場合は、<code>git add</code>コマンドに複数のファイルを指定することができる。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/file3.txt<span class="w"> </span>folder/file4.txt<span class="w"> </span>file1.txt
 </code></pre></div>
-<p>You can also specify a directory to add all changes in that directory to the staging area at once.</p>
+<p>また、ディレクトリを指定することで、そのディレクトリ内のすべての変更を一度にステージングエリアに追加することもできる。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/
 </code></pre></div>
-<p>If you want to stage all the files that you have changed, you can run the command under the project (<strong>. refers to the current directory</strong>), execute the command</p>
+<p>もし、変更したすべてのファイルをステージングしたい場合はプロジェクト以下(<strong>.はカレントディレクトリを指す</strong>)をコマンドを実行する</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
 </code></pre></div>
-<p>Files added to the staging area can be committed to the local repository by running the <code>git commit</code> command.</p>
-<h3 id="undo-staging-git-reset">Undo staging (git reset)</h3>
-<p>The <code>git reset</code> command can be used to undo files added to the staging area (index).</p>
-<p>First, check the files added to the staging area with the <code>git status</code> command.</p>
+<p>ステージングエリアに追加されたファイルは、<code>git commit</code>コマンドを実行することで、ローカルリポジトリにコミットすることができる。</p>
+<h3 id="git-reset">ステージングの取り消し(git reset)<a class="headerlink" href="#git-reset" title="Permanent link">&para;</a></h3>
+<p>ステージングエリア（インデックス）に追加したファイルを取り消す方法は、<code>git reset</code>コマンドを使用することができる。</p>
+<p>まず、<code>git status</code>コマンドで、ステージングエリアに追加されたファイルを確認します。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
 On<span class="w"> </span>branch<span class="w"> </span>main
 Your<span class="w"> </span>branch<span class="w"> </span>is<span class="w"> </span>ahead<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;origin/main&#39;</span><span class="w"> </span>by<span class="w"> </span><span class="m">1</span><span class="w"> </span>commit.
@@ -1652,73 +1645,73 @@ Changes<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </sp
 <span class="w">        </span>modified:<span class="w">   </span>folder/file4.txt
 <span class="w">        </span>modified:<span class="w">   </span>file1.txt
 </code></pre></div>
-<p>Use the <code>git reset</code> command to cancel files added to the staging area.</p>
+<p><code>git reset</code>コマンドを使用して、ステージングエリアに追加したファイルを取り消します。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>HEAD<span class="w"> </span>folder/file3.txt<span class="w"> </span>folder/file4.txt<span class="w"> </span>file1.txt
 </code></pre></div>
-<p>The <code>HEAD</code> refers to the latest commit. You can undo changes added to the staging area by specifying HEAD to the <code>git reset</code> command.</p>
-<p>If no file is specified, all files can be undone from the staging area.</p>
+<p><code>HEAD</code>は、最新のコミットを指す。<code>git reset</code>コマンドにHEADを指定することで、ステージングエリアに追加された変更を取り消すことができる。</p>
+<p>ファイル指定しない場合はステージングエリアからすべてのファイルを取り消すことができる。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>HEAD
 </code></pre></div>
-<p>Thus, the <code>git reset</code> command can be used to undo changes to files that have been added to the staging area. However, the undone changes will remain in the working directory. If necessary, you can also use the <code>git restore</code> command to undo changes in the working directory.</p>
-<p>Note that if you do not specify HEAD for the <code>git reset</code> command, the commit history is not changed, but you can undo changes to files from the staging area. Specifically, changes to files that are undone from the staging area are returned to the working directory. <strong>But note that the commit history is not changed.</strong></p>
-<h2 id="revert-changes-in-the-working-tree-git-restore-command">Revert changes in the working tree (git restore command)</h2>
-<p>The <code>git restore</code> command is used to restore changes from the working tree to the staging area or from the staging area to the commits. Specifically, it can be used as follows.</p>
+<p>このように、<code>git reset</code>コマンドを使用することで、ステージングエリアに追加したファイルの変更を取り消すことができる。ただし、取り消した変更は作業ディレクトリに残ります。必要に応じて、<code>git restore</code>コマンドを使用して作業ディレクトリの変更を取り消すこともできる。</p>
+<p>なお、git resetコマンドにHEADを指定しない場合、コミットの履歴は変更されませんが、ステージングエリアからファイルの変更を取り消すことができる。具体的には、ステージングエリアから取り消されたファイルの変更は、作業ディレクトリに戻される。<strong>ただし、コミットの履歴は変更されないため、注意が必要。</strong></p>
+<h2 id="git-restore">ワーキングツリー内の変更を取り消す(git restoreコマンド)<a class="headerlink" href="#git-restore" title="Permanent link">&para;</a></h2>
+<p><code>git restore</code>コマンドは、ワーキングツリーからステージングエリアに変更を戻したり、ステージングエリアからコミットに変更を戻すために使用される。具体的には、次のような使い方ができる。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>file.txt
 </code></pre></div>
-<p>Changes to <code>file.txt</code> in the staging area are undone and the **file reverts to the state of the previous commit. **</p>
-<p>If you added a file to the staging area with the <code>git add</code> command, but want to revert it, use <code>git restore --staged</code>.</p>
-<p>For example, if you added the <code>file1.txt</code> file to the staging area and want to revert the changes, use</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>file1.txt<span class="w">     </span><span class="c1"># Add changes to staging area</span>
-$<span class="w"> </span>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>file1.txt<span class="w">  </span><span class="c1"># Return changes from staging area</span>
+<p>ステージングエリアにある <code>file.txt</code>の変更が取り消され、<strong>ファイルは以前のコミットの状態に戻ります。</strong></p>
+<p><code>git add</code>コマンドでファイルをステージングエリアに追加したが、戻したい場合は、<code>git restore --staged</code>を使用します。</p>
+<p>例えば、<code>file1.txt</code>ファイルをステージングエリアに追加し、変更を戻したい場合は、次のようにする。</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>file1.txt<span class="w">     </span><span class="c1"># ステージングエリアに変更を追加</span>
+$<span class="w"> </span>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>file1.txt<span class="w">  </span><span class="c1"># ステージングエリアから変更を戻す</span>
 </code></pre></div>
-<p>The <code>--satge</code> option will undo **changes to <code>file.txt</code> in the staging area, but the file itself will remain unchanged. **
-That is, the changes remain in the staging area.</p>
-<h2 id="git-commit">git commit</h2>
-<h3 id="basic-form">basic form</h3>
-<p>The git commit command is used to commit changes to a local repository.<br />
-Below is an example of a basic git commit command.</p>
+<p><code>--satge</code>オプションを指定することにより、ステージングエリアにある <code>file.txt</code>の<strong>変更は取り消されますが、ファイル自体は変更されたままです。</strong>
+つまり、変更はステージングエリア内に残ります。</p>
+<h2 id="git-commit">git commitコマンド<a class="headerlink" href="#git-commit" title="Permanent link">&para;</a></h2>
+<h3 id="_8">基本形<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>git commit コマンドは、ローカルリポジトリに変更をコミットするために使用されます。<br />
+以下は、基本的な git commit コマンドの例。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add new feature&quot;</span>
 </code></pre></div>
-<h3 id="example-using-commit-type-and-emojis">Example using commit type and emojis</h3>
-<p>Whether or not to include a space after the emoji depends on the style of the commit message and the guidelines of the project. Some projects may require a space after the emoji in the commit message, but generally spaces are often omitted.</p>
+<h3 id="commit-typeemojis">commit typeとemojisを使用した例<a class="headerlink" href="#commit-typeemojis" title="Permanent link">&para;</a></h3>
+<p>emojiの後ろにスペースを入れるかどうかは、コミットメッセージのスタイルやプロジェクトのガイドラインによります。一部のプロジェクトでは、コミットメッセージに絵文字の後ろにスペースを入れることを求める場合がありますが、一般的にはスペースを省略することが多いようです。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;:+1:feat: Add new feature&quot;</span>
 </code></pre></div>
-<h3 id="commit-type">commit type</h3>
-<p>A commit type refers to a generic identifier used to succinctly describe the purpose of a commit.<br />
-The commit type helps other developers understand the purpose of the developer's modification of the code.</p>
-<p>Common commit types include the following</p>
+<h3 id="commit-type">commit type<a class="headerlink" href="#commit-type" title="Permanent link">&para;</a></h3>
+<p>commit typeは、コミットの目的を簡潔に表すために使用される、一般的な識別子のことを指す。<br />
+コミットタイプは、開発者がコードを修正する目的を他の開発者が理解しやすくするのに役立つ。</p>
+<p>一般的なコミットタイプには、以下のようなものがある。</p>
 <ul>
-<li>feat: used when a new feature is added.</li>
-<li>fix: Used to fix bugs.</li>
-<li>docs: Used for document changes.</li>
-<li>style: Used when you have made changes to the style of the code (spacing, formatting, etc.).</li>
-<li>refactor: Used when you have made changes that do not change the functionality of the code.</li>
-<li>test: Used when changes are made to the test code.</li>
-<li>chore: Used when changes are made to the build process or auxiliary tools.</li>
+<li>feat：新しい機能を追加した場合に使用します。</li>
+<li>fix：バグ修正のために使用します。</li>
+<li>docs：ドキュメントを変更した場合に使用します。</li>
+<li>style：コードのスタイルに関する変更（スペース、フォーマットなど）を行った場合に使用します。</li>
+<li>refactor：コードの機能を変更しない変更を行った場合に使用します。</li>
+<li>test：テストコードに関する変更を行った場合に使用します。</li>
+<li>chore：ビルドプロセスや補助ツールの変更を行った場合に使用します。</li>
 </ul>
-<p>For example, when modifying the README.md file, the commit type is "docs". Therefore, the commit message would be as follows.</p>
+<p>例えば、README.mdファイルを修正する場合、コミットタイプは「docs」となる。そのため、コミットメッセージは以下のようになる。</p>
 <div class="highlight"><pre><span></span><code>docs:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 </code></pre></div>
-<p>This allows other developers to understand that this commit updates the documentation in the README.md file.</p>
-<h3 id="commit-message">commit message</h3>
-<p>There are several elements in the commit message that can be used to add details</p>
+<p>これにより、他の開発者は、このコミットがREADME.mdファイルのドキュメントを更新したことを理解できる。</p>
+<h3 id="commit-message">commit message<a class="headerlink" href="#commit-message" title="Permanent link">&para;</a></h3>
+<p>コミットメッセージには、詳細を追加するために使用できるいくつかの要素がある。</p>
 <ul>
-<li>Scope: an optional element that indicates the scope affected by the commit. This element can be used to specify the files, modules, functions, etc. that the commit modifies.</li>
+<li>Scope：コミットが影響を受ける範囲を示すオプションの要素。この要素は、コミットが変更を加えたファイルやモジュール、機能などを指定するために使用できる。</li>
 </ul>
-<p>In the case of modifying the README.md file, the scope is the README. Therefore, the commit message would be as follows.</p>
+<p>README.mdファイルの修正に関する場合、スコープはREADMEとなります。そのため、コミットメッセージは以下のようになる。</p>
 <div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 </code></pre></div>
 <ul>
-<li>Subject: A required element that gives a brief summary of the commit. It is written on the first line of the commit message.</li>
+<li>Subject：コミットの簡潔な要約を示す必須要素。コミットメッセージの最初の行に書かれる。</li>
 </ul>
-<p>Example: If the subject is about modifying the README.md file, the subject would be about the updated information. Therefore, the commit message would look like this</p>
+<p>例：README.mdファイルの修正に関する場合、サブジェクトは更新された情報に関するものになる。そのため、コミットメッセージは以下のようになる。</p>
 <div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 </code></pre></div>
 <ul>
-<li>Body: An optional element detailing the commit.
-  This element is used to describe the details of the changes made by the commit, background, reasons, etc.</li>
+<li>Body：コミットの詳細を示すオプションの要素。
+  この要素は、コミットが行った変更の詳細や、背景、理由などを記述するために使用される</li>
 </ul>
-<p>Example: In the case of a modification to the README.md file, the body can include a detailed description of the new information. Thus, the commit message would look like this</p>
+<p>例：README.mdファイルの修正に関する場合、ボディには、新しい情報についての詳細な説明が含めることができる。そのため、コミットメッセージは以下のようになる。</p>
 <div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 
 Add<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>section<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md<span class="w"> </span>file<span class="w"> </span>describing<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>features
@@ -1727,10 +1720,10 @@ better<span class="w"> </span>understand<span class="w"> </span>how<span class="
 its<span class="w"> </span>latest<span class="w"> </span>features.
 </code></pre></div>
 <ul>
-<li>Footer: An optional element indicating metadata about the commit.
-  This element is used to indicate the associated Issue number, significant changes, destructive changes, etc.</li>
+<li>Footer：コミットに関するメタデータを示すオプションの要素。
+  この要素は、関連するIssue番号、重要な変更、破壊的な変更などを示すために使用される。</li>
 </ul>
-<p>Example: In the case of a modification to the README.md file, the footer may include the associated Issue number. Thus, the commit message would look like this</p>
+<p>例：README.mdファイルの修正に関する場合、フッターには、関連するIssue番号を含めることができる。そのため、コミットメッセージは以下のようにな。</p>
 <div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 
 Add<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>section<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md<span class="w"> </span>file<span class="w"> </span>describing<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>features
@@ -1740,20 +1733,20 @@ its<span class="w"> </span>latest<span class="w"> </span>features.
 
 Issue<span class="w"> </span><span class="c1">#123</span>
 </code></pre></div>
-<h3 id="example-of-adding-commit-type-and-git-message">Example of adding commit type and git message</h3>
-<p>This example specifies "search" as the scope and uses a commit type of "feat" to indicate that a new feature has been added. The body describes the changes in detail, and the footer describes the associated issue number as "Closes #1234." This clearly indicates which issue this commit is related to and facilitates collaboration across the team.</p>
+<h3 id="commit-typegit-message">commit typeとgit messageを加えた例<a class="headerlink" href="#commit-typegit-message" title="Permanent link">&para;</a></h3>
+<p>この例では、スコープとして "search" を指定し、"feat" というコミットタイプを使用して、新しい機能が追加されたことを示している。ボディでは、変更内容の詳細が説明され、フッターでは関連する問題番号が "Closes #1234" として記述されている。これにより、このコミットがどの問題に関連しているのかを明確に示し、チーム全体でのコラボレーションをスムーズに進めることができ。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat(search): add fuzzy search to search bar</span>
 
 <span class="s2">This commit adds fuzzy search functionality to the search bar component. Fuzzy search allows users to find search results even if they make spelling mistakes or typos. This feature will enhance the user experience and make it easier to find what they are looking for.</span>
 
 <span class="s2">Closes #1234&quot;</span>
 </code></pre></div>
-<h3 id="commit-message-templates">Commit Message Templates</h3>
-<h4 id="how-to-specify-a-commit-message-template">How to specify a commit message template</h4>
-<p>In the git commit command, the -t option can be used to specify a commit message template.</p>
-<h5 id="example-template-for-docs">Example template for docs</h5>
-<p>This example template includes scope, commit type, changes, and test method to create a more detailed commit message.</p>
-<p>Contents of docs_gt</p>
+<h3 id="_9">コミットメッセージのテンプレート<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="_10">コミットメッセージのテンプレートを指定する方法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>git commit コマンドでは、-t オプションを使用して、コミットメッセージのテンプレートを指定することができる。</p>
+<h5 id="docs">docs用のテンプレート例<a class="headerlink" href="#docs" title="Permanent link">&para;</a></h5>
+<p>この例のテンプレートには、スコープ、コミットタイプ、変更内容、テスト方法などが含まれており、より詳細なコミットメッセージを作成することができる。</p>
+<p>docs_gtの中身</p>
 <div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 
 Add<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>section<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>README.md<span class="w"> </span>file<span class="w"> </span>describing<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>features
@@ -1765,13 +1758,13 @@ Issue<span class="w"> </span><span class="c1">#[]</span>
 Closes<span class="w"> </span><span class="c1">#[]</span>
 Refs<span class="w"> </span><span class="c1">#[]</span>
 </code></pre></div>
-<p>Specified with the -t option at commit time</p>
+<p>コミット時に-tオプションで指定</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span>~./git_message_template/docs_gt
 </code></pre></div>
-<h4 id="template-settings-for-commit-messages-to-be-used-by-default">Template settings for commit messages to be used by default</h4>
-<p>By specifying a path in commit.template, the file specified in that path can be used as the default commit message template.</p>
-<p>Reference：<a href="https://zenn.dev/ianchen0419/articles/99564425e43dd4">Gitコミットスタイル</a></p>
-<h5 id="creating-a-gitmessage">Creating a .gitmessage</h5>
+<h4 id="_11">デフォルトで使用するコミットメッセージのテンプレート設定<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>commit.template にパスを指定することで、そのパスで指定したファイルがデフォルトのコミットメッセージのテンプレートとして使用できる。</p>
+<p>参考：<a href="https://zenn.dev/ianchen0419/articles/99564425e43dd4">Gitコミットスタイル</a></p>
+<h5 id="gitmessage">.gitmessageの作成<a class="headerlink" href="#gitmessage" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/.git_message_template
 touch<span class="w"> </span>~/.git_message_template/.gitmessage
 </code></pre></div>
@@ -1799,76 +1792,76 @@ touch<span class="w"> </span>~/.git_message_template/.gitmessage
 <span class="c1"># :green_heart: テストやCIの修正・改善 (test)</span>
 <span class="c1"># :up:          依存パッケージなどのアップデート (chore)</span>
 </code></pre></div>
-<p>Specify the path to the template file to be used at commit time in Git's global configuration with the <code>git config --global</code> command.</p>
+<p><code>git config --global</code>コマンドでGitのグローバル設定で、コミット時に使用されるテンプレートファイルのパスを指定する。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.template<span class="w"> </span>~/.git_message_template/.gitmessage
 </code></pre></div>
-<p>If commit.template is set, the template will be automatically loaded and displayed as the initial text of the editable commit message when the git commit command is executed.</p>
-<p>In the case of vscode, it will be displayed by default on COMMIT_EDITMSG when you commit after staging changes.</p>
-<p>Note that, as with the --template option, the commit.template setting will be overwritten if another template file is specified with the -t option when the git commit command is executed.</p>
+<p>commit.template を設定すると、git commit コマンドを実行したときにテンプレートが自動的に読み込まれ、編集可能なコミットメッセージの初期テキストとして表示されるようになる。<br />
+vscodeの場合は変更をステージ後コミットするとCOMMIT_EDITMSG上にデフォルトで表示されるようになる。</p>
+<p>なお、commit.template は --template オプションと同様に、git commit コマンド実行時に -t オプションで別のテンプレートファイルを指定すると、commit.template の設定は上書きされる。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span><span class="nv">$HOME</span>/.git_message_template/.docs_gt
-Aborting<span class="w"> </span>commit<span class="p">;</span><span class="w"> </span>you<span class="w"> </span>did<span class="w"> </span>not<span class="w"> </span>edit<span class="w"> </span>the<span class="w"> </span>message.<span class="w"> </span><span class="c1"># If no overwrite save</span>
+Aborting<span class="w"> </span>commit<span class="p">;</span><span class="w"> </span>you<span class="w"> </span>did<span class="w"> </span>not<span class="w"> </span>edit<span class="w"> </span>the<span class="w"> </span>message.<span class="w"> </span><span class="c1"># 上書き保存しない場合</span>
 
 $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span><span class="nv">$HOME</span>/.git_message_template/.docs_gt
 <span class="o">[</span>main<span class="w"> </span>e4db099<span class="o">]</span><span class="w"> </span>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 <span class="w"> </span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">106</span><span class="w"> </span>insertions<span class="o">(</span>+<span class="o">)</span>,<span class="w"> </span><span class="m">1</span><span class="w"> </span>deletion<span class="o">(</span>-<span class="o">)</span>
 </code></pre></div>
-<h4 id="githubabout-the-display-of-github-after-git-commit-push">【GitHub】About the display of GitHub after git commit / push</h4>
-<h5 id="when-you-write-the-issue-number-with-of-the-forked-source-on-git-commit-it-is-automatically-converted-to-a-url-with-the-title-account-name-issue-number">When you write the issue number (with #) of the forked source on git commit, it is automatically converted to a URL with the title "account name# issue number"</h5>
+<h4 id="github-git-commit-push-github">【GitHub】 git commit / push後の GitHubの表示について<a class="headerlink" href="#github-git-commit-push-github" title="Permanent link">&para;</a></h4>
+<h5 id="git-commitissue-issueurl">git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される<a class="headerlink" href="#git-commitissue-issueurl" title="Permanent link">&para;</a></h5>
 <p><a href="https://github.com/7rikazhexde/twitter-video-dl-for-sc/commit/08c13970a84804e48c80d589002189e452cb8183">参考</a></p>
-<h2 id="undo-a-commit-after-git-commit-git-reset-git-revert">Undo a commit after git commit (git reset / git revert)</h2>
-<p>To undo a commit after a <code>git commit</code>, the <code>git reset</code> command is generally used. Be careful, however, as undoing a commit may affect your ability to work with other developers and remote repositories. The following describes how to undo a commit.</p>
-<h3 id="undo-the-previous-commit-and-return-the-changes-to-the-staging-area">Undo the previous commit and return the changes to the staging area</h3>
+<h2 id="git-commitgit-reset-git-revert">git commit後のコミットを取消する(git reset / git revert)<a class="headerlink" href="#git-commitgit-reset-git-revert" title="Permanent link">&para;</a></h2>
+<p><code>git commit</code>後のコミットを取消する場合、一般的には <code>git reset</code>コマンドを使用します。ただし、注意が必要であり、コミットを取り消すことは他の開発者やリモートリポジトリとの連携に影響を与える可能性があります。以下に、コミットの取消方法を説明します。</p>
+<h3 id="_12">直前のコミットを取消し、変更をステージングエリアに戻す<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> </span>HEAD^
 </code></pre></div>
-<p>This command undoes the previous commit and returns the changes to the staging area, retaining the commit message. After this, the changes can be modified and re-committed.</p>
-<h3 id="completely-undo-last-commit-and-changes">Completely undo last commit and changes</h3>
+<p>このコマンドは直前のコミットを取り消し、コミットメッセージを保持したまま変更をステージングエリアに戻します。この後、変更を修正して再コミットすることができます。</p>
+<h3 id="_13">直前のコミットと変更を完全に取り消す<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD^
 </code></pre></div>
-<p>This command completely undoes the previous commit and its changes, and also restores the working tree to its pre-modified state. Note that, once undone, commits and changes cannot be restored.</p>
-<h3 id="undo-a-specific-commit">Undo a specific commit</h3>
+<p>このコマンドは直前のコミットとその変更を完全に取り消し、ワーキングツリーも変更前の状態に戻します。注意が必要で、取り消したコミットと変更は復元できません。</p>
+<h3 id="_14">特定のコミットを取り消す<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>&lt;commit-hash&gt;
 </code></pre></div>
-<p>The <code>git revert</code> command creates a new commit that undoes the changes in a given commit. This not only undoes the changes, but also records them in the history. This is a way to undo changes while still keeping up with other developers.</p>
-<h2 id="githubabout-project-forking">【GitHub】About Project Forking</h2>
-<p>Forking a project on GitHub allows you to copy the original repository and bring it to your own GitHub account.<br />
-Below are the etiquette, precautions, and methods for forking.</p>
-<h3 id="etiquette">Etiquette</h3>
+<p><code>git revert</code> コマンドは、指定したコミットの変更を取り消す新しいコミットを作成します。これにより、変更を取り消すだけでなく、履歴にも記録されます。他の開発者との連携を維持しつつ、変更を取り消す方法です。</p>
+<h2 id="github">【GitHub】プロジェクトのフォークについて<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
+<p>GitHubでのプロジェクトのフォークは、オリジナルのリポジトリをコピーして自分のGitHubアカウントに持ってくることができる。<br />
+以下は、フォークする際の作法、注意点、やり方。</p>
+<h3 id="_15">作法<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <ul>
-<li>As a general rule, it is advisable to check the license of the project to be forked and properly credit it.</li>
-<li>When contributing to a forked project, be sure to follow the same proper development process as for the original project.</li>
+<li>原則として、フォークするプロジェクトのライセンスを確認し、適切にクレジットを表示することが望ましい。</li>
+<li>フォークしたプロジェクトに対してコントリビュートする際は、オリジナルのプロジェクトと同じように、適切な開発プロセスを行うようにする。</li>
 </ul>
-<h3 id="note">Note</h3>
+<h3 id="_16">注意点<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Make sure you understand and comply with the license, including the project from which you are forking.</li>
-<li>If the project from which you are forking is updated, synchronize regularly to ensure that you are using the latest code.</li>
+<li>フォーク元のプロジェクトを含め、ライセンスについてしっかりと理解し、遵守するようこと。</li>
+<li>フォーク元のプロジェクトがアップデートされた場合、定期的に同期をとることで、最新のコードを利用することができる。</li>
 </ul>
-<h3 id="usage">Usage</h3>
+<h3 id="_17">やり方<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Log in to GitHub and access the repository of the project you wish to fork.</li>
-<li>Click the "Fork" button in the upper right corner.</li>
-<li>A copy of the forked repository will be created in your GitHub account.</li>
-<li>Make the necessary modifications to the copied repository and commit.</li>
+<li>GitHubにログインし、フォークしたいプロジェクトのリポジトリにアクセスする。</li>
+<li>右上にある「Fork」ボタンをクリックする。</li>
+<li>自分のGitHubアカウントで、フォークしたリポジトリのコピーが作成される。</li>
+<li>コピーしたリポジトリに対して、必要な修正を行い、コミットする。</li>
 </ol>
-<h2 id="how-to-incorporate-changes-in-the-fork-source">How to incorporate changes in the fork source</h2>
-<h3 id="add-the-forked-repository-to-the-remote">Add the forked repository to the remote</h3>
+<h2 id="_18">フォーク元の変更を取り込む方法<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">フォーク元のリポジトリをリモートに追加する<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>&lt;フォーク元のリポジトリのURL&gt;
 </code></pre></div>
-<h3 id="update-local-forked-repositories">Update local forked repositories</h3>
+<h3 id="_20">ローカルのフォークしたリポジトリを更新する<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>upstream
 </code></pre></div>
-<h3 id="merge-changes-from-the-fork-source">Merge changes from the fork source</h3>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>upstream/&lt;Branch<span class="w"> </span>name<span class="w"> </span>to<span class="w"> </span>import<span class="w"> </span>changes<span class="w"> </span>into&gt;
+<h3 id="_21">フォーク元の変更をマージする<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>upstream/&lt;変更を取り込むブランチ名&gt;
 </code></pre></div>
-<h4 id="to-rebase-execute-the-following-command">To rebase, execute the following command</h4>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>upstream/&lt;Branch<span class="w"> </span>name<span class="w"> </span>to<span class="w"> </span>import<span class="w"> </span>changes<span class="w"> </span>into&gt;
+<h4 id="_22">リベースする場合は以下のコマンドを実行する。<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>upstream/&lt;変更を取り込むブランチ名&gt;
 </code></pre></div>
-<h3 id="conflict-resolution">Conflict Resolution</h3>
-<p>If conflicts arise when merging or rebasing changes, they must be resolved manually. The method of resolving conflicts depends on the nature of the change.</p>
-<h3 id="push-changes">Push changes</h3>
-<p>After merging or rebasing the changes, push the changes to the forked repository.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>&lt;Remote<span class="w"> </span>destination<span class="w"> </span>branch<span class="w"> </span>name&gt;
+<h3 id="_23">コンフリクトの解決<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>変更をマージまたはリベースする際にコンフリクトが発生した場合は、手動で解決する必要があります。コンフリクトの解決方法は、変更の内容に応じて異なります。</p>
+<h3 id="_24">変更をプッシュする<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>変更をマージまたはリベースした後は、フォークしたリポジトリに変更をプッシュする。</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>&lt;リモート先のブランチ名&gt;
 </code></pre></div>
-<p>By following these steps, you can incorporate the changes from the forked source into your own forked repository.</p>
+<p>これらの手順に従うことで、フォーク元の変更を自分のフォークしたリポジトリに取り込むことができる。</p>
 
 
   
@@ -1915,16 +1908,16 @@ Below are the etiquette, precautions, and methods for forking.</p>
     </fieldset>
   </form>
 
-<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-<!-- 参考2: Adding a comment system -->
-<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
 
                 
 
   <!-- Giscus -->
-  <h2 id="__comments">Comments</h2>
+  <h2 id="__comments">コメント</h2>
   <!-- Replace with generated snippet -->
+  <!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
+  <!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
+  <!-- 参考2: Adding a comment system -->
+  <!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
   <!--
   <script src="https://giscus.app/client.js"
         data-repo="7rikazhexde/dev-insights-tips"
@@ -2014,6 +2007,43 @@ Below are the etiquette, precautions, and methods for forking.</p>
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/7rikazhexde" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tw_7rikazhexde" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://7rikazhexde-techlog.hatenablog.com/" target="_blank" rel="noopener" title="7rikazhexde-techlog.hatenablog.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M192 32c0 17.7 14.3 32 32 32 123.7 0 224 100.3 224 224 0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32 70.7 0 128 57.3 128 128 0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192-17.7 0-32 14.3-32 32zm-96 16c0-26.5-21.5-48-48-48S0 117.5 0 144v224c0 79.5 64.5 144 144 144s144-64.5 144-144-64.5-144-144-144h-16v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48V144z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -2080,7 +2110,7 @@ Below are the etiquette, precautions, and methods for forking.</p>
 <div class="md-consent__controls">
   
     
-      <button class="md-button md-button--primary">Accept</button>
+      <button class="md-button md-button--primary">同意</button>
     
     
     
@@ -2088,7 +2118,7 @@ Below are the etiquette, precautions, and methods for forking.</p>
     
     
     
-      <label class="md-button" for="__settings">Manage settings</label>
+      <label class="md-button" for="__settings">サイトの設定</label>
     
   
 </div>
@@ -2097,7 +2127,7 @@ Below are the etiquette, precautions, and methods for forking.</p>
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>

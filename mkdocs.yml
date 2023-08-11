@@ -26,14 +26,22 @@ theme:
   font:
     text: Noto Sans
     code: Inconsolata
-  language: en
+  language: ja
   icon:
     repo: fontawesome/brands/github
   features:
     - navigation.indexes
     - navigation.expand
+    - content.code.copy
 
 extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/7rikazhexde
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/tw_7rikazhexde
+    - icon: fontawesome/solid/blog
+      link: https://7rikazhexde-techlog.hatenablog.com/
   consent:
     title: Cookie consent
     description: >-
@@ -67,48 +75,48 @@ extra:
             <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
 
 nav:
-  - Introduction:
+  - はじめに:
     - index.md
   - Database:
-    - database/index.en.md
-    - database/mariadb-tips.en.md
+    - database/index.ja.md
+    - database/mariadb-tips.ja.md
   - Git:
-    - git/index.en.md
-    - git/git-tips.en.md
+    - git/index.ja.md
+    - git/git-tips.ja.md
   - Markdown:
-    - markdown/markdown-tips.en.md
+    - markdown/markdown-tips.ja.md
   - Python:
-    - python/dash-plotly-tips.en.md
-    - python/pre-commit-tips.en.md
-    - python/post-commit-tips.en.md
-    - python/pymysql-tips.en.md
-  - RaspberryPi:
-    - raspberrypi/raspberrypi-ubuntu-tips.en.md
+    - python/dash-plotly-tips.ja.md
+    - python/pre-commit-tips.ja.md
+    - python/post-commit-tips.ja.md
+    - python/pymysql-tips.ja.md
+  - Raspberry Pi:
+    - raspberrypi/raspberrypi-ubuntu-tips.ja.md
   - Tools:
-    - tools/tools-tips.en.md
+    - tools/tools-tips.ja.md
   - vi:
-    - vi/vi-tips.en.md
+    - vi/vi-tips.ja.md
   - vscode:
-    - vscode/vscode-tips.en.md
+    - vscode/vscode-tips.ja.md
 
 plugins:
   - search:
   - i18n:
-      default_language: en
+      default_language: ja
       languages:
         en: English
         ja: 日本語
       nav_translations:
-        ja:
-          site_name: Dev Insights Tips
-          Introduction: はじめに
-          Database: Database Tips
-          Git: Git Tips
-          Markdwon: Markdown Tips
-          Python: Python Tips
-          Raspberry Pi:
-          vi: vi tips
-          Visual Studio Code(VSCode): VSCode tips
+        en:
+          #site_name: Dev Insights Tips
+          はじめに: Introduction
+          #Database: Database
+          #Git: Git
+          #Markdwon: Markdown
+          #Python: Python
+          #Raspberry Pi: Raspberry Pi
+          #vi: vi
+          #Visual Studio Code(VSCode): VSCode
 
 markdown_extensions:
     - codehilite:
@@ -120,3 +128,5 @@ markdown_extensions:
     - admonition
     - pymdownx.superfences
     - pymdownx.details
+    - toc:
+        permalink: true

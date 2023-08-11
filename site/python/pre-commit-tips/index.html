@@ -1,11 +1,6 @@
-<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-<!-- 参考2: Adding a comment system -->
-<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
-
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -89,7 +84,7 @@
       
         
         <a href="#pre-commit-tips" class="md-skip">
-          Skip to content
+          コンテンツにスキップ
         </a>
       
     </div>
@@ -103,7 +98,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="../.." title="Dev Insights Tips" class="md-header__button md-logo" aria-label="Dev Insights Tips" data-md-component="logo">
       
   
@@ -160,21 +155,21 @@
       <div class="md-header__option">
         <div class="md-select">
           
-          <button class="md-header__button md-icon" aria-label="Select language">
+          <button class="md-header__button md-icon" aria-label="言語切り替え">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
           </button>
           <div class="md-select__inner">
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="./" hreflang="en" class="md-select__link">
-                    English
+                  <a href="./" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
               
                 <li class="md-select__item">
-                  <a href="../../ja/python/pre-commit-tips/" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../en/python/pre-commit-tips/" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
               
@@ -191,14 +186,14 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="検索">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -208,7 +203,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            検索を初期化
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -219,7 +214,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/7rikazhexde/dev-insights-tips" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/7rikazhexde/dev-insights-tips" title="リポジトリへ" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -252,7 +247,7 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Dev Insights Tips" class="md-nav__button md-logo" aria-label="Dev Insights Tips" data-md-component="logo">
       
@@ -264,7 +259,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/7rikazhexde/dev-insights-tips" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/7rikazhexde/dev-insights-tips" title="リポジトリへ" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
@@ -305,14 +300,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../..">Introduction</a>
+          <a href="../..">はじめに</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          Introduction
+          はじめに
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -445,7 +440,7 @@
   
     <li class="md-nav__item">
       <a href="../../git/git-tips/" class="md-nav__link">
-        git-tips
+        git tips
       </a>
     </li>
   
@@ -594,7 +589,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -603,39 +598,39 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#_1" class="md-nav__link">
+    使い方
   </a>
   
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="使い方">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hooks-used-in-pre-commit-configyaml" class="md-nav__link">
-    Hooks used in .pre-commit-config.yaml
+  <a href="#pre-commit-configyaml" class="md-nav__link">
+    .pre-commit-config.yamlで使用するフック
   </a>
   
-    <nav class="md-nav" aria-label="Hooks used in .pre-commit-config.yaml">
+    <nav class="md-nav" aria-label=".pre-commit-config.yamlで使用するフック">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reference-article-japanese-pre-commit" class="md-nav__link">
-    Reference article (Japanese): pre-commitでコミット時にコードの整形やチェックを行う
+  <a href="#pre-commit" class="md-nav__link">
+    参考記事: pre-commitでコミット時にコードの整形やチェックを行う
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#_2" class="md-nav__link">
+    実例
   </a>
   
-    <nav class="md-nav" aria-label="Example">
+    <nav class="md-nav" aria-label="実例">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -727,14 +722,14 @@
       
       
         <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          RaspberryPi
+          Raspberry Pi
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
-          RaspberryPi
+          Raspberry Pi
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -936,7 +931,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目次">
   
   
   
@@ -945,39 +940,39 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目次
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#_1" class="md-nav__link">
+    使い方
   </a>
   
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="使い方">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hooks-used-in-pre-commit-configyaml" class="md-nav__link">
-    Hooks used in .pre-commit-config.yaml
+  <a href="#pre-commit-configyaml" class="md-nav__link">
+    .pre-commit-config.yamlで使用するフック
   </a>
   
-    <nav class="md-nav" aria-label="Hooks used in .pre-commit-config.yaml">
+    <nav class="md-nav" aria-label=".pre-commit-config.yamlで使用するフック">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reference-article-japanese-pre-commit" class="md-nav__link">
-    Reference article (Japanese): pre-commitでコミット時にコードの整形やチェックを行う
+  <a href="#pre-commit" class="md-nav__link">
+    参考記事: pre-commitでコミット時にコードの整形やチェックを行う
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#_2" class="md-nav__link">
+    実例
   </a>
   
-    <nav class="md-nav" aria-label="Example">
+    <nav class="md-nav" aria-label="実例">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1021,50 +1016,50 @@
   
 
 
-<h1 id="pre-commit-tips">pre-commit tips</h1>
-<p>pre-commit, a feature of <code>git hook</code>, is a tool available on PyPl to set up commands and scripts to be run automatically before committing in a Git repository. This tool is used to maintain code quality and ensure consistency.</p>
-<p>See official documentation for details.<br />
+<h1 id="pre-commit-tips">pre-commit tips<a class="headerlink" href="#pre-commit-tips" title="Permanent link">&para;</a></h1>
+<p>pre-commitは、<code>git hook</code>の一機能ですが、Gitリポジトリ内のコミット前に自動的に実行されるコマンドやスクリプトを設定するためのツールとしてPyPlで公開されています。このツールは、コードの品質を維持し、一貫性を確保するために使用されます。</p>
+<p>詳細は公式ドキュメント参照<br />
 <a href="https://pre-commit.com/">https://pre-commit.com/</a></p>
-<p>With pre-commit, developers can run a variety of static analysis and code formatting tools prior to commit. Pre-commit allows developers to set customizable hooks (hooks) for the entire repository or for individual files.</p>
-<p>The pre-commit configuration is described in a file named.pre-commit-config.yaml. This file specifies settings such as hooks to use, commands to execute, files to exclude, etc. pre-commit automatically executes hooks before commit and decides whether to accept or abort the commit based on the results of the hooks.</p>
-<p>pre-commit is supported by a variety of programming languages and tools, and many existing hooks are publicly available. Custom hooks can also be created.</p>
-<p>The main advantages of pre-commit are:</p>
+<p>pre-commitを使用すると、開発者はコミット前にさまざまな静的解析やコードフォーマットツールを実行することができます。これにより、コードスタイルの遵守や一般的なエラーパターンの検出、セキュリティの脆弱性のチェックなどが自動的に行われます。pre-commitは、リポジトリ全体または個々のファイルに対して、カスタマイズ可能なフック（hooks）を設定することができます。</p>
+<p>pre-commitの設定は、.pre-commit-config.yamlという名前のファイルに記述されます。このファイルでは、使用するフックや実行するコマンド、除外するファイルなどの設定を指定する。pre-commitは、コミット前にフックを自動的に実行し、フックの結果に基づいてコミットの承認または中止を判断する。</p>
+<p>pre-commitは、さまざまなプログラミング言語やツールに対応しており、多くの既存のフックが公開されています。また、カスタムフックを作成することも可能です。</p>
+<p>pre-commitの主な利点は次のとおりです:</p>
 <ul>
-<li>Improved code quality: pre-commit can be used to improve code quality by unifying code styles and detecting common error patterns.</li>
-<li>Automated static analysis: pre-commit automatically runs static analysis and code formatting tools, eliminating the need for developers to run these tools manually.</li>
-<li>Team adherence to common rules: pre-commit settings are shared within the repository, making it easier for the entire development team to adhere to consistent coding rules and best practices.</li>
-<li>Early detection of errors: pre-commit runs hooks before committing, allowing for early detection and correction of errors and problems.</li>
+<li>コードの品質向上: pre-commitを使用することで、コードスタイルの統一や一般的なエラーパターンの検出など、コードの品質を向上させることができます。</li>
+<li>自動化された静的解析: pre-commitは、静的解析ツールやコードフォーマットツールを自動的に実行するため、開発者は手動でこれらのツールを実行する手間を省くことができます。</li>
+<li>チームの共通ルールの遵守: pre-commitの設定はリポジトリ内で共有されるため、開発チーム全体で一貫したコーディングルールやベストプラクティスの遵守が容易になります。</li>
+<li>エラーの早期検出: pre-commitは、コミット前にフックを実行するため、エラーや問題を早期に検出し修正することができます。</li>
 </ul>
-<p>As a precaution, pre-commit is executed before commit, so commits may be delayed if hooks are executed over time. Also, pre-commit settings are included in the repository, and you must ensure that all team members are using the same settings.</p>
-<p>pre-commit is a widely used tool for quality control and development efficiency and has been adopted by many projects.</p>
-<h2 id="usage">Usage</h2>
-<h3 id="hooks-used-in-pre-commit-configyaml">Hooks used in .pre-commit-config.yaml</h3>
-<h4 id="reference-article-japanese-pre-commit">Reference article (Japanese): <a href="https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d">pre-commitでコミット時にコードの整形やチェックを行う</a></h4>
+<p>注意点として、pre-commitはコミット前に実行されるため、フックが時間をかけて実行されるとコミットが遅くなる場合があります。また、pre-commitの設定はリポジトリに含まれており、チームメンバーが同じ設定を使用していることを確認する必要があります。</p>
+<p>pre-commitは、品質管理と開発効率の向上のために広く利用されているツールであり、多くのプロジェクトで採用されています。</p>
+<h2 id="_1">使い方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="pre-commit-configyaml">.pre-commit-config.yamlで使用するフック<a class="headerlink" href="#pre-commit-configyaml" title="Permanent link">&para;</a></h3>
+<h4 id="pre-commit">参考記事: <a href="https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d">pre-commitでコミット時にコードの整形やチェックを行う</a><a class="headerlink" href="#pre-commit" title="Permanent link">&para;</a></h4>
 <ul>
-<li>pre-commit-hooks: A collection of plug-ins provided as part of the pre-commit tool.</li>
-<li>trailing-whitespace: Detects the presence of unwanted whitespace characters at the end of a file.</li>
-<li>end-of-file-fixer: Make the last line of the file a newline code.</li>
-<li>mixed-line-ending: Unify line feed code to LF.</li>
-<li>check-added-large-files: Prohibit commit of large files.</li>
-<li>check-yaml: Check the validity of the syntax of YAML files.</li>
-<li>check-toml: Check the validity of the syntax of TOML files.</li>
-<li>detect-aws-credentials: Check if there is an AWS credential file. By adding the --allow-missing-credentials option, the hook will pass even if there is no credentail file.</li>
-<li>formatter</li>
-<li>black: Automatic formatting of Python code to unify code styles.</li>
-<li>isort: Organize and sort Python import statements.</li>
-<li>mdformat: Enforce consistent styles in Markdown files.</li>
-<li>linter</li>
-<li>flake8: Perform static analysis of Python code to detect code style violations and common error patterns.</li>
-<li>mypy: Static Type Inspection Tool</li>
-<li>Poetry related</li>
-<li>poetry-check: Call the poetry check command to make sure that the poetry setting is not committed in a broken state.</li>
-<li>poetry-lock: Call the poetry lock command to ensure that the lock file is up-to-date when committing changes.</li>
-<li>poetry-export: Call the <code>poetry export</code> command to synchronize the <code>requirements.txt</code> file with the current dependencies. <code>dev-dependencies</code> can also be exported by adding <code>--dev</code> to the args.</li>
-<li>Original script</li>
-<li>Case(Japanese): <a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></li>
+<li>pre-commit-hooks: pre-commitツールの一部として提供されるプラグインの集合体。</li>
+<li>trailing-whitespace: ファイルの末尾に不要な空白文字があるかどうかを検出する。</li>
+<li>end-of-file-fixer: ファイル最終行を改行コードにする。</li>
+<li>mixed-line-ending: 改行コードを LF に統一。</li>
+<li>check-added-large-files: 巨大なファイルの commit を禁止。</li>
+<li>check-yaml: YAMLファイルの構文の妥当性を確認する。</li>
+<li>check-toml: TOMLファイルの構文の妥当性を確認する。</li>
+<li>detect-aws-credentials: AWSのcredentialファイルがあるかどうかを確認。<code>--allow-missing-credentials</code>オプションを追加することで，credentailファイルがない場合でもhookが通るようになる。</li>
+<li>フォーマッター (formatter)</li>
+<li>black: Pythonコードの自動フォーマットを行い、コードスタイルを統一する。</li>
+<li>isort: Pythonのインポートステートメントを整理・ソートする。</li>
+<li>mdformat: Markdownファイルに一貫したスタイルを強制する。</li>
+<li>リンター (linter)</li>
+<li>flake8: Pythonコードの静的解析を行い、コードスタイルの違反や一般的なエラーパターンを検出する。</li>
+<li>mypy: 静的型検査ツール</li>
+<li>Poetry関連</li>
+<li>poetry-check: poetryの設定が壊れた状態でコミットされないことを確認するためにpoetry checkコマンドを呼び出す。</li>
+<li>poetry-lock: 変更をコミットする際にロックファイルが最新であることを確認するために poetry lock コマンドを呼び出す。</li>
+<li>poetry-export: poetry export コマンドを呼び出して、requirements.txt ファイルと現在の依存関係を同期させる。argsに--devを追加することで、dev-dependenciesを書き出すことも可能。</li>
+<li>オリジナルスクリプト</li>
+<li>事例: <a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></li>
 </ul>
-<h4 id="example">Example</h4>
-<h5 id="dev-insights-tips-pre-commit-configyaml"><a href="https://github.com/7rikazhexde/dev-insights-tips/blob/main/.pre-commit-config.yaml">dev-insights-tips /.pre-commit-config.yaml</a></h5>
+<h4 id="_2">実例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<h5 id="dev-insights-tips-pre-commit-configyaml"><a href="https://github.com/7rikazhexde/dev-insights-tips/blob/main/.pre-commit-config.yaml">dev-insights-tips /.pre-commit-config.yaml</a><a class="headerlink" href="#dev-insights-tips-pre-commit-configyaml" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1"># pre-commit stop running hooks after the first failure.</span>
 <span class="nt">fail_fast</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="c1"># A list of repository mappings</span>
@@ -1210,16 +1205,16 @@
     </fieldset>
   </form>
 
-<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-<!-- 参考2: Adding a comment system -->
-<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
 
                 
 
   <!-- Giscus -->
-  <h2 id="__comments">Comments</h2>
+  <h2 id="__comments">コメント</h2>
   <!-- Replace with generated snippet -->
+  <!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
+  <!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
+  <!-- 参考2: Adding a comment system -->
+  <!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
   <!--
   <script src="https://giscus.app/client.js"
         data-repo="7rikazhexde/dev-insights-tips"
@@ -1309,6 +1304,43 @@
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/7rikazhexde" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tw_7rikazhexde" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://7rikazhexde-techlog.hatenablog.com/" target="_blank" rel="noopener" title="7rikazhexde-techlog.hatenablog.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M192 32c0 17.7 14.3 32 32 32 123.7 0 224 100.3 224 224 0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32 70.7 0 128 57.3 128 128 0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192-17.7 0-32 14.3-32 32zm-96 16c0-26.5-21.5-48-48-48S0 117.5 0 144v224c0 79.5 64.5 144 144 144s144-64.5 144-144-64.5-144-144-144h-16v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48V144z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1375,7 +1407,7 @@
 <div class="md-consent__controls">
   
     
-      <button class="md-button md-button--primary">Accept</button>
+      <button class="md-button md-button--primary">同意</button>
     
     
     
@@ -1383,7 +1415,7 @@
     
     
     
-      <label class="md-button" for="__settings">Manage settings</label>
+      <label class="md-button" for="__settings">サイトの設定</label>
     
   
 </div>
@@ -1392,7 +1424,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>

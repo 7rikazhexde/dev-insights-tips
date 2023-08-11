@@ -1,8 +1,3 @@
-<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-<!-- 参考2: Adding a comment system -->
-<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
-
 
 <!doctype html>
 <html lang="ja" class="no-js">
@@ -24,7 +19,7 @@
     
     
       
-        <title>git-tips - Dev Insights Tips</title>
+        <title>git tips - Dev Insights Tips</title>
       
     
     
@@ -123,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              git-tips
+              git tips
             
           </span>
         </div>
@@ -167,14 +162,14 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../../git/git-tips/" hreflang="en" class="md-select__link">
-                    English
+                  <a href="../../../git/git-tips/" hreflang="ja" class="md-select__link">
+                    日本語
                   </a>
                 </li>
               
                 <li class="md-select__item">
-                  <a href="./" hreflang="ja" class="md-select__link">
-                    日本語
+                  <a href="../../../en/git/git-tips/" hreflang="en" class="md-select__link">
+                    English
                   </a>
                 </li>
               
@@ -354,7 +349,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../database/">Database Tips</a>
+          <a href="../../database/">Database</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -365,7 +360,7 @@
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Database Tips
+          Database
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -421,7 +416,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Git Tips</a>
+          <a href="../">Git</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -432,7 +427,7 @@
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Git Tips
+          Git
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -454,12 +449,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          git-tips
+          git tips
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        git-tips
+        git tips
       </a>
       
         
@@ -909,14 +904,14 @@
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-          Python Tips
+          Python
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Python Tips
+          Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1006,14 +1001,14 @@
       
       
         <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          RaspberryPi
+          Raspberry Pi
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
-          RaspberryPi
+          Raspberry Pi
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1116,14 +1111,14 @@
       
       
         <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-          vi tips
+          vi
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
-          vi tips
+          vi
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1579,29 +1574,29 @@
   
 
 
-<h1 id="git-tips">git-tips</h1>
+<h1 id="git-tips">git tips<a class="headerlink" href="#git-tips" title="Permanent link">&para;</a></h1>
 <p>git関連のtipsです。</p>
-<h2 id="_1">基本的な流れ</h2>
+<h2 id="_1">基本的な流れ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>Gitを使用してコードをリモートリポジトリにプッシュする一般的な流れは以下の通りです。</p>
-<h3 id="_2">リポジトリの初期化またはクローン</h3>
+<h3 id="_2">リポジトリの初期化またはクローン<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>リモートリポジトリを既に持っている場合は、git clone コマンドを使用して既存のリポジトリをローカルに複製します。<br />
 新しいリポジトリを作成する場合は、<code>git init</code>コマンドを使用して新しいリポジトリを初期化します。</p>
-<h3 id="_3">ファイルのステージング</h3>
+<h3 id="_3">ファイルのステージング<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>変更したファイルをステージングエリアに追加します。これは、変更をコミットする前の準備作業です。<br />
 すべての変更をステージングするには、<code>git add .</code>コマンドを使用します。<br />
 特定のファイルのみをステージングするには、<code>git add ファイル名</code>コマンドを使用します。</p>
-<h3 id="_4">コミット</h3>
+<h3 id="_4">コミット<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>ステージングエリアに追加した変更をコミットします。これにより、変更がリポジトリの履歴に記録されます。<br />
 <code>git commit -m "コミットメッセージ"</code>コマンドを使用してコミットを作成します。コミットメッセージはその変更の内容を説明するためのものです。</p>
-<h3 id="_5">リモートリポジトリの設定:</h3>
+<h3 id="_5">リモートリポジトリの設定:<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>リモートリポジトリを追加します。通常、このリモートリポジトリは GitHub や GitLab などのホスティングサービス上にあります。
 <code>git remote add origin リモートリポジトリのURL</code> コマンドを使用してリモートリポジトリを追加します。"origin" はリモートリポジトリへの参照の名前です。</p>
-<h3 id="_6">プッシュ</h3>
+<h3 id="_6">プッシュ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>ローカルのコミットをリモートリポジトリにプッシュします。これにより、リモートリポジトリに変更が反映されます。
 <code>git push origin ブランチ名</code> コマンドを使用して、指定したブランチの変更をリモートリポジトリにプッシュします。
 ここで ブランチ名 はプッシュする対象のブランチの名前です。デフォルトでは、通常は main や master といった名前になります。</p>
-<h2 id="_7">コマンド毎の詳細</h2>
-<h3 id="git-add">ステージング(git add)</h3>
+<h2 id="_7">コマンド毎の詳細<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="git-add">ステージング(git add)<a class="headerlink" href="#git-add" title="Permanent link">&para;</a></h3>
 <p>git addは、Gitで変更したファイルをステージングエリア（インデックス）に追加するコマンドです。変更したファイル、フォルダは<code>git status</code>コマンドで確認できます。ステージングエリアにファイルを追加することで、Gitはその変更を次のコミットの対象として扱います。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
 On<span class="w"> </span>branch<span class="w"> </span>main
@@ -1636,7 +1631,7 @@ Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w">
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>.
 </code></pre></div>
 <p>ステージングエリアに追加されたファイルは、<code>git commit</code>コマンドを実行することで、ローカルリポジトリにコミットすることができる。</p>
-<h3 id="git-reset">ステージングの取り消し(git reset)</h3>
+<h3 id="git-reset">ステージングの取り消し(git reset)<a class="headerlink" href="#git-reset" title="Permanent link">&para;</a></h3>
 <p>ステージングエリア（インデックス）に追加したファイルを取り消す方法は、<code>git reset</code>コマンドを使用することができる。</p>
 <p>まず、<code>git status</code>コマンドで、ステージングエリアに追加されたファイルを確認します。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
@@ -1659,7 +1654,7 @@ Changes<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </sp
 </code></pre></div>
 <p>このように、<code>git reset</code>コマンドを使用することで、ステージングエリアに追加したファイルの変更を取り消すことができる。ただし、取り消した変更は作業ディレクトリに残ります。必要に応じて、<code>git restore</code>コマンドを使用して作業ディレクトリの変更を取り消すこともできる。</p>
 <p>なお、git resetコマンドにHEADを指定しない場合、コミットの履歴は変更されませんが、ステージングエリアからファイルの変更を取り消すことができる。具体的には、ステージングエリアから取り消されたファイルの変更は、作業ディレクトリに戻される。<strong>ただし、コミットの履歴は変更されないため、注意が必要。</strong></p>
-<h2 id="git-restore">ワーキングツリー内の変更を取り消す(git restoreコマンド)</h2>
+<h2 id="git-restore">ワーキングツリー内の変更を取り消す(git restoreコマンド)<a class="headerlink" href="#git-restore" title="Permanent link">&para;</a></h2>
 <p><code>git restore</code>コマンドは、ワーキングツリーからステージングエリアに変更を戻したり、ステージングエリアからコミットに変更を戻すために使用される。具体的には、次のような使い方ができる。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>restore<span class="w"> </span>file.txt
 </code></pre></div>
@@ -1671,17 +1666,17 @@ $<span class="w"> </span>git<span class="w"> </span>restore<span class="w"> </sp
 </code></pre></div>
 <p><code>--satge</code>オプションを指定することにより、ステージングエリアにある <code>file.txt</code>の<strong>変更は取り消されますが、ファイル自体は変更されたままです。</strong>
 つまり、変更はステージングエリア内に残ります。</p>
-<h2 id="git-commit">git commitコマンド</h2>
-<h3 id="_8">基本形</h3>
+<h2 id="git-commit">git commitコマンド<a class="headerlink" href="#git-commit" title="Permanent link">&para;</a></h2>
+<h3 id="_8">基本形<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <p>git commit コマンドは、ローカルリポジトリに変更をコミットするために使用されます。<br />
 以下は、基本的な git commit コマンドの例。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add new feature&quot;</span>
 </code></pre></div>
-<h3 id="commit-typeemojis">commit typeとemojisを使用した例</h3>
+<h3 id="commit-typeemojis">commit typeとemojisを使用した例<a class="headerlink" href="#commit-typeemojis" title="Permanent link">&para;</a></h3>
 <p>emojiの後ろにスペースを入れるかどうかは、コミットメッセージのスタイルやプロジェクトのガイドラインによります。一部のプロジェクトでは、コミットメッセージに絵文字の後ろにスペースを入れることを求める場合がありますが、一般的にはスペースを省略することが多いようです。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;:+1:feat: Add new feature&quot;</span>
 </code></pre></div>
-<h3 id="commit-type">commit type</h3>
+<h3 id="commit-type">commit type<a class="headerlink" href="#commit-type" title="Permanent link">&para;</a></h3>
 <p>commit typeは、コミットの目的を簡潔に表すために使用される、一般的な識別子のことを指す。<br />
 コミットタイプは、開発者がコードを修正する目的を他の開発者が理解しやすくするのに役立つ。</p>
 <p>一般的なコミットタイプには、以下のようなものがある。</p>
@@ -1698,7 +1693,7 @@ $<span class="w"> </span>git<span class="w"> </span>restore<span class="w"> </sp
 <div class="highlight"><pre><span></span><code>docs:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 </code></pre></div>
 <p>これにより、他の開発者は、このコミットがREADME.mdファイルのドキュメントを更新したことを理解できる。</p>
-<h3 id="commit-message">commit message</h3>
+<h3 id="commit-message">commit message<a class="headerlink" href="#commit-message" title="Permanent link">&para;</a></h3>
 <p>コミットメッセージには、詳細を追加するために使用できるいくつかの要素がある。</p>
 <ul>
 <li>Scope：コミットが影響を受ける範囲を示すオプションの要素。この要素は、コミットが変更を加えたファイルやモジュール、機能などを指定するために使用できる。</li>
@@ -1738,7 +1733,7 @@ its<span class="w"> </span>latest<span class="w"> </span>features.
 
 Issue<span class="w"> </span><span class="c1">#123</span>
 </code></pre></div>
-<h3 id="commit-typegit-message">commit typeとgit messageを加えた例</h3>
+<h3 id="commit-typegit-message">commit typeとgit messageを加えた例<a class="headerlink" href="#commit-typegit-message" title="Permanent link">&para;</a></h3>
 <p>この例では、スコープとして "search" を指定し、"feat" というコミットタイプを使用して、新しい機能が追加されたことを示している。ボディでは、変更内容の詳細が説明され、フッターでは関連する問題番号が "Closes #1234" として記述されている。これにより、このコミットがどの問題に関連しているのかを明確に示し、チーム全体でのコラボレーションをスムーズに進めることができ。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat(search): add fuzzy search to search bar</span>
 
@@ -1746,10 +1741,10 @@ Issue<span class="w"> </span><span class="c1">#123</span>
 
 <span class="s2">Closes #1234&quot;</span>
 </code></pre></div>
-<h3 id="_9">コミットメッセージのテンプレート</h3>
-<h4 id="_10">コミットメッセージのテンプレートを指定する方法</h4>
+<h3 id="_9">コミットメッセージのテンプレート<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="_10">コミットメッセージのテンプレートを指定する方法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <p>git commit コマンドでは、-t オプションを使用して、コミットメッセージのテンプレートを指定することができる。</p>
-<h5 id="docs">docs用のテンプレート例</h5>
+<h5 id="docs">docs用のテンプレート例<a class="headerlink" href="#docs" title="Permanent link">&para;</a></h5>
 <p>この例のテンプレートには、スコープ、コミットタイプ、変更内容、テスト方法などが含まれており、より詳細なコミットメッセージを作成することができる。</p>
 <p>docs_gtの中身</p>
 <div class="highlight"><pre><span></span><code>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
@@ -1766,10 +1761,10 @@ Refs<span class="w"> </span><span class="c1">#[]</span>
 <p>コミット時に-tオプションで指定</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span>~./git_message_template/docs_gt
 </code></pre></div>
-<h4 id="_11">デフォルトで使用するコミットメッセージのテンプレート設定</h4>
+<h4 id="_11">デフォルトで使用するコミットメッセージのテンプレート設定<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
 <p>commit.template にパスを指定することで、そのパスで指定したファイルがデフォルトのコミットメッセージのテンプレートとして使用できる。</p>
 <p>参考：<a href="https://zenn.dev/ianchen0419/articles/99564425e43dd4">Gitコミットスタイル</a></p>
-<h5 id="gitmessage">.gitmessageの作成</h5>
+<h5 id="gitmessage">.gitmessageの作成<a class="headerlink" href="#gitmessage" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/.git_message_template
 touch<span class="w"> </span>~/.git_message_template/.gitmessage
 </code></pre></div>
@@ -1810,59 +1805,59 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
 <span class="o">[</span>main<span class="w"> </span>e4db099<span class="o">]</span><span class="w"> </span>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
 <span class="w"> </span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">106</span><span class="w"> </span>insertions<span class="o">(</span>+<span class="o">)</span>,<span class="w"> </span><span class="m">1</span><span class="w"> </span>deletion<span class="o">(</span>-<span class="o">)</span>
 </code></pre></div>
-<h4 id="github-git-commit-push-github">【GitHub】 git commit / push後の GitHubの表示について</h4>
-<h5 id="git-commitissue-issueurl">git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される</h5>
+<h4 id="github-git-commit-push-github">【GitHub】 git commit / push後の GitHubの表示について<a class="headerlink" href="#github-git-commit-push-github" title="Permanent link">&para;</a></h4>
+<h5 id="git-commitissue-issueurl">git commit時ににフォーク元のissue番号(# 付き)を書くと、自動で「アカウント名# issue番号」のタイトルでURLに変換される<a class="headerlink" href="#git-commitissue-issueurl" title="Permanent link">&para;</a></h5>
 <p><a href="https://github.com/7rikazhexde/twitter-video-dl-for-sc/commit/08c13970a84804e48c80d589002189e452cb8183">参考</a></p>
-<h2 id="git-commitgit-reset-git-revert">git commit後のコミットを取消する(git reset / git revert)</h2>
+<h2 id="git-commitgit-reset-git-revert">git commit後のコミットを取消する(git reset / git revert)<a class="headerlink" href="#git-commitgit-reset-git-revert" title="Permanent link">&para;</a></h2>
 <p><code>git commit</code>後のコミットを取消する場合、一般的には <code>git reset</code>コマンドを使用します。ただし、注意が必要であり、コミットを取り消すことは他の開発者やリモートリポジトリとの連携に影響を与える可能性があります。以下に、コミットの取消方法を説明します。</p>
-<h3 id="_12">直前のコミットを取消し、変更をステージングエリアに戻す</h3>
+<h3 id="_12">直前のコミットを取消し、変更をステージングエリアに戻す<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> </span>HEAD^
 </code></pre></div>
 <p>このコマンドは直前のコミットを取り消し、コミットメッセージを保持したまま変更をステージングエリアに戻します。この後、変更を修正して再コミットすることができます。</p>
-<h3 id="_13">直前のコミットと変更を完全に取り消す</h3>
+<h3 id="_13">直前のコミットと変更を完全に取り消す<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD^
 </code></pre></div>
 <p>このコマンドは直前のコミットとその変更を完全に取り消し、ワーキングツリーも変更前の状態に戻します。注意が必要で、取り消したコミットと変更は復元できません。</p>
-<h3 id="_14">特定のコミットを取り消す</h3>
+<h3 id="_14">特定のコミットを取り消す<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>&lt;commit-hash&gt;
 </code></pre></div>
 <p><code>git revert</code> コマンドは、指定したコミットの変更を取り消す新しいコミットを作成します。これにより、変更を取り消すだけでなく、履歴にも記録されます。他の開発者との連携を維持しつつ、変更を取り消す方法です。</p>
-<h2 id="github">【GitHub】プロジェクトのフォークについて</h2>
+<h2 id="github">【GitHub】プロジェクトのフォークについて<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <p>GitHubでのプロジェクトのフォークは、オリジナルのリポジトリをコピーして自分のGitHubアカウントに持ってくることができる。<br />
 以下は、フォークする際の作法、注意点、やり方。</p>
-<h3 id="_15">作法</h3>
+<h3 id="_15">作法<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <ul>
 <li>原則として、フォークするプロジェクトのライセンスを確認し、適切にクレジットを表示することが望ましい。</li>
 <li>フォークしたプロジェクトに対してコントリビュートする際は、オリジナルのプロジェクトと同じように、適切な開発プロセスを行うようにする。</li>
 </ul>
-<h3 id="_16">注意点</h3>
+<h3 id="_16">注意点<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <ul>
 <li>フォーク元のプロジェクトを含め、ライセンスについてしっかりと理解し、遵守するようこと。</li>
 <li>フォーク元のプロジェクトがアップデートされた場合、定期的に同期をとることで、最新のコードを利用することができる。</li>
 </ul>
-<h3 id="_17">やり方</h3>
+<h3 id="_17">やり方<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <ol>
 <li>GitHubにログインし、フォークしたいプロジェクトのリポジトリにアクセスする。</li>
 <li>右上にある「Fork」ボタンをクリックする。</li>
 <li>自分のGitHubアカウントで、フォークしたリポジトリのコピーが作成される。</li>
 <li>コピーしたリポジトリに対して、必要な修正を行い、コミットする。</li>
 </ol>
-<h2 id="_18">フォーク元の変更を取り込む方法</h2>
-<h3 id="_19">フォーク元のリポジトリをリモートに追加する</h3>
+<h2 id="_18">フォーク元の変更を取り込む方法<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">フォーク元のリポジトリをリモートに追加する<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>upstream<span class="w"> </span>&lt;フォーク元のリポジトリのURL&gt;
 </code></pre></div>
-<h3 id="_20">ローカルのフォークしたリポジトリを更新する</h3>
+<h3 id="_20">ローカルのフォークしたリポジトリを更新する<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>upstream
 </code></pre></div>
-<h3 id="_21">フォーク元の変更をマージする</h3>
+<h3 id="_21">フォーク元の変更をマージする<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>merge<span class="w"> </span>upstream/&lt;変更を取り込むブランチ名&gt;
 </code></pre></div>
-<h4 id="_22">リベースする場合は以下のコマンドを実行する。</h4>
+<h4 id="_22">リベースする場合は以下のコマンドを実行する。<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>upstream/&lt;変更を取り込むブランチ名&gt;
 </code></pre></div>
-<h3 id="_23">コンフリクトの解決</h3>
+<h3 id="_23">コンフリクトの解決<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
 <p>変更をマージまたはリベースする際にコンフリクトが発生した場合は、手動で解決する必要があります。コンフリクトの解決方法は、変更の内容に応じて異なります。</p>
-<h3 id="_24">変更をプッシュする</h3>
+<h3 id="_24">変更をプッシュする<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
 <p>変更をマージまたはリベースした後は、フォークしたリポジトリに変更をプッシュする。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>&lt;リモート先のブランチ名&gt;
 </code></pre></div>
@@ -1913,16 +1908,16 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
     </fieldset>
   </form>
 
-<!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-<!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-<!-- 参考2: Adding a comment system -->
-<!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
 
                 
 
   <!-- Giscus -->
   <h2 id="__comments">コメント</h2>
   <!-- Replace with generated snippet -->
+  <!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
+  <!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
+  <!-- 参考2: Adding a comment system -->
+  <!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
   <!--
   <script src="https://giscus.app/client.js"
         data-repo="7rikazhexde/dev-insights-tips"
@@ -2012,6 +2007,43 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/7rikazhexde" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/tw_7rikazhexde" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://7rikazhexde-techlog.hatenablog.com/" target="_blank" rel="noopener" title="7rikazhexde-techlog.hatenablog.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M192 32c0 17.7 14.3 32 32 32 123.7 0 224 100.3 224 224 0 17.7 14.3 32 32 32s32-14.3 32-32C512 128.9 383.1 0 224 0c-17.7 0-32 14.3-32 32zm0 96c0 17.7 14.3 32 32 32 70.7 0 128 57.3 128 128 0 17.7 14.3 32 32 32s32-14.3 32-32c0-106-86-192-192-192-17.7 0-32 14.3-32 32zm-96 16c0-26.5-21.5-48-48-48S0 117.5 0 144v224c0 79.5 64.5 144 144 144s144-64.5 144-144-64.5-144-144-144h-16v96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48V144z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -2095,7 +2127,7 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
