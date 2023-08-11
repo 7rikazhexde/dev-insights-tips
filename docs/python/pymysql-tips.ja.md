@@ -1,7 +1,6 @@
 # PyMySQL tips
 
-\[PyMySQL\](https://pypi.org/project/pymysql/に関するTipsです。<br />
-主に、使い方をまとめてます。
+[PyMySQL](https://pypi.org/project/pymysql/)に関するTipsです。主に、使い方をまとめてます。
 
 ## 使い方
 

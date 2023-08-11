@@ -1,4 +1,4 @@
-# git-tips
+# git tips
 
 This section summarizes information related to git.
 

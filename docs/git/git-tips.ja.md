@@ -1,4 +1,4 @@
-# git-tips
+# git tips
 
 git関連のtipsです。
 
