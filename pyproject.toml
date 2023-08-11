@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dev-insights-tips"
-version = "0.1.15"
+version = "0.1.16"
 description = "A repository that gathers insights and tips for development. It aims to share information related to programming and development."
 authors = ["7rikaz_h785 <7rikaz.h785.stat2ltas41lcijad@gmail.com>"]
 license = "MIT"
