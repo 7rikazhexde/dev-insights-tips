@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dev-insights-tips"
-version = "0.1.14"
+version = "0.1.15"
 description = "A repository that gathers insights and tips for development. It aims to share information related to programming and development."
 authors = ["7rikaz_h785 <7rikaz.h785.stat2ltas41lcijad@gmail.com>"]
 license = "MIT"
@@ -13,6 +13,9 @@ mdformat = "^0.7.16"
 tomlkit = "^0.11.8"
 pre-commit = "^3.3.3"
 mkdocs-material = "^9.1.16"
+mkdocs-static-i18n = "^0.56"
+pygments = "^2.16.1"
+plantuml-markdown = "^3.9.2"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.11.0"
