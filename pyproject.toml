@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "dev-insights-tips"
-version = "0.1.17"
+version = "0.1.18"
 description = "A repository that gathers insights and tips for development. It aims to share information related to programming and development."
 authors = ["7rikaz_h785 <7rikaz.h785.stat2ltas41lcijad@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "dev_insights_tips"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -30,9 +29,9 @@ ruamel-yaml = "^0.17.31"
 mkdb = "poetry run mkdocs build"
 mkds = "poetry run mkdocs serve"
 mkddp = "poetry run mkdocs gh-deploy"
-isort = "poetry run isort ci"
-black = "poetry run black ci"
-flake8 = "poetry run flake8 ci"
+isort = "poetry run isort ci scripts"
+black = "poetry run black ci scripts"
+flake8 = "poetry run flake8 ci scripts"
 mypy = "poetry run mypy"
 
 [build-system]
@@ -48,7 +47,7 @@ target-version = ['py310']
 ignore = ["E402","E501","W503"]
 
 [tool.mypy]
-files = ["ci"]
+files = ["ci","scripts"]
 python_version = "3.10"
 strict = true
 warn_return_any = false

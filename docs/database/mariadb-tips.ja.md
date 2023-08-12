@@ -147,8 +147,11 @@ Thanks for using MariaDB!
 
 ### For Mac
 
+```zsh
+mysql -u root -p
 ```
-% mysql -u root -p
+
+```zsh
 Enter password: [New passwordを入力する]
 Welcome to the MariaDB monitor.  Commands end with ; or g.
 Your MariaDB connection id is 31
@@ -163,7 +166,7 @@ Type 'help;' or 'h' for help. Type 'c' to clear the current input statement.
 
 Macでも可能
 
-```
+```zsh
 % sudo mysql -u root -p
 Enter password: [passwordを入力する]
 Welcome to the MariaDB monitor.  Commands end with ; or g.
@@ -228,10 +231,10 @@ Database changed
 ```bash
 CREATE TABLE `users2`
 (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(255) COLLATE utf8_bin NOT NULL,
-  `password` varchar(255) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `email` varchar(255) COLLATE utf8_bin NOT NULL,
+    `password` varchar(255) COLLATE utf8_bin NOT NULL,
+    PRIMARY KEY (`id`)
 )
 ENGINE=InnoDB DEFAULT
 CHARSET=utf8mb4
@@ -243,16 +246,16 @@ AUTO_INCREMENT=1;
 
 ```bash
 MariaDB [myTestDB2]> CREATE TABLE `users2`
-    -> (
+-> (
     ->   `id` int(11) NOT NULL AUTO_INCREMENT,
     ->   `email` varchar(255) COLLATE utf8_bin NOT NULL,
     ->   `password` varchar(255) COLLATE utf8_bin NOT NULL,
     ->   PRIMARY KEY (`id`)
-    -> )
-    -> ENGINE=InnoDB DEFAULT
-    -> CHARSET=utf8mb4
-    -> COLLATE=utf8mb4_bin
-    -> AUTO_INCREMENT=1;
+-> )
+-> ENGINE=InnoDB DEFAULT
+-> CHARSET=utf8mb4
+-> COLLATE=utf8mb4_bin
+-> AUTO_INCREMENT=1;
 Query OK, 0 rows affected (0.021 sec)
 ```
 

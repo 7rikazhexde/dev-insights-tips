@@ -535,6 +535,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -621,10 +623,9 @@
     Example(Japanese)
   </a>
   
-    <nav class="md-nav" aria-label="Example(Japanese)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#code" class="md-nav__link">
     Code
   </a>
@@ -650,11 +651,6 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
@@ -673,6 +669,20 @@
     <li class="md-nav__item">
       <a href="../pymysql-tips/" class="md-nav__link">
         PyMySQL tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mdformat-tips/" class="md-nav__link">
+        mdformat tips
       </a>
     </li>
   
@@ -936,10 +946,9 @@
     Example(Japanese)
   </a>
   
-    <nav class="md-nav" aria-label="Example(Japanese)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#code" class="md-nav__link">
     Code
   </a>
@@ -958,11 +967,6 @@
   <a href="#post-commit" class="md-nav__link">
     post-commit
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -993,16 +997,16 @@
 <h1 id="post-commit-tips">post-commit tips<a class="headerlink" href="#post-commit-tips" title="Permanent link">&para;</a></h1>
 <p>post-commit hook is a git hooks function that runs when "<strong>all commits complete</strong>".</p>
 <p>git hooks is a hook function that launches custom scripts. (See <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks">the official documentation</a> for details.)</p>
-<h3 id="examplejapanese">Example(Japanese)<a class="headerlink" href="#examplejapanese" title="Permanent link">&para;</a></h3>
+<h2 id="examplejapanese">Example(Japanese)<a class="headerlink" href="#examplejapanese" title="Permanent link">&para;</a></h2>
 <p>The following article presents python code to create a post-commit shell script.</p>
 <p><a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></p>
-<h4 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h4>
-<h5 id="create_post-commitsh">create_post-commit.sh<a class="headerlink" href="#create_post-commitsh" title="Permanent link">&para;</a></h5>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
+<h3 id="create_post-commitsh">create_post-commit.sh<a class="headerlink" href="#create_post-commitsh" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://gist.github.com/7rikazhexde/89036d5fc849411b925e6da7d4986b52
 </code></pre></div>
 <script src="https://gist.github.com/7rikazhexde/89036d5fc849411b925e6da7d4986b52.js"></script>
 
-<h5 id="post-commit">post-commit<a class="headerlink" href="#post-commit" title="Permanent link">&para;</a></h5>
+<h3 id="post-commit">post-commit<a class="headerlink" href="#post-commit" title="Permanent link">&para;</a></h3>
 <p>It can be created by running <code>create_post-commit.sh</code>.</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://gist.github.com/7rikazhexde/6ada2a6ef3ca23938bfa62f32e3fbed8
 </code></pre></div>

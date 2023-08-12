@@ -20,7 +20,7 @@
 
 デフォルトだと白背景なので、画面右上の三点リーダー縦（︙）から以下Themeで変更できる。
 
-```
+```text
 setting > Appearance > Theme > Dark
 ```
 

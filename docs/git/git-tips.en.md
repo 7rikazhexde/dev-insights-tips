@@ -44,14 +44,14 @@ git add is a command that adds files you have modified in Git to the staging are
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
+(use "git push" to publish your local commits)
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   folder/file3.txt
-        modified:   folder/file4.txt
-        modified:   file1.txt
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified:   folder/file3.txt
+modified:   folder/file4.txt
+modified:   file1.txt
 ```
 
 This example display contains the following information
@@ -62,8 +62,6 @@ This example display contains the following information
 - A message indicating that the changes have not been staged.
 
 From this output, you can see the change status of the files in the working tree. Before committing these changes, you can use the `git add` command to stage the necessary changes.
-
-Translated with www.DeepL.com/Translator (free version)
 
 The `git add` command is used as follows
 
@@ -101,13 +99,13 @@ First, check the files added to the staging area with the `git status` command.
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
+(use "git push" to publish your local commits)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   folder/file3.txt
-        modified:   folder/file4.txt
-        modified:   file1.txt
+(use "git restore --staged <file>..." to unstage)
+new file:   folder/file3.txt
+modified:   folder/file4.txt
+modified:   file1.txt
 ```
 
 Use the `git reset` command to cancel files added to the staging area.
@@ -143,8 +141,8 @@ If you added a file to the staging area with the `git add` command, but want to 
 For example, if you added the `file1.txt` file to the staging area and want to revert the changes, use
 
 ```bash
-$ git add file1.txt     # Add changes to staging area
-$ git restore --staged file1.txt  # Return changes from staging area
+git add file1.txt     # Add changes to staging area
+git restore --staged file1.txt  # Return changes from staging area
 ```
 
 The `--satge` option will undo \*\*changes to `file.txt` in the staging area, but the file itself will remain unchanged. \*\*
@@ -298,15 +296,15 @@ mkdir ~/.git_message_template
 touch ~/.git_message_template/.gitmessage
 ```
 
-```bash
+```text
 # ==== Prefix ====
-# fix		バグ修正、クリティカルなバグ修正なら hotfix
-# feat		feat は feature の略
-# docs		ドキュメントのみ修正
-# style		空白、セミコロン、行、コーディングフォーマットなどの修正
-# refactor	整理 （リファクタリング等）
-# test		テスト追加や間違っていたテストの修正
-# chore		ビルドツールやライブラリで自動生成されたものをコミットするとき
+# fix       バグ修正、クリティカルなバグ修正なら hotfix
+# feat      feat は feature の略
+# docs      ドキュメントのみ修正
+# style     空白、セミコロン、行、コーディングフォーマットなどの修正
+# refactor  整理 （リファクタリング等）
+# test      テスト追加や間違っていたテストの修正
+# chore     ビルドツールやライブラリで自動生成されたものをコミットするとき
 
 # ==== Emojis ====
 # :bug:         バグ修正 (fix)
@@ -342,7 +340,7 @@ Aborting commit; you did not edit the message. # If no overwrite save
 
 $ git commit -t $HOME/.git_message_template/.docs_gt
 [main e4db099] docs(README): Update README.md with new information
- 1 file changed, 106 insertions(+), 1 deletion(-)
+1 file changed, 106 insertions(+), 1 deletion(-)
 ```
 
 #### 【GitHub】About the display of GitHub after git commit / push

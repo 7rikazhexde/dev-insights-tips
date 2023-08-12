@@ -4,7 +4,7 @@ Raspberry Pi(Ubuntu OS)に関連する情報をまとめます。
 
 ## Raspberry Pi(Ubuntu)にMariaDBとPythonをインストールする手順について
 
-以下の内容について、はてなブログで手順をまとめたのでリンクを記載する。
+以下の内容について、はてなブログで手順をまとめたリンクを記載します。
 
 [https://7rikazhexde-techlog.hatenablog.com/](https://7rikazhexde-techlog.hatenablog.com/)
 

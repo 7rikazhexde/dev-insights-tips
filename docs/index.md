@@ -5,8 +5,10 @@
 - 記事は日本語と英語で公開しています。
 
 !!! info
+    - 英語ページはDeepLを使用して日本語ページを英訳していますが、誤訳にはご注意ください。
+    - To access English pages, use the language selector in the header to switch between the two.
 
-```
-- 英語ページはDeepLを使用して日本語ページを英訳していますが、誤訳にはご注意してください。
-- To access English pages, use the language selector in the header to switch between the two.
-```
+!!! warning
+    - ページで公開している情報・コードを実行したこと、参考にしたことによって被るあらゆる損害について責任を負いかねますのでご注意ください。
+    - ページで公開している情報はBlog等に引用していただいて構いませんが、記事の無断転用はご遠慮ください。
+    - 引用する際は、URLまたはトップページのURLを記載してください。

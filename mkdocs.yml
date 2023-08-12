@@ -90,6 +90,7 @@ nav:
     - python/pre-commit-tips.ja.md
     - python/post-commit-tips.ja.md
     - python/pymysql-tips.ja.md
+    - python/mdformat-tips.ja.md
   - Raspberry Pi:
     - raspberrypi/raspberrypi-ubuntu-tips.ja.md
   - Tools:
@@ -111,12 +112,6 @@ plugins:
           #site_name: Dev Insights Tips
           はじめに: Introduction
           #Database: Database
-          #Git: Git
-          #Markdwon: Markdown
-          #Python: Python
-          #Raspberry Pi: Raspberry Pi
-          #vi: vi
-          #Visual Studio Code(VSCode): VSCode
 
 markdown_extensions:
     - codehilite:

@@ -861,6 +861,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -925,6 +927,20 @@
     <li class="md-nav__item">
       <a href="../../python/pymysql-tips/" class="md-nav__link">
         PyMySQL tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/mdformat-tips/" class="md-nav__link">
+        mdformat tips
       </a>
     </li>
   
@@ -1625,27 +1641,28 @@ Thanks<span class="w"> </span><span class="k">for</span><span class="w"> </span>
 </code></pre></div>
 <h2 id="_2">ログイン<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="for-mac_2">For Mac<a class="headerlink" href="#for-mac_2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>% mysql -u root -p
-Enter password: [New passwordを入力する]
-Welcome to the MariaDB monitor.  Commands end with ; or g.
-Your MariaDB connection id is 31
-Server version: 10.8.3-MariaDB Homebrew
+<div class="highlight"><pre><span></span><code>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Enter<span class="w"> </span>password:<span class="w"> </span><span class="o">[</span>New<span class="w"> </span>passwordを入力する<span class="o">]</span>
+Welcome<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>MariaDB<span class="w"> </span>monitor.<span class="w">  </span>Commands<span class="w"> </span>end<span class="w"> </span>with<span class="w"> </span><span class="p">;</span><span class="w"> </span>or<span class="w"> </span>g.
+Your<span class="w"> </span>MariaDB<span class="w"> </span>connection<span class="w"> </span>id<span class="w"> </span>is<span class="w"> </span><span class="m">31</span>
+Server<span class="w"> </span>version:<span class="w"> </span><span class="m">10</span>.8.3-MariaDB<span class="w"> </span>Homebrew
 
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span><span class="m">2000</span>,<span class="w"> </span><span class="m">2018</span>,<span class="w"> </span>Oracle,<span class="w"> </span>MariaDB<span class="w"> </span>Corporation<span class="w"> </span>Ab<span class="w"> </span>and<span class="w"> </span>others.
 
-Type &#39;help;&#39; or &#39;h&#39; for help. Type &#39;c&#39; to clear the current input statement.
+Type<span class="w"> </span><span class="s1">&#39;help;&#39;</span><span class="w"> </span>or<span class="w"> </span><span class="s1">&#39;h&#39;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help.<span class="w"> </span>Type<span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="w"> </span>to<span class="w"> </span>clear<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>input<span class="w"> </span>statement.
 </code></pre></div>
 <h3 id="for-wsl2ubuntu">For WSL2/Ubuntu<a class="headerlink" href="#for-wsl2ubuntu" title="Permanent link">&para;</a></h3>
 <p>Macでも可能</p>
-<div class="highlight"><pre><span></span><code>% sudo mysql -u root -p
-Enter password: [passwordを入力する]
-Welcome to the MariaDB monitor.  Commands end with ; or g.
-Your MariaDB connection id is 31
-Server version: 10.8.3-MariaDB Homebrew
+<div class="highlight"><pre><span></span><code>%<span class="w"> </span>sudo<span class="w"> </span>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+Enter<span class="w"> </span>password:<span class="w"> </span><span class="o">[</span>passwordを入力する<span class="o">]</span>
+Welcome<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>MariaDB<span class="w"> </span>monitor.<span class="w">  </span>Commands<span class="w"> </span>end<span class="w"> </span>with<span class="w"> </span><span class="p">;</span><span class="w"> </span>or<span class="w"> </span>g.
+Your<span class="w"> </span>MariaDB<span class="w"> </span>connection<span class="w"> </span>id<span class="w"> </span>is<span class="w"> </span><span class="m">31</span>
+Server<span class="w"> </span>version:<span class="w"> </span><span class="m">10</span>.8.3-MariaDB<span class="w"> </span>Homebrew
 
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+Copyright<span class="w"> </span><span class="o">(</span>c<span class="o">)</span><span class="w"> </span><span class="m">2000</span>,<span class="w"> </span><span class="m">2018</span>,<span class="w"> </span>Oracle,<span class="w"> </span>MariaDB<span class="w"> </span>Corporation<span class="w"> </span>Ab<span class="w"> </span>and<span class="w"> </span>others.
 
-Type &#39;help;&#39; or &#39;h&#39; for help. Type &#39;c&#39; to clear the current input statement.
+Type<span class="w"> </span><span class="s1">&#39;help;&#39;</span><span class="w"> </span>or<span class="w"> </span><span class="s1">&#39;h&#39;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>help.<span class="w"> </span>Type<span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="w"> </span>to<span class="w"> </span>clear<span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>input<span class="w"> </span>statement.
 </code></pre></div>
 <h2 id="_3">ユーザー一覧確認<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>MariaDB<span class="w"> </span><span class="o">[(</span>none<span class="o">)]</span>&gt;<span class="w"> </span><span class="k">select</span><span class="w"> </span>host,user,password<span class="w"> </span>from<span class="w"> </span>mysql.user<span class="p">;</span>
@@ -1687,10 +1704,10 @@ Database<span class="w"> </span>changed
 <h3 id="create-table-table">CREATE TABLE <code>`[TABLE名]`</code>;<a class="headerlink" href="#create-table-table" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>CREATE<span class="w"> </span>TABLE<span class="w"> </span><span class="sb">`</span>users2<span class="sb">`</span>
 <span class="o">(</span>
-<span class="w">  </span><span class="sb">`</span>id<span class="sb">`</span><span class="w"> </span>int<span class="o">(</span><span class="m">11</span><span class="o">)</span><span class="w"> </span>NOT<span class="w"> </span>NULL<span class="w"> </span>AUTO_INCREMENT,
-<span class="w">  </span><span class="sb">`</span>email<span class="sb">`</span><span class="w"> </span>varchar<span class="o">(</span><span class="m">255</span><span class="o">)</span><span class="w"> </span>COLLATE<span class="w"> </span>utf8_bin<span class="w"> </span>NOT<span class="w"> </span>NULL,
-<span class="w">  </span><span class="sb">`</span>password<span class="sb">`</span><span class="w"> </span>varchar<span class="o">(</span><span class="m">255</span><span class="o">)</span><span class="w"> </span>COLLATE<span class="w"> </span>utf8_bin<span class="w"> </span>NOT<span class="w"> </span>NULL,
-<span class="w">  </span>PRIMARY<span class="w"> </span>KEY<span class="w"> </span><span class="o">(</span><span class="sb">`</span>id<span class="sb">`</span><span class="o">)</span>
+<span class="w">    </span><span class="sb">`</span>id<span class="sb">`</span><span class="w"> </span>int<span class="o">(</span><span class="m">11</span><span class="o">)</span><span class="w"> </span>NOT<span class="w"> </span>NULL<span class="w"> </span>AUTO_INCREMENT,
+<span class="w">    </span><span class="sb">`</span>email<span class="sb">`</span><span class="w"> </span>varchar<span class="o">(</span><span class="m">255</span><span class="o">)</span><span class="w"> </span>COLLATE<span class="w"> </span>utf8_bin<span class="w"> </span>NOT<span class="w"> </span>NULL,
+<span class="w">    </span><span class="sb">`</span>password<span class="sb">`</span><span class="w"> </span>varchar<span class="o">(</span><span class="m">255</span><span class="o">)</span><span class="w"> </span>COLLATE<span class="w"> </span>utf8_bin<span class="w"> </span>NOT<span class="w"> </span>NULL,
+<span class="w">    </span>PRIMARY<span class="w"> </span>KEY<span class="w"> </span><span class="o">(</span><span class="sb">`</span>id<span class="sb">`</span><span class="o">)</span>
 <span class="o">)</span>
 <span class="nv">ENGINE</span><span class="o">=</span>InnoDB<span class="w"> </span>DEFAULT
 <span class="nv">CHARSET</span><span class="o">=</span>utf8mb4
@@ -1699,16 +1716,16 @@ Database<span class="w"> </span>changed
 </code></pre></div>
 <h4 id="-">＜補足＞ターミナルでペーストすると「-&gt;」が挿入される<a class="headerlink" href="#-" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>MariaDB<span class="w"> </span><span class="o">[</span>myTestDB2<span class="o">]</span>&gt;<span class="w"> </span>CREATE<span class="w"> </span>TABLE<span class="w"> </span><span class="sb">`</span>users2<span class="sb">`</span>
-<span class="w">    </span>-&gt;<span class="w"> </span><span class="o">(</span>
+-&gt;<span class="w"> </span><span class="o">(</span>
 <span class="w">    </span>-&gt;<span class="w">   </span><span class="sb">`</span>id<span class="sb">`</span><span class="w"> </span>int<span class="o">(</span><span class="m">11</span><span class="o">)</span><span class="w"> </span>NOT<span class="w"> </span>NULL<span class="w"> </span>AUTO_INCREMENT,
 <span class="w">    </span>-&gt;<span class="w">   </span><span class="sb">`</span>email<span class="sb">`</span><span class="w"> </span>varchar<span class="o">(</span><span class="m">255</span><span class="o">)</span><span class="w"> </span>COLLATE<span class="w"> </span>utf8_bin<span class="w"> </span>NOT<span class="w"> </span>NULL,
 <span class="w">    </span>-&gt;<span class="w">   </span><span class="sb">`</span>password<span class="sb">`</span><span class="w"> </span>varchar<span class="o">(</span><span class="m">255</span><span class="o">)</span><span class="w"> </span>COLLATE<span class="w"> </span>utf8_bin<span class="w"> </span>NOT<span class="w"> </span>NULL,
 <span class="w">    </span>-&gt;<span class="w">   </span>PRIMARY<span class="w"> </span>KEY<span class="w"> </span><span class="o">(</span><span class="sb">`</span>id<span class="sb">`</span><span class="o">)</span>
-<span class="w">    </span>-&gt;<span class="w"> </span><span class="o">)</span>
-<span class="w">    </span>-&gt;<span class="w"> </span><span class="nv">ENGINE</span><span class="o">=</span>InnoDB<span class="w"> </span>DEFAULT
-<span class="w">    </span>-&gt;<span class="w"> </span><span class="nv">CHARSET</span><span class="o">=</span>utf8mb4
-<span class="w">    </span>-&gt;<span class="w"> </span><span class="nv">COLLATE</span><span class="o">=</span>utf8mb4_bin
-<span class="w">    </span>-&gt;<span class="w"> </span><span class="nv">AUTO_INCREMENT</span><span class="o">=</span><span class="m">1</span><span class="p">;</span>
+-&gt;<span class="w"> </span><span class="o">)</span>
+-&gt;<span class="w"> </span><span class="nv">ENGINE</span><span class="o">=</span>InnoDB<span class="w"> </span>DEFAULT
+-&gt;<span class="w"> </span><span class="nv">CHARSET</span><span class="o">=</span>utf8mb4
+-&gt;<span class="w"> </span><span class="nv">COLLATE</span><span class="o">=</span>utf8mb4_bin
+-&gt;<span class="w"> </span><span class="nv">AUTO_INCREMENT</span><span class="o">=</span><span class="m">1</span><span class="p">;</span>
 Query<span class="w"> </span>OK,<span class="w"> </span><span class="m">0</span><span class="w"> </span>rows<span class="w"> </span>affected<span class="w"> </span><span class="o">(</span><span class="m">0</span>.021<span class="w"> </span>sec<span class="o">)</span>
 </code></pre></div>
 <h2 id="_7">データベースの削除<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
