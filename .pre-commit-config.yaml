@@ -39,6 +39,13 @@ repos:
         verbose: true
         files: ^pyproject\.toml$
 
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.16
+    hooks:
+      - id: mdformat
+        additional_dependencies:
+        - mdformat-admon
+
   # Repository local hooks
   - repo: local
     hooks:
@@ -46,14 +53,14 @@ repos:
         name: isort
         stages: [commit]
         language: system
-        entry: poetry run isort ci
+        entry: poetry run isort ci scripts
         types: [python]
 
       - id: black
         name: black
         stages: [commit]
         language: system
-        entry: poetry run black ci
+        entry: poetry run black ci scripts
         types: [python]
         exclude: resources_bin.py
 
@@ -61,7 +68,7 @@ repos:
         name: flake8
         stages: [commit]
         language: system
-        entry: poetry run flake8 ci
+        entry: poetry run flake8 ci scripts
         types: [python]
 
       - id: mypy
@@ -71,12 +78,12 @@ repos:
         entry: poetry run mypy
         types: [python]
 
-      - id: mdformat
-        name: mdformat
-        stages: [commit]
-        language: system
-        entry: poetry run mdformat .
-        types: [markdown]
+      #- id: mdformat
+      #  name: mdformat
+      #  stages: [commit]
+      #  language: system
+      #  entry: poetry run mdformat .
+      #  types: [markdown]
 
     # Original script
       - id: update-pyproject

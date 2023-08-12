@@ -20,7 +20,7 @@ However, since all sentences will be aggregated in HOME, it will be vertically l
 
 The default is a white background, which can be changed in the following Theme from the three-point leader vertical (︙) in the upper right corner of the screen.
 
-```
+```text
 setting > Appearance > Theme > Dark
 ```
 

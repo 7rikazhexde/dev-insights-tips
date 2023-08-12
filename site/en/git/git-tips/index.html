@@ -901,6 +901,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -965,6 +967,20 @@
     <li class="md-nav__item">
       <a href="../../python/pymysql-tips/" class="md-nav__link">
         PyMySQL tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/mdformat-tips/" class="md-nav__link">
+        mdformat tips
       </a>
     </li>
   
@@ -1602,14 +1618,14 @@ Here, branch name is the name of the branch you are pushing to. By default, this
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
 On<span class="w"> </span>branch<span class="w"> </span>main
 Your<span class="w"> </span>branch<span class="w"> </span>is<span class="w"> </span>ahead<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;origin/main&#39;</span><span class="w"> </span>by<span class="w"> </span><span class="m">1</span><span class="w"> </span>commit.
-<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git push&quot;</span><span class="w"> </span>to<span class="w"> </span>publish<span class="w"> </span>your<span class="w"> </span><span class="nb">local</span><span class="w"> </span>commits<span class="o">)</span>
+<span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git push&quot;</span><span class="w"> </span>to<span class="w"> </span>publish<span class="w"> </span>your<span class="w"> </span><span class="nb">local</span><span class="w"> </span>commits<span class="o">)</span>
 
 Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w"> </span><span class="k">for</span><span class="w"> </span>commit:
-<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>update<span class="w"> </span>what<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>committed<span class="o">)</span>
-<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git restore &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>discard<span class="w"> </span>changes<span class="w"> </span><span class="k">in</span><span class="w"> </span>working<span class="w"> </span>directory<span class="o">)</span>
-<span class="w">        </span>modified:<span class="w">   </span>folder/file3.txt
-<span class="w">        </span>modified:<span class="w">   </span>folder/file4.txt
-<span class="w">        </span>modified:<span class="w">   </span>file1.txt
+<span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git add &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>update<span class="w"> </span>what<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>committed<span class="o">)</span>
+<span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git restore &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>discard<span class="w"> </span>changes<span class="w"> </span><span class="k">in</span><span class="w"> </span>working<span class="w"> </span>directory<span class="o">)</span>
+modified:<span class="w">   </span>folder/file3.txt
+modified:<span class="w">   </span>folder/file4.txt
+modified:<span class="w">   </span>file1.txt
 </code></pre></div>
 <p>This example display contains the following information</p>
 <ul>
@@ -1619,7 +1635,6 @@ Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w">
 <li>A message indicating that the changes have not been staged.</li>
 </ul>
 <p>From this output, you can see the change status of the files in the working tree. Before committing these changes, you can use the <code>git add</code> command to stage the necessary changes.</p>
-<p>Translated with www.DeepL.com/Translator (free version)</p>
 <p>The <code>git add</code> command is used as follows</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>folder/file3.txt
 </code></pre></div>
@@ -1639,13 +1654,13 @@ Changes<span class="w"> </span>not<span class="w"> </span>staged<span class="w">
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>status
 On<span class="w"> </span>branch<span class="w"> </span>main
 Your<span class="w"> </span>branch<span class="w"> </span>is<span class="w"> </span>ahead<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;origin/main&#39;</span><span class="w"> </span>by<span class="w"> </span><span class="m">1</span><span class="w"> </span>commit.
-<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git push&quot;</span><span class="w"> </span>to<span class="w"> </span>publish<span class="w"> </span>your<span class="w"> </span><span class="nb">local</span><span class="w"> </span>commits<span class="o">)</span>
+<span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git push&quot;</span><span class="w"> </span>to<span class="w"> </span>publish<span class="w"> </span>your<span class="w"> </span><span class="nb">local</span><span class="w"> </span>commits<span class="o">)</span>
 
 Changes<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>committed:
-<span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git restore --staged &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>unstage<span class="o">)</span>
-<span class="w">        </span>new<span class="w"> </span>file:<span class="w">   </span>folder/file3.txt
-<span class="w">        </span>modified:<span class="w">   </span>folder/file4.txt
-<span class="w">        </span>modified:<span class="w">   </span>file1.txt
+<span class="o">(</span>use<span class="w"> </span><span class="s2">&quot;git restore --staged &lt;file&gt;...&quot;</span><span class="w"> </span>to<span class="w"> </span>unstage<span class="o">)</span>
+new<span class="w"> </span>file:<span class="w">   </span>folder/file3.txt
+modified:<span class="w">   </span>folder/file4.txt
+modified:<span class="w">   </span>file1.txt
 </code></pre></div>
 <p>Use the <code>git reset</code> command to cancel files added to the staging area.</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>HEAD<span class="w"> </span>folder/file3.txt<span class="w"> </span>folder/file4.txt<span class="w"> </span>file1.txt
@@ -1663,8 +1678,8 @@ Changes<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </sp
 <p>Changes to <code>file.txt</code> in the staging area are undone and the **file reverts to the state of the previous commit. **</p>
 <p>If you added a file to the staging area with the <code>git add</code> command, but want to revert it, use <code>git restore --staged</code>.</p>
 <p>For example, if you added the <code>file1.txt</code> file to the staging area and want to revert the changes, use</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>file1.txt<span class="w">     </span><span class="c1"># Add changes to staging area</span>
-$<span class="w"> </span>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>file1.txt<span class="w">  </span><span class="c1"># Return changes from staging area</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>file1.txt<span class="w">     </span><span class="c1"># Add changes to staging area</span>
+git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>file1.txt<span class="w">  </span><span class="c1"># Return changes from staging area</span>
 </code></pre></div>
 <p>The <code>--satge</code> option will undo **changes to <code>file.txt</code> in the staging area, but the file itself will remain unchanged. **
 That is, the changes remain in the staging area.</p>
@@ -1770,29 +1785,29 @@ Refs<span class="w"> </span><span class="c1">#[]</span>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/.git_message_template
 touch<span class="w"> </span>~/.git_message_template/.gitmessage
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1"># ==== Prefix ====</span>
-<span class="c1"># fix       バグ修正、クリティカルなバグ修正なら hotfix</span>
-<span class="c1"># feat      feat は feature の略</span>
-<span class="c1"># docs      ドキュメントのみ修正</span>
-<span class="c1"># style     空白、セミコロン、行、コーディングフォーマットなどの修正</span>
-<span class="c1"># refactor  整理 （リファクタリング等）</span>
-<span class="c1"># test      テスト追加や間違っていたテストの修正</span>
-<span class="c1"># chore     ビルドツールやライブラリで自動生成されたものをコミットするとき</span>
+<div class="highlight"><pre><span></span><code># ==== Prefix ====
+# fix       バグ修正、クリティカルなバグ修正なら hotfix
+# feat      feat は feature の略
+# docs      ドキュメントのみ修正
+# style     空白、セミコロン、行、コーディングフォーマットなどの修正
+# refactor  整理 （リファクタリング等）
+# test      テスト追加や間違っていたテストの修正
+# chore     ビルドツールやライブラリで自動生成されたものをコミットするとき
 
-<span class="c1"># ==== Emojis ====</span>
-<span class="c1"># :bug:         バグ修正 (fix)</span>
-<span class="c1"># :+1:          機能改善 (fix/feat)</span>
-<span class="c1"># :sparkles:    部分的な機能追加 (feat)</span>
-<span class="c1"># :tada:        盛大に祝うべき大きな機能追加 (feat)</span>
-<span class="c1"># :rocket:      パフォーマンス改善 (feat)</span>
-<span class="c1"># :lock:        新機能の公開範囲の制限 (feat)</span>
-<span class="c1"># :cop:         セキュリティ関連の改善 (feat)</span>
-<span class="c1"># :note:        ドキュメント修正 (docs)</span>
-<span class="c1"># :shirt:       Lintエラーの修正やコードスタイルの修正 (style)</span>
-<span class="c1"># :recycle:     リファクタリング (refactor)</span>
-<span class="c1"># :shower:      不要な機能・使われなくなった機能の削除 (refactor)</span>
-<span class="c1"># :green_heart: テストやCIの修正・改善 (test)</span>
-<span class="c1"># :up:          依存パッケージなどのアップデート (chore)</span>
+# ==== Emojis ====
+# :bug:         バグ修正 (fix)
+# :+1:          機能改善 (fix/feat)
+# :sparkles:    部分的な機能追加 (feat)
+# :tada:        盛大に祝うべき大きな機能追加 (feat)
+# :rocket:      パフォーマンス改善 (feat)
+# :lock:        新機能の公開範囲の制限 (feat)
+# :cop:         セキュリティ関連の改善 (feat)
+# :note:        ドキュメント修正 (docs)
+# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)
+# :recycle:     リファクタリング (refactor)
+# :shower:      不要な機能・使われなくなった機能の削除 (refactor)
+# :green_heart: テストやCIの修正・改善 (test)
+# :up:          依存パッケージなどのアップデート (chore)
 </code></pre></div>
 <p>Specify the path to the template file to be used at commit time in Git's global configuration with the <code>git config --global</code> command.</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.template<span class="w"> </span>~/.git_message_template/.gitmessage
@@ -1805,7 +1820,7 @@ Aborting<span class="w"> </span>commit<span class="p">;</span><span class="w"> <
 
 $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-t<span class="w"> </span><span class="nv">$HOME</span>/.git_message_template/.docs_gt
 <span class="o">[</span>main<span class="w"> </span>e4db099<span class="o">]</span><span class="w"> </span>docs<span class="o">(</span>README<span class="o">)</span>:<span class="w"> </span>Update<span class="w"> </span>README.md<span class="w"> </span>with<span class="w"> </span>new<span class="w"> </span>information
-<span class="w"> </span><span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">106</span><span class="w"> </span>insertions<span class="o">(</span>+<span class="o">)</span>,<span class="w"> </span><span class="m">1</span><span class="w"> </span>deletion<span class="o">(</span>-<span class="o">)</span>
+<span class="m">1</span><span class="w"> </span>file<span class="w"> </span>changed,<span class="w"> </span><span class="m">106</span><span class="w"> </span>insertions<span class="o">(</span>+<span class="o">)</span>,<span class="w"> </span><span class="m">1</span><span class="w"> </span>deletion<span class="o">(</span>-<span class="o">)</span>
 </code></pre></div>
 <h4 id="githubabout-the-display-of-github-after-git-commit-push">【GitHub】About the display of GitHub after git commit / push<a class="headerlink" href="#githubabout-the-display-of-github-after-git-commit-push" title="Permanent link">&para;</a></h4>
 <h5 id="when-you-write-the-issue-number-with-of-the-forked-source-on-git-commit-it-is-automatically-converted-to-a-url-with-the-title-account-name-issue-number">When you write the issue number (with #) of the forked source on git commit, it is automatically converted to a URL with the title "account name# issue number"<a class="headerlink" href="#when-you-write-the-issue-number-with-of-the-forked-source-on-git-commit-it-is-automatically-converted-to-a-url-with-the-title-account-name-issue-number" title="Permanent link">&para;</a></h5>

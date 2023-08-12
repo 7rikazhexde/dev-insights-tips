@@ -2,4 +2,4 @@
 
 ## 目次
 
-- [ tips](./sample-tips.ja.md)
+- [tips](./sample-tips.ja.md)

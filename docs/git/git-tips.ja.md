@@ -43,14 +43,14 @@ git addは、Gitで変更したファイルをステージングエリア（イ�
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
+(use "git push" to publish your local commits)
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   folder/file3.txt
-        modified:   folder/file4.txt
-        modified:   file1.txt
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+modified:   folder/file3.txt
+modified:   folder/file4.txt
+modified:   file1.txt
 ```
 
 この表示例では、以下の情報が含まれています：
@@ -98,13 +98,13 @@ git add .
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
+(use "git push" to publish your local commits)
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   folder/file3.txt
-        modified:   folder/file4.txt
-        modified:   file1.txt
+(use "git restore --staged <file>..." to unstage)
+new file:   folder/file3.txt
+modified:   folder/file4.txt
+modified:   file1.txt
 ```
 
 `git reset`コマンドを使用して、ステージングエリアに追加したファイルを取り消します。
@@ -140,8 +140,8 @@ git restore file.txt
 例えば、`file1.txt`ファイルをステージングエリアに追加し、変更を戻したい場合は、次のようにする。
 
 ```bash
-$ git add file1.txt     # ステージングエリアに変更を追加
-$ git restore --staged file1.txt  # ステージングエリアから変更を戻す
+git add file1.txt     # ステージングエリアに変更を追加
+git restore --staged file1.txt  # ステージングエリアから変更を戻す
 ```
 
 `--satge`オプションを指定することにより、ステージングエリアにある `file.txt`の**変更は取り消されますが、ファイル自体は変更されたままです。**
@@ -295,15 +295,15 @@ mkdir ~/.git_message_template
 touch ~/.git_message_template/.gitmessage
 ```
 
-```bash
+```text
 # ==== Prefix ====
-# fix		バグ修正、クリティカルなバグ修正なら hotfix
-# feat		feat は feature の略
-# docs		ドキュメントのみ修正
-# style		空白、セミコロン、行、コーディングフォーマットなどの修正
-# refactor	整理 （リファクタリング等）
-# test		テスト追加や間違っていたテストの修正
-# chore		ビルドツールやライブラリで自動生成されたものをコミットするとき
+# fix      バグ修正、クリティカルなバグ修正なら hotfix
+# feat     feat は feature の略
+# docs     ドキュメントのみ修正
+# style    空白、セミコロン、行、コーディングフォーマットなどの修正
+# refactor 整理 （リファクタリング等）
+# test     テスト追加や間違っていたテストの修正
+# chore    ビルドツールやライブラリで自動生成されたものをコミットするとき
 
 # ==== Emojis ====
 # :bug:         バグ修正 (fix)
@@ -338,7 +338,7 @@ Aborting commit; you did not edit the message. # 上書き保存しない場合
 
 $ git commit -t $HOME/.git_message_template/.docs_gt
 [main e4db099] docs(README): Update README.md with new information
- 1 file changed, 106 insertions(+), 1 deletion(-)
+1 file changed, 106 insertions(+), 1 deletion(-)
 ```
 
 #### 【GitHub】 git commit / push後の GitHubの表示について

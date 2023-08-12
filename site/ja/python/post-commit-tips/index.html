@@ -535,6 +535,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -673,6 +675,20 @@
     <li class="md-nav__item">
       <a href="../pymysql-tips/" class="md-nav__link">
         PyMySQL tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mdformat-tips/" class="md-nav__link">
+        mdformat tips
       </a>
     </li>
   
@@ -993,16 +1009,16 @@
 <h1 id="post-commit-tips">post-commit tips<a class="headerlink" href="#post-commit-tips" title="Permanent link">&para;</a></h1>
 <p>post-commitフックはgit hooksの一機能で「<strong>すべてのコミット処理が完了</strong>」すると実行されます。</p>
 <p>git hooksとはカスタムスクリプトを起動するフック機能です。(詳細は<a href="https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%83%95%E3%83%83%E3%82%AF">公式ドキュメント</a>参照)</p>
-<h3 id="_1">実例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h2 id="_1">実例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>以下の記事ではpost-commitのシェルスクリプトを作成するpythonコードが紹介しています。</p>
 <p><a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></p>
-<h4 id="_2">コード<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
-<h5 id="create_post-commitsh">create_post-commit.sh<a class="headerlink" href="#create_post-commitsh" title="Permanent link">&para;</a></h5>
+<h3 id="_2">コード<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="create_post-commitsh">create_post-commit.sh<a class="headerlink" href="#create_post-commitsh" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://gist.github.com/7rikazhexde/89036d5fc849411b925e6da7d4986b52
 </code></pre></div>
 <script src="https://gist.github.com/7rikazhexde/89036d5fc849411b925e6da7d4986b52.js"></script>
 
-<h5 id="post-commit">post-commit<a class="headerlink" href="#post-commit" title="Permanent link">&para;</a></h5>
+<h4 id="post-commit">post-commit<a class="headerlink" href="#post-commit" title="Permanent link">&para;</a></h4>
 <p><code>create_post-commit.sh</code>を実行することで作成できます。</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://gist.github.com/7rikazhexde/6ada2a6ef3ca23938bfa62f32e3fbed8
 </code></pre></div>
