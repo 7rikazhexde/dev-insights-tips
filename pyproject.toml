@@ -4,7 +4,7 @@ description = "A repository that gathers insights and tips for development. It a
 license = "MIT"
 name = "dev-insights-tips"
 readme = "README.md"
-version = "0.1.20"
+version = "0.1.21"
 
 [tool.poetry.dependencies]
 mdformat = "^0.7.16"
