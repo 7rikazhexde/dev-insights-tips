@@ -300,14 +300,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">はじめに</a>
+          <a href="../../">Introduction</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          はじめに
+          Introduction
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -627,8 +627,35 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    フック処理
+  </a>
+  
+    <nav class="md-nav" aria-label="フック処理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-commitmdformat1" class="md-nav__link">
+    pre-commitフックで個別にmdformatする場合[^1]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    未ステージング状態のファイルに対してもフックを実行する場合[^1]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     実例
   </a>
   
@@ -903,14 +930,14 @@
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-          vscode
+          VSCode
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          vscode
+          VSCode
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -983,8 +1010,35 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    フック処理
+  </a>
+  
+    <nav class="md-nav" aria-label="フック処理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-commitmdformat1" class="md-nav__link">
+    pre-commitフックで個別にmdformatする場合[^1]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    未ステージング状態のファイルに対してもフックを実行する場合[^1]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     実例
   </a>
   
@@ -1037,7 +1091,7 @@
 <p>詳細は公式ドキュメント参照<br />
 <a href="https://pre-commit.com/">https://pre-commit.com/</a></p>
 <p>pre-commitを使用すると、開発者はコミット前にさまざまな静的解析やコードフォーマットツールを実行することができます。これにより、コードスタイルの遵守や一般的なエラーパターンの検出、セキュリティの脆弱性のチェックなどが自動的に行われます。pre-commitは、リポジトリ全体または個々のファイルに対して、カスタマイズ可能なフック（hooks）を設定することができます。</p>
-<p>pre-commitの設定は、.pre-commit-config.yamlという名前のファイルに記述されます。このファイルでは、使用するフックや実行するコマンド、除外するファイルなどの設定を指定する。pre-commitは、コミット前にフックを自動的に実行し、フックの結果に基づいてコミットの承認または中止を判断する。</p>
+<p>pre-commitの設定は、<code>.pre-commit-config.yaml</code>という名前のファイルに記述されます。このファイルでは、使用するフックや実行するコマンド、除外するファイルなどの設定を指定する。pre-commitは、コミット前にフックを自動的に実行し、フックの結果に基づいてコミットの承認または中止を判断する。</p>
 <p>pre-commitは、さまざまなプログラミング言語やツールに対応しており、多くの既存のフックが公開されています。また、カスタムフックを作成することも可能です。</p>
 <p>pre-commitの主な利点は次のとおりです:</p>
 <ul>
@@ -1049,7 +1103,7 @@
 <p>注意点として、pre-commitはコミット前に実行されるため、フックが時間をかけて実行されるとコミットが遅くなる場合があります。また、pre-commitの設定はリポジトリに含まれており、チームメンバーが同じ設定を使用していることを確認する必要があります。</p>
 <p>pre-commitは、品質管理と開発効率の向上のために広く利用されているツールであり、多くのプロジェクトで採用されています。</p>
 <h2 id="_1">使い方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="pre-commit-configyaml">.pre-commit-config.yamlで使用するフック<a class="headerlink" href="#pre-commit-configyaml" title="Permanent link">&para;</a></h3>
+<h3 id="pre-commit-configyaml"><code>.pre-commit-config.yaml</code>で使用するフック<a class="headerlink" href="#pre-commit-configyaml" title="Permanent link">&para;</a></h3>
 <h4 id="pre-commit">参考記事: <a href="https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d">pre-commitでコミット時にコードの整形やチェックを行う</a><a class="headerlink" href="#pre-commit" title="Permanent link">&para;</a></h4>
 <ul>
 <li>pre-commit-hooks: pre-commitツールの一部として提供されるプラグインの集合体。</li>
@@ -1074,7 +1128,16 @@
 <li>オリジナルスクリプト</li>
 <li>事例: <a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></li>
 </ul>
-<h4 id="_2">実例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<h3 id="_2">フック処理<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="pre-commitmdformat1">pre-commitフックで個別にmdformatする場合[^1]<a class="headerlink" href="#pre-commitmdformat1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>your_file.md<span class="w">  </span><span class="c1"># 対象のMarkdownファイルをステージング</span>
+poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>mdformat
+</code></pre></div>
+<h4 id="1">未ステージング状態のファイルに対してもフックを実行する場合[^1]<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>mdformat<span class="w"> </span>--all-files<span class="w"> </span><span class="c1"># id指定で実行する</span>
+poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files<span class="w"> </span><span class="c1"># 全てのidを実行する</span>
+</code></pre></div>
+<h4 id="_3">実例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <h5 id="dev-insights-tips-pre-commit-configyaml"><a href="https://github.com/7rikazhexde/dev-insights-tips/blob/main/.pre-commit-config.yaml">dev-insights-tips /.pre-commit-config.yaml</a><a class="headerlink" href="#dev-insights-tips-pre-commit-configyaml" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1"># pre-commit stop running hooks after the first failure.</span>
 <span class="nt">fail_fast</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -1119,6 +1182,13 @@
 <span class="w">        </span><span class="nt">verbose</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">        </span><span class="nt">files</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">^pyproject\.toml$</span>
 
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/executablebooks/mdformat</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.7.16</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
+<span class="w">        </span><span class="nt">additional_dependencies</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-admon</span>
+
 <span class="w">  </span><span class="c1"># Repository local hooks</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">local</span>
 <span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
@@ -1151,12 +1221,12 @@
 <span class="w">        </span><span class="nt">entry</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">poetry run mypy</span>
 <span class="w">        </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">python</span><span class="p p-Indicator">]</span>
 
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
-<span class="w">        </span><span class="nt">stages</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">commit</span><span class="p p-Indicator">]</span>
-<span class="w">        </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">system</span>
-<span class="w">        </span><span class="nt">entry</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">poetry run mdformat .</span>
-<span class="w">        </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">markdown</span><span class="p p-Indicator">]</span>
+<span class="w">      </span><span class="c1">#- id: mdformat</span>
+<span class="w">      </span><span class="c1">#  name: mdformat</span>
+<span class="w">      </span><span class="c1">#  stages: [commit]</span>
+<span class="w">      </span><span class="c1">#  language: system</span>
+<span class="w">      </span><span class="c1">#  entry: poetry run mdformat .</span>
+<span class="w">      </span><span class="c1">#  types: [markdown]</span>
 
 <span class="w">    </span><span class="c1"># Original script</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">update-pyproject</span>
@@ -1177,6 +1247,7 @@
 <span class="w">        </span><span class="nt">stages</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">commit</span><span class="p p-Indicator">]</span>
 <span class="w">        </span><span class="nt">additional_dependencies</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
+<p>[^1]: poetryを使用しない場合はpre-commit runのみで問題ありません。</p>
 
 
   
@@ -1301,6 +1372,11 @@
           
           
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            ページトップへ戻る
+          </button>
         
       </main>
       
@@ -1442,7 +1518,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>

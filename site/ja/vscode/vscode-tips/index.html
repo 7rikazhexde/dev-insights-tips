@@ -298,14 +298,14 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../">はじめに</a>
+          <a href="../../">Introduction</a>
           
         </div>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          はじめに
+          Introduction
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -814,14 +814,14 @@
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-          vscode
+          VSCode
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          vscode
+          VSCode
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -946,11 +946,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#marmarkdown" class="md-nav__link">
-    marMarkdownの構文やスタイルをチェックする
+  <a href="#markdown" class="md-nav__link">
+    Markdownの構文やスタイルをチェックして修正する
   </a>
   
-    <nav class="md-nav" aria-label="marMarkdownの構文やスタイルをチェックする">
+    <nav class="md-nav" aria-label="Markdownの構文やスタイルをチェックして修正する">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -968,6 +968,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#markdownoff" class="md-nav__link">
+    Markdownのチェック項目を意図的にOFFにする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#markdownlint-markdownoff" class="md-nav__link">
     参考記事: markdownlint Markdownのチェック項目を意図的にOFFにする
   </a>
@@ -976,8 +983,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#markdownlint-markdownsettingsjson" class="md-nav__link">
-    markdownlint Markdownのチェック項目の変更(settings.json)
+  <a href="#markdownsettingsjson" class="md-nav__link">
+    Markdownのチェック項目の変更(settings.json)
   </a>
   
 </li>
@@ -994,8 +1001,36 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    ファイル単位で修正する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    ファイル保存時に修正する
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    多言語指向フォーマッタ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    使い方
+  </a>
   
 </li>
         
@@ -1127,11 +1162,11 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#marmarkdown" class="md-nav__link">
-    marMarkdownの構文やスタイルをチェックする
+  <a href="#markdown" class="md-nav__link">
+    Markdownの構文やスタイルをチェックして修正する
   </a>
   
-    <nav class="md-nav" aria-label="marMarkdownの構文やスタイルをチェックする">
+    <nav class="md-nav" aria-label="Markdownの構文やスタイルをチェックして修正する">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1149,6 +1184,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#markdownoff" class="md-nav__link">
+    Markdownのチェック項目を意図的にOFFにする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#markdownlint-markdownoff" class="md-nav__link">
     参考記事: markdownlint Markdownのチェック項目を意図的にOFFにする
   </a>
@@ -1157,8 +1199,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#markdownlint-markdownsettingsjson" class="md-nav__link">
-    markdownlint Markdownのチェック項目の変更(settings.json)
+  <a href="#markdownsettingsjson" class="md-nav__link">
+    Markdownのチェック項目の変更(settings.json)
   </a>
   
 </li>
@@ -1175,8 +1217,36 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    ファイル単位で修正する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    ファイル保存時に修正する
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    多言語指向フォーマッタ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    使い方
+  </a>
   
 </li>
         
@@ -1236,15 +1306,16 @@
 </ul>
 <p>もしくはテキストを矩形選択して調整することが可能です。</p>
 <p>参考： <a href="https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news022.html">VS Codeでテキストを矩形選択するには</a></p>
-<h3 id="marmarkdown">marMarkdownの構文やスタイルをチェックする<a class="headerlink" href="#marmarkdown" title="Permanent link">&para;</a></h3>
+<h3 id="markdown">Markdownの構文やスタイルをチェックして修正する<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h3>
 <p>markdownlintを使用します。<br />
 markdownlintはMarkdownファイルの標準と一貫性を促進するルールのライブラリを含むVSCodeの拡張機能です。</p>
 <h4 id="_6">リポジトリ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <p><a href="https://github.com/DavidAnson/vscode-markdownlint">https://github.com/DavidAnson/vscode-markdownlint</a></p>
 <h4 id="_7">使い方<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<h4 id="markdownoff">Markdownのチェック項目を意図的にOFFにする<a class="headerlink" href="#markdownoff" title="Permanent link">&para;</a></h4>
 <h4 id="markdownlint-markdownoff">参考記事: markdownlint Markdownのチェック項目を意図的にOFFにする<a class="headerlink" href="#markdownlint-markdownoff" title="Permanent link">&para;</a></h4>
 <p><a href="https://qiita.com/miriwo/items/132750876e37df26e976">(https://qiita.com/miriwo/items/132750876e37df26e976)</a></p>
-<h5 id="markdownlint-markdownsettingsjson">markdownlint Markdownのチェック項目の変更(settings.json)<a class="headerlink" href="#markdownlint-markdownsettingsjson" title="Permanent link">&para;</a></h5>
+<h5 id="markdownsettingsjson">Markdownのチェック項目の変更(settings.json)<a class="headerlink" href="#markdownsettingsjson" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code>拡張機能の有効 &gt; ユーザー &gt; Markdownlint: Config(settings.jsonで編集)
 </code></pre></div>
 <h5 id="markdownlint-markdownmarkdownlintconfig">無効化しているmarkdownlint Markdownのチェック項目(markdownlint.config)<a class="headerlink" href="#markdownlint-markdownmarkdownlintconfig" title="Permanent link">&para;</a></h5>
@@ -1265,6 +1336,30 @@ markdownlintはMarkdownファイルの標準と一貫性を促進するルール
 <span class="w">                          </span><span class="c1">// 個人的に言語問わずハイライトした方が良いので有効にする。</span>
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
+<h4 id="_8">ファイル単位で修正する<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>Markdownファイルを全て選択 &gt; 右クリック &gt; ドキュメントのフォーマット…(２つある内の下で「…」の方) &gt; markdownlint
+</code></pre></div>
+<h4 id="_9">ファイル保存時に修正する<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>Markdownファイルを全て選択 &gt; 右クリック &gt; ドキュメントのフォーマット…(２つある内の下で「…」の方) &gt; 既定のフォーマッタ…変更
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>もし、実行されない場合は<code>Editor: Format On Save</code>が有効になっているか確認してください。</li>
+<li>settigs.json: <code>"editor.formatOnSave": true,</code></li>
+</ul>
+</div>
+<h3 id="_10">多言語指向フォーマッタ<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>markdownlintはMarkdown向けのフォーマッタですが、htmlやjavascriptなどに対応した<a href="https://prettier.io/">Prettier</a>という拡張機能もあります。</p>
+<h3 id="_11">使い方<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>markdownlintの使い方と同様です。</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>フォマート対象にはMarkdownも含まれますが、いくつか意図しない変換がされないケースがあります。(設定次第では回避できる可能性はありますが、未確認です。)</li>
+<li>Markdownファイルをフォーマットする場合は、markdownlintが良いと思います。</li>
+</ul>
+</div>
 
 
   
@@ -1389,6 +1484,11 @@ markdownlintはMarkdownファイルの標準と一貫性を促進するルール
           
           
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            ページトップへ戻る
+          </button>
         
       </main>
       
@@ -1530,7 +1630,7 @@ markdownlintはMarkdownファイルの標準と一貫性を促進するルール
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>

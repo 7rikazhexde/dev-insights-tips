@@ -7,7 +7,7 @@ See official documentation for details.<br />
 
 With pre-commit, developers can run a variety of static analysis and code formatting tools prior to commit. Pre-commit allows developers to set customizable hooks (hooks) for the entire repository or for individual files.
 
-The pre-commit configuration is described in a file named.pre-commit-config.yaml. This file specifies settings such as hooks to use, commands to execute, files to exclude, etc. pre-commit automatically executes hooks before commit and decides whether to accept or abort the commit based on the results of the hooks.
+The pre-commit configuration is described in a file named.`pre-commit-config.yaml`. This file specifies settings such as hooks to use, commands to execute, files to exclude, etc. pre-commit automatically executes hooks before commit and decides whether to accept or abort the commit based on the results of the hooks.
 
 pre-commit is supported by a variety of programming languages and tools, and many existing hooks are publicly available. Custom hooks can also be created.
 
@@ -24,7 +24,7 @@ pre-commit is a widely used tool for quality control and development efficiency 
 
 ## Usage
 
-### Hooks used in .pre-commit-config.yaml
+### Hooks used in `.pre-commit-config.yaml`
 
 #### Reference article (Japanese): [pre-commitでコミット時にコードの整形やチェックを行う](https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d)
 
@@ -49,6 +49,22 @@ pre-commit is a widely used tool for quality control and development efficiency 
   - poetry-export: Call the `poetry export` command to synchronize the `requirements.txt` file with the current dependencies. `dev-dependencies` can also be exported by adding `--dev` to the args.
 - Original script
   - Case(Japanese): [【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて](https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231)
+
+### hook processing
+
+#### pre-commit hook for individual mdformat\[^1\]
+
+```bash
+git add your_file.md # Stage the target Markdown file
+poetry run pre-commit run mdformat
+```
+
+#### To run hooks on unstaged files, too.\[^1\]
+
+```bash
+poetry run pre-commit run mdformat --all-files # run with id
+poetry run pre-commit run --all-files # Run all id's
+```
 
 #### Example
 
@@ -98,6 +114,13 @@ repos:
         verbose: true
         files: ^pyproject\.toml$
 
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.16
+    hooks:
+      - id: mdformat
+        additional_dependencies:
+        - mdformat-admon
+
   # Repository local hooks
   - repo: local
     hooks:
@@ -130,12 +153,12 @@ repos:
         entry: poetry run mypy
         types: [python]
 
-      - id: mdformat
-        name: mdformat
-        stages: [commit]
-        language: system
-        entry: poetry run mdformat .
-        types: [markdown]
+      #- id: mdformat
+      #  name: mdformat
+      #  stages: [commit]
+      #  language: system
+      #  entry: poetry run mdformat .
+      #  types: [markdown]
 
     # Original script
       - id: update-pyproject
@@ -156,3 +179,5 @@ repos:
         stages: [commit]
         additional_dependencies: []
 ```
+
+\[^1\]: If you don't use poetry, only pre-commit run is fine.

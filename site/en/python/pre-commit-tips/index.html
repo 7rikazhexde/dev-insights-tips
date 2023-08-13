@@ -627,6 +627,33 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hook-processing" class="md-nav__link">
+    hook processing
+  </a>
+  
+    <nav class="md-nav" aria-label="hook processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-commit-hook-for-individual-mdformat1" class="md-nav__link">
+    pre-commit hook for individual mdformat[^1]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-run-hooks-on-unstaged-files-too1" class="md-nav__link">
+    To run hooks on unstaged files, too.[^1]
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     Example
@@ -903,14 +930,14 @@
       
       
         <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
-          vscode
+          VSCode
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          vscode
+          VSCode
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -983,6 +1010,33 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hook-processing" class="md-nav__link">
+    hook processing
+  </a>
+  
+    <nav class="md-nav" aria-label="hook processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-commit-hook-for-individual-mdformat1" class="md-nav__link">
+    pre-commit hook for individual mdformat[^1]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-run-hooks-on-unstaged-files-too1" class="md-nav__link">
+    To run hooks on unstaged files, too.[^1]
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     Example
@@ -1037,7 +1091,7 @@
 <p>See official documentation for details.<br />
 <a href="https://pre-commit.com/">https://pre-commit.com/</a></p>
 <p>With pre-commit, developers can run a variety of static analysis and code formatting tools prior to commit. Pre-commit allows developers to set customizable hooks (hooks) for the entire repository or for individual files.</p>
-<p>The pre-commit configuration is described in a file named.pre-commit-config.yaml. This file specifies settings such as hooks to use, commands to execute, files to exclude, etc. pre-commit automatically executes hooks before commit and decides whether to accept or abort the commit based on the results of the hooks.</p>
+<p>The pre-commit configuration is described in a file named.<code>pre-commit-config.yaml</code>. This file specifies settings such as hooks to use, commands to execute, files to exclude, etc. pre-commit automatically executes hooks before commit and decides whether to accept or abort the commit based on the results of the hooks.</p>
 <p>pre-commit is supported by a variety of programming languages and tools, and many existing hooks are publicly available. Custom hooks can also be created.</p>
 <p>The main advantages of pre-commit are:</p>
 <ul>
@@ -1049,7 +1103,7 @@
 <p>As a precaution, pre-commit is executed before commit, so commits may be delayed if hooks are executed over time. Also, pre-commit settings are included in the repository, and you must ensure that all team members are using the same settings.</p>
 <p>pre-commit is a widely used tool for quality control and development efficiency and has been adopted by many projects.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<h3 id="hooks-used-in-pre-commit-configyaml">Hooks used in .pre-commit-config.yaml<a class="headerlink" href="#hooks-used-in-pre-commit-configyaml" title="Permanent link">&para;</a></h3>
+<h3 id="hooks-used-in-pre-commit-configyaml">Hooks used in <code>.pre-commit-config.yaml</code><a class="headerlink" href="#hooks-used-in-pre-commit-configyaml" title="Permanent link">&para;</a></h3>
 <h4 id="reference-article-japanese-pre-commit">Reference article (Japanese): <a href="https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d">pre-commitでコミット時にコードの整形やチェックを行う</a><a class="headerlink" href="#reference-article-japanese-pre-commit" title="Permanent link">&para;</a></h4>
 <ul>
 <li>pre-commit-hooks: A collection of plug-ins provided as part of the pre-commit tool.</li>
@@ -1074,6 +1128,15 @@
 <li>Original script</li>
 <li>Case(Japanese): <a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></li>
 </ul>
+<h3 id="hook-processing">hook processing<a class="headerlink" href="#hook-processing" title="Permanent link">&para;</a></h3>
+<h4 id="pre-commit-hook-for-individual-mdformat1">pre-commit hook for individual mdformat[^1]<a class="headerlink" href="#pre-commit-hook-for-individual-mdformat1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>your_file.md<span class="w"> </span><span class="c1"># Stage the target Markdown file</span>
+poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>mdformat
+</code></pre></div>
+<h4 id="to-run-hooks-on-unstaged-files-too1">To run hooks on unstaged files, too.[^1]<a class="headerlink" href="#to-run-hooks-on-unstaged-files-too1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>mdformat<span class="w"> </span>--all-files<span class="w"> </span><span class="c1"># run with id</span>
+poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files<span class="w"> </span><span class="c1"># Run all id&#39;s</span>
+</code></pre></div>
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <h5 id="dev-insights-tips-pre-commit-configyaml"><a href="https://github.com/7rikazhexde/dev-insights-tips/blob/main/.pre-commit-config.yaml">dev-insights-tips /.pre-commit-config.yaml</a><a class="headerlink" href="#dev-insights-tips-pre-commit-configyaml" title="Permanent link">&para;</a></h5>
 <div class="highlight"><pre><span></span><code><span class="c1"># pre-commit stop running hooks after the first failure.</span>
@@ -1119,6 +1182,13 @@
 <span class="w">        </span><span class="nt">verbose</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">        </span><span class="nt">files</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">^pyproject\.toml$</span>
 
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/executablebooks/mdformat</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.7.16</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
+<span class="w">        </span><span class="nt">additional_dependencies</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-admon</span>
+
 <span class="w">  </span><span class="c1"># Repository local hooks</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">local</span>
 <span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
@@ -1151,12 +1221,12 @@
 <span class="w">        </span><span class="nt">entry</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">poetry run mypy</span>
 <span class="w">        </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">python</span><span class="p p-Indicator">]</span>
 
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
-<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
-<span class="w">        </span><span class="nt">stages</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">commit</span><span class="p p-Indicator">]</span>
-<span class="w">        </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">system</span>
-<span class="w">        </span><span class="nt">entry</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">poetry run mdformat .</span>
-<span class="w">        </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">markdown</span><span class="p p-Indicator">]</span>
+<span class="w">      </span><span class="c1">#- id: mdformat</span>
+<span class="w">      </span><span class="c1">#  name: mdformat</span>
+<span class="w">      </span><span class="c1">#  stages: [commit]</span>
+<span class="w">      </span><span class="c1">#  language: system</span>
+<span class="w">      </span><span class="c1">#  entry: poetry run mdformat .</span>
+<span class="w">      </span><span class="c1">#  types: [markdown]</span>
 
 <span class="w">    </span><span class="c1"># Original script</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">update-pyproject</span>
@@ -1177,6 +1247,7 @@
 <span class="w">        </span><span class="nt">stages</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">commit</span><span class="p p-Indicator">]</span>
 <span class="w">        </span><span class="nt">additional_dependencies</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
+<p>[^1]: If you don't use poetry, only pre-commit run is fine.</p>
 
 
   
@@ -1301,6 +1372,11 @@
           
           
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
         
       </main>
       
@@ -1442,7 +1518,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.expand", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>

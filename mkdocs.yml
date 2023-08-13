@@ -31,6 +31,7 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.indexes
+    - navigation.top
     - navigation.expand
     - content.code.copy
 
@@ -75,30 +76,30 @@ extra:
             <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
 
 nav:
-  - はじめに:
-    - index.md
+  - Introduction:
+      - index.md
   - Database:
-    - database/index.ja.md
-    - database/mariadb-tips.ja.md
+      - database/index.ja.md
+      - database/mariadb-tips.ja.md
   - Git:
-    - git/index.ja.md
-    - git/git-tips.ja.md
+      - git/index.ja.md
+      - git/git-tips.ja.md
   - Markdown:
-    - markdown/markdown-tips.ja.md
+      - markdown/markdown-tips.ja.md
   - Python:
-    - python/dash-plotly-tips.ja.md
-    - python/pre-commit-tips.ja.md
-    - python/post-commit-tips.ja.md
-    - python/pymysql-tips.ja.md
-    - python/mdformat-tips.ja.md
+      - python/dash-plotly-tips.ja.md
+      - python/pre-commit-tips.ja.md
+      - python/post-commit-tips.ja.md
+      - python/pymysql-tips.ja.md
+      - python/mdformat-tips.ja.md
   - Raspberry Pi:
-    - raspberrypi/raspberrypi-ubuntu-tips.ja.md
+      - raspberrypi/raspberrypi-ubuntu-tips.ja.md
   - Tools:
-    - tools/tools-tips.ja.md
+      - tools/tools-tips.ja.md
   - vi:
-    - vi/vi-tips.ja.md
-  - vscode:
-    - vscode/vscode-tips.ja.md
+      - vi/vi-tips.ja.md
+  - VSCode:
+      - vscode/vscode-tips.ja.md
 
 plugins:
   - search:
@@ -110,18 +111,19 @@ plugins:
       nav_translations:
         en:
           #site_name: Dev Insights Tips
-          はじめに: Introduction
+          Introduction: Introduction
           #Database: Database
 
 markdown_extensions:
-    - codehilite:
-        noclasses: true
-        pygments_style: colorful
-        linenums: true
-    - plantuml_markdown:
-        server: http://www.plantuml.com/plantuml
-    - admonition
-    - pymdownx.superfences
-    - pymdownx.details
-    - toc:
-        permalink: true
+  - footnotes
+  - codehilite:
+      noclasses: true
+      pygments_style: colorful
+      linenums: true
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.details
+  - toc:
+      permalink: true
