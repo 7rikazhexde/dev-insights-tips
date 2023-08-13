@@ -1,6 +1,6 @@
-# dash-plotly tips
+# Dash / Plotly tips
 
-このセクションでは、plotly-dashに関連する情報をまとめます。
+このセクションでは、Dash / Plotlyに関連する情報をまとめます。
 
 ## Dash Plotlyについて
 

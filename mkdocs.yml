@@ -92,6 +92,7 @@ nav:
       - python/post-commit-tips.ja.md
       - python/pymysql-tips.ja.md
       - python/mdformat-tips.ja.md
+      - python/mkdocs-tips.ja.md
   - Raspberry Pi:
       - raspberrypi/raspberrypi-ubuntu-tips.ja.md
   - Tools:

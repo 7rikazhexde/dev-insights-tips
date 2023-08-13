@@ -1,4 +1,4 @@
-# tools tips
+# Tools tips
 
 Here are some tools that I personally use.
 

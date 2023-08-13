@@ -1,4 +1,4 @@
-# markdown tips
+# Markdown tips
 
 This section summarizes information related to Markdown.
 

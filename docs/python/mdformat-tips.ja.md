@@ -1,4 +1,4 @@
-# mdformat tips
+# Mdformat tips
 
 Mdformat は、Markdown ファイルに一貫したスタイルを適用するために使用できる、独自の Markdown フォーマッタです。<br/>
 コードはpythonで作成されています。
@@ -62,7 +62,7 @@ mkdocs serveを実行すると、admonitionsの表示は下記のようになり
     hooks:
       - id: mdformat
         additional_dependencies:
-        - mdformat-admon
+          - mdformat-admon
 ```
 
 結果、mdformatによる変換は行われずに意図した表示を確認できました。

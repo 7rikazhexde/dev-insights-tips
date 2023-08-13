@@ -81,6 +81,14 @@
          
     </url>
     <url>
+         <loc>Nonepython/mkdocs-tips/</loc>
+         <lastmod>2023-08-13</lastmod>
+         <changefreq>daily</changefreq>
+         <xhtml:link rel="alternate" hreflang="en" href="Noneen/python/mkdocs-tips/"/>
+         <xhtml:link rel="alternate" hreflang="ja" href="Noneja/python/mkdocs-tips/"/>
+         
+    </url>
+    <url>
          <loc>Nonepython/post-commit-tips/</loc>
          <lastmod>2023-08-13</lastmod>
          <changefreq>daily</changefreq>

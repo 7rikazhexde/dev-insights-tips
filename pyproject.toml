@@ -4,7 +4,7 @@ description = "A repository that gathers insights and tips for development. It a
 license = "MIT"
 name = "dev-insights-tips"
 readme = "README.md"
-version = "0.1.19"
+version = "0.1.20"
 
 [tool.poetry.dependencies]
 mdformat = "^0.7.16"
@@ -29,7 +29,7 @@ taskipy = "^1.11.0"
 black = "poetry run black ci scripts"
 flake8 = "poetry run flake8 ci scripts"
 isort = "poetry run isort ci scripts"
-mkdb = "poetry run mkdocs build"
+mkdb = "poetry run mkdocs build --clean"
 mkddp = "poetry run mkdocs gh-deploy"
 mkds = "poetry run mkdocs serve"
 mypy = "poetry run mypy"

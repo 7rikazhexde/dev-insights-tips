@@ -1,4 +1,4 @@
-# mdformat tips
+# Mdformat tips
 
 Mdformat is a proprietary Markdown formatter that can be used to apply a consistent style to Markdown files.<br/>
 The code is written in python.
@@ -62,7 +62,7 @@ Set up the hooks according to the official documentation.
     hooks:
       - id: mdformat
         additional_dependencies:
-        - mdformat-admon
+          - mdformat-admon
 ```
 
 As a result, the intended display was confirmed without conversion by mdformat.

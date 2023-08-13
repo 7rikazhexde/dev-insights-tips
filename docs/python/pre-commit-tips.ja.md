@@ -52,14 +52,14 @@ pre-commitは、品質管理と開発効率の向上のために広く利用さ�
 
 ### フック処理
 
-#### pre-commitフックで個別にmdformatする場合\[^1\]
+#### pre-commitフックで個別にmdformatする場合[^1]
 
 ```bash
 git add your_file.md  # 対象のMarkdownファイルをステージング
 poetry run pre-commit run mdformat
 ```
 
-#### 未ステージング状態のファイルに対してもフックを実行する場合\[^1\]
+#### 未ステージング状態のファイルに対してもフックを実行する場合[^1]
 
 ```bash
 poetry run pre-commit run mdformat --all-files # id指定で実行する
@@ -119,7 +119,16 @@ repos:
     hooks:
       - id: mdformat
         additional_dependencies:
-        - mdformat-admon
+          - mdformat-admon
+          - mdformat-beautysh
+          - mdformat-black
+          - mdformat-config
+          - mdformat-footnote
+          - mdformat-frontmatter
+          - mdformat-simple-breaks
+          - mdformat-tables
+          - mdformat-toc
+          - mdformat-web
 
   # Repository local hooks
   - repo: local
@@ -180,4 +189,4 @@ repos:
         additional_dependencies: []
 ```
 
-\[^1\]: poetryを使用しない場合はpre-commit runのみで問題ありません。
+[^1]: poetryを使用しない場合はpre-commit runのみで問題ありません。

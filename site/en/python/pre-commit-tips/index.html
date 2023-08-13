@@ -373,7 +373,7 @@
   
     <li class="md-nav__item">
       <a href="../../database/mariadb-tips/" class="md-nav__link">
-        mariadb tips
+        MariaDB tips
       </a>
     </li>
   
@@ -440,7 +440,7 @@
   
     <li class="md-nav__item">
       <a href="../../git/git-tips/" class="md-nav__link">
-        git tips
+        Git tips
       </a>
     </li>
   
@@ -495,7 +495,7 @@
   
     <li class="md-nav__item">
       <a href="../../markdown/markdown-tips/" class="md-nav__link">
-        markdown tips
+        Markdown tips
       </a>
     </li>
   
@@ -537,6 +537,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -558,7 +560,7 @@
   
     <li class="md-nav__item">
       <a href="../dash-plotly-tips/" class="md-nav__link">
-        dash-plotly tips
+        Dash / Plotly tips
       </a>
     </li>
   
@@ -642,14 +644,14 @@
         
           <li class="md-nav__item">
   <a href="#pre-commit-hook-for-individual-mdformat1" class="md-nav__link">
-    pre-commit hook for individual mdformat[^1]
+    pre-commit hook for individual mdformat1
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#to-run-hooks-on-unstaged-files-too1" class="md-nav__link">
-    To run hooks on unstaged files, too.[^1]
+    To run hooks on unstaged files, too.1
   </a>
   
 </li>
@@ -728,7 +730,21 @@
   
     <li class="md-nav__item">
       <a href="../mdformat-tips/" class="md-nav__link">
-        mdformat tips
+        Mdformat tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs-tips/" class="md-nav__link">
+        MkDocs tips
       </a>
     </li>
   
@@ -838,7 +854,7 @@
   
     <li class="md-nav__item">
       <a href="../../tools/tools-tips/" class="md-nav__link">
-        tools tips
+        Tools tips
       </a>
     </li>
   
@@ -1025,14 +1041,14 @@
         
           <li class="md-nav__item">
   <a href="#pre-commit-hook-for-individual-mdformat1" class="md-nav__link">
-    pre-commit hook for individual mdformat[^1]
+    pre-commit hook for individual mdformat1
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#to-run-hooks-on-unstaged-files-too1" class="md-nav__link">
-    To run hooks on unstaged files, too.[^1]
+    To run hooks on unstaged files, too.1
   </a>
   
 </li>
@@ -1129,11 +1145,11 @@
 <li>Case(Japanese): <a href="https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231">【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて</a></li>
 </ul>
 <h3 id="hook-processing">hook processing<a class="headerlink" href="#hook-processing" title="Permanent link">&para;</a></h3>
-<h4 id="pre-commit-hook-for-individual-mdformat1">pre-commit hook for individual mdformat[^1]<a class="headerlink" href="#pre-commit-hook-for-individual-mdformat1" title="Permanent link">&para;</a></h4>
+<h4 id="pre-commit-hook-for-individual-mdformat1">pre-commit hook for individual mdformat<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><a class="headerlink" href="#pre-commit-hook-for-individual-mdformat1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>your_file.md<span class="w"> </span><span class="c1"># Stage the target Markdown file</span>
 poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>mdformat
 </code></pre></div>
-<h4 id="to-run-hooks-on-unstaged-files-too1">To run hooks on unstaged files, too.[^1]<a class="headerlink" href="#to-run-hooks-on-unstaged-files-too1" title="Permanent link">&para;</a></h4>
+<h4 id="to-run-hooks-on-unstaged-files-too1">To run hooks on unstaged files, too.<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup><a class="headerlink" href="#to-run-hooks-on-unstaged-files-too1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>mdformat<span class="w"> </span>--all-files<span class="w"> </span><span class="c1"># run with id</span>
 poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files<span class="w"> </span><span class="c1"># Run all id&#39;s</span>
 </code></pre></div>
@@ -1187,7 +1203,16 @@ poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="
 <span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat</span>
 <span class="w">        </span><span class="nt">additional_dependencies</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-admon</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-admon</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-beautysh</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-black</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-config</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-footnote</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-frontmatter</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-simple-breaks</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-tables</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-toc</span>
+<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-web</span>
 
 <span class="w">  </span><span class="c1"># Repository local hooks</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">local</span>
@@ -1247,7 +1272,14 @@ poetry<span class="w"> </span>run<span class="w"> </span>pre-commit<span class="
 <span class="w">        </span><span class="nt">stages</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">commit</span><span class="p p-Indicator">]</span>
 <span class="w">        </span><span class="nt">additional_dependencies</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
 </code></pre></div>
-<p>[^1]: If you don't use poetry, only pre-commit run is fine.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>If you don't use poetry, only pre-commit run is fine.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
   
