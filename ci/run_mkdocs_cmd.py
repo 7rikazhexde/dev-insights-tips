@@ -24,9 +24,9 @@ def git_add_if_diff(directory: str) -> None:
 # mkdocs build
 if __name__ == "__main__":  # pragma: no cover
     # Note: "poetry run pre-commit run --all-files" will result in Failed
-    # subprocess.run(["poetry", "run", "mkdocs", "build"])
+    # subprocess.run(["poetry", "run", "mkdocs", "build", "--clean"])
     # subprocess.run(["poetry", "run", "task", "mkmb"])
 
     # Execute in the following format
-    subprocess.run(["mkdocs", "build"])
+    subprocess.run(["mkdocs", "build", "--clean"])
     git_add_if_diff("site")

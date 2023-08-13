@@ -1,4 +1,4 @@
-# mariadb tips
+# MariaDB tips
 
 Tips about MariaDB.<br />
 Mainly, it summarizes how to use it.

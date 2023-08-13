@@ -1,4 +1,4 @@
-# mariadb tips
+# MariaDB tips
 
 MariaDBに関するTipsです。<br />
 主に、使い方についてまとめてます。

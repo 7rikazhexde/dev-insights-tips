@@ -1,4 +1,4 @@
-# markdown tips
+# Markdown tips
 
 マークダウン関連のTipsをまとめます。
 

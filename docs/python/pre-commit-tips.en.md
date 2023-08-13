@@ -52,14 +52,14 @@ pre-commit is a widely used tool for quality control and development efficiency 
 
 ### hook processing
 
-#### pre-commit hook for individual mdformat\[^1\]
+#### pre-commit hook for individual mdformat[^1]
 
 ```bash
 git add your_file.md # Stage the target Markdown file
 poetry run pre-commit run mdformat
 ```
 
-#### To run hooks on unstaged files, too.\[^1\]
+#### To run hooks on unstaged files, too.[^1]
 
 ```bash
 poetry run pre-commit run mdformat --all-files # run with id
@@ -119,7 +119,16 @@ repos:
     hooks:
       - id: mdformat
         additional_dependencies:
-        - mdformat-admon
+          - mdformat-admon
+          - mdformat-beautysh
+          - mdformat-black
+          - mdformat-config
+          - mdformat-footnote
+          - mdformat-frontmatter
+          - mdformat-simple-breaks
+          - mdformat-tables
+          - mdformat-toc
+          - mdformat-web
 
   # Repository local hooks
   - repo: local
@@ -180,4 +189,4 @@ repos:
         additional_dependencies: []
 ```
 
-\[^1\]: If you don't use poetry, only pre-commit run is fine.
+[^1]: If you don't use poetry, only pre-commit run is fine.
