@@ -53,7 +53,7 @@ Windowsの場合:
 
 参考： [VS Codeでテキストを矩形選択するには](https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news022.html)
 
-### marMarkdownの構文やスタイルをチェックする
+### Markdownの構文やスタイルをチェックして修正する
 
 markdownlintを使用します。<br />
 markdownlintはMarkdownファイルの標準と一貫性を促進するルールのライブラリを含むVSCodeの拡張機能です。
@@ -64,11 +64,13 @@ markdownlintはMarkdownファイルの標準と一貫性を促進するルール
 
 #### 使い方
 
+#### Markdownのチェック項目を意図的にOFFにする
+
 #### 参考記事: markdownlint Markdownのチェック項目を意図的にOFFにする
 
 [(https://qiita.com/miriwo/items/132750876e37df26e976)](https://qiita.com/miriwo/items/132750876e37df26e976)
 
-##### markdownlint Markdownのチェック項目の変更(settings.json)
+##### Markdownのチェック項目の変更(settings.json)
 
 ```text
 拡張機能の有効 > ユーザー > Markdownlint: Config(settings.jsonで編集)
@@ -95,3 +97,31 @@ markdownlintはMarkdownファイルの標準と一貫性を促進するルール
                           // 個人的に言語問わずハイライトした方が良いので有効にする。
     }
 ```
+
+#### ファイル単位で修正する
+
+```text
+Markdownファイルを全て選択 > 右クリック > ドキュメントのフォーマット…(２つある内の下で「…」の方) > markdownlint
+```
+
+#### ファイル保存時に修正する
+
+```text
+Markdownファイルを全て選択 > 右クリック > ドキュメントのフォーマット…(２つある内の下で「…」の方) > 既定のフォーマッタ…変更
+```
+
+!!! info
+    - もし、実行されない場合は`Editor: Format On Save`が有効になっているか確認してください。
+    - settigs.json: `"editor.formatOnSave": true,`
+
+### 多言語指向フォーマッタ
+
+markdownlintはMarkdown向けのフォーマッタですが、htmlやjavascriptなどに対応した[Prettier](https://prettier.io/)という拡張機能もあります。
+
+### 使い方
+
+markdownlintの使い方と同様です。
+
+!!! info
+    - フォマート対象にはMarkdownも含まれますが、いくつか意図しない変換がされないケースがあります。(設定次第では回避できる可能性はありますが、未確認です。)
+    - Markdownファイルをフォーマットする場合は、markdownlintが良いと思います。

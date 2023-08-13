@@ -2,5 +2,10 @@
     "files.exclude": {
         "**/.git": false
     },
-    "markdown.extension.toc.updateOnSave": false
+    "markdown.extension.toc.updateOnSave": false,
+    "editor.formatOnSave": true,
+    "eslint.codeActionsOnSave.rules": null,
+    //"[markdown]": {
+    //     "editor.formatOnSave": false
+    //},
 }

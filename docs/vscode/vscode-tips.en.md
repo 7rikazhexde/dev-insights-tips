@@ -53,8 +53,6 @@ Or you can select a rectangle of text and adjust it.
 
 Reference(Japanese： [VS Codeでテキストを矩形選択するには](https://atmarkit.itmedia.co.jp/ait/articles/1805/11/news022.html)
 
-### markdownlint
-
 ### Check marMarkdown syntax and style
 
 Use "markdownlint".<br />
@@ -65,6 +63,8 @@ markdownlint is a VSCode extension that includes a library of rules that promote
 [https://github.com/DavidAnson/vscode-markdownlint](https://github.com/DavidAnson/vscode-markdownlint)
 
 #### Usage
+
+#### Intentionally turn off Markdown check items
 
 #### Reference(Japanese): markdownlint Intentionally turning off Markdown check items
 
@@ -97,3 +97,31 @@ The settings used are as follows:
                           // Code block highlighting is recommended.
     }
 ```
+
+#### Modify on a file-by-file basis
+
+```text
+Select all Markdown files > right click > Format Document...(the one with "..." under the two) > markdownlint
+```
+
+#### Correct when saving the file.
+
+```text
+Select all Markdown files > Right click > Format Document... (the "..." under the two) > Default Formatter...Change
+```
+
+!!! info
+    - If it does not run, check if `Editor: Format On Save` is enabled.
+    - settigs.json: `"editor.formatOnSave": true,`
+
+### Multilingual Oriented Formatter
+
+markdownlint is a formatter for Markdown, but there is also an extension called [Prettier](https://prettier.io/) that supports html, javascript, etc.
+
+### Usage
+
+Similar to the use of markdownlint.
+
+!!! info
+    - The formate target includes Markdown, but there are a few cases where unintended conversions are not performed. (It may be possible to work around this depending on your settings, but this has not been confirmed.)
+    - If you want to format Markdown files, markdownlint is a good choice.

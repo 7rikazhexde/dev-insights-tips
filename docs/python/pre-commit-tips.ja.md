@@ -7,7 +7,7 @@ pre-commitは、`git hook`の一機能ですが、Gitリポジトリ内のコミ
 
 pre-commitを使用すると、開発者はコミット前にさまざまな静的解析やコードフォーマットツールを実行することができます。これにより、コードスタイルの遵守や一般的なエラーパターンの検出、セキュリティの脆弱性のチェックなどが自動的に行われます。pre-commitは、リポジトリ全体または個々のファイルに対して、カスタマイズ可能なフック（hooks）を設定することができます。
 
-pre-commitの設定は、.pre-commit-config.yamlという名前のファイルに記述されます。このファイルでは、使用するフックや実行するコマンド、除外するファイルなどの設定を指定する。pre-commitは、コミット前にフックを自動的に実行し、フックの結果に基づいてコミットの承認または中止を判断する。
+pre-commitの設定は、`.pre-commit-config.yaml`という名前のファイルに記述されます。このファイルでは、使用するフックや実行するコマンド、除外するファイルなどの設定を指定する。pre-commitは、コミット前にフックを自動的に実行し、フックの結果に基づいてコミットの承認または中止を判断する。
 
 pre-commitは、さまざまなプログラミング言語やツールに対応しており、多くの既存のフックが公開されています。また、カスタムフックを作成することも可能です。
 
@@ -24,7 +24,7 @@ pre-commitは、品質管理と開発効率の向上のために広く利用さ�
 
 ## 使い方
 
-### .pre-commit-config.yamlで使用するフック
+### `.pre-commit-config.yaml`で使用するフック
 
 #### 参考記事: [pre-commitでコミット時にコードの整形やチェックを行う](https://zenn.dev/yiskw713/articles/3c3b4022f3e3f22d276d)
 
@@ -49,6 +49,22 @@ pre-commitは、品質管理と開発効率の向上のために広く利用さ�
   - poetry-export: poetry export コマンドを呼び出して、requirements.txt ファイルと現在の依存関係を同期させる。argsに--devを追加することで、dev-dependenciesを書き出すことも可能。
 - オリジナルスクリプト
   - 事例: [【Pythonバージョン管理】git hookを使用してコミットをトリガーにpyproject.tomlとgit tagを更新するスクリプトについて](https://7rikazhexde-techlog.hatenablog.com/entry/2023/06/10/005231)
+
+### フック処理
+
+#### pre-commitフックで個別にmdformatする場合\[^1\]
+
+```bash
+git add your_file.md  # 対象のMarkdownファイルをステージング
+poetry run pre-commit run mdformat
+```
+
+#### 未ステージング状態のファイルに対してもフックを実行する場合\[^1\]
+
+```bash
+poetry run pre-commit run mdformat --all-files # id指定で実行する
+poetry run pre-commit run --all-files # 全てのidを実行する
+```
 
 #### 実例
 
@@ -98,6 +114,13 @@ repos:
         verbose: true
         files: ^pyproject\.toml$
 
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.16
+    hooks:
+      - id: mdformat
+        additional_dependencies:
+        - mdformat-admon
+
   # Repository local hooks
   - repo: local
     hooks:
@@ -130,12 +153,12 @@ repos:
         entry: poetry run mypy
         types: [python]
 
-      - id: mdformat
-        name: mdformat
-        stages: [commit]
-        language: system
-        entry: poetry run mdformat .
-        types: [markdown]
+      #- id: mdformat
+      #  name: mdformat
+      #  stages: [commit]
+      #  language: system
+      #  entry: poetry run mdformat .
+      #  types: [markdown]
 
     # Original script
       - id: update-pyproject
@@ -156,3 +179,5 @@ repos:
         stages: [commit]
         additional_dependencies: []
 ```
+
+\[^1\]: poetryを使用しない場合はpre-commit runのみで問題ありません。

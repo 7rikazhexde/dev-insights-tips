@@ -13,7 +13,7 @@ Content(website) is managed by GitHub Pages.
 
 ### For local
 
-If you want to launch website in a local repository, do the following
+If you want to launch website in a local repository, do the following.
 
 ```bash
 git clone https://github.com/7rikazhexde/dev-insights-tips.git
@@ -37,6 +37,17 @@ create `.git/hooks/pre-commit`
 poetry run pre-commit install
 ```
 
+> ℹ️ **Note:**<br />
+> **When I set [pre-commit-hooks](https://pre-commit.com/#pre-commit-configyaml---hooks) and checked the operation, I confirmed that the files under the site folder were modified multiple times.**
+> **Considering the commit process, I determined that there was no need to include files under the site folder in the hook process.**
+> **Therefore, I decided to add a Python script that excludes files under the generated site folder and set them to be excluded.**
+>
+> **The following script can be executed to include them in the [exclude](https://pre-commit.com/#config-exclude) list.**
+
+```bash
+poetry run python ci/set_pre-commit-hooks_exclude.py
+```
+
 create `.git/hooks/post-commit`
 
 ```bash
@@ -49,8 +60,8 @@ chmod +x create_post-commit.sh
 Execute the following command to access the URL displayed.
 Check mkdocs for details.
 
-- https://www.mkdocs.org/
-- https://squidfunk.github.io/mkdocs-material/
+- <https://www.mkdocs.org/>
+- <https://squidfunk.github.io/mkdocs-material/>
 
 ```bash
 mkdocs serve
