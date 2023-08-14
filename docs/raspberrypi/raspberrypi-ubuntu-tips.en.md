@@ -6,7 +6,7 @@ This section summarizes information related to the Raspberry Pi (Ubuntu OS).
 
 The following is a link to a Hatena blog that summarizes the procedure for the following content.
 
-[https://7rikazhexde-techlog.hatenablog.com/](https://7rikazhexde-techlog.hatenablog.com/)
+[https://7rikazhexde-techlog.hatenablog.com/entry/2023/07/08/173536](https://7rikazhexde-techlog.hatenablog.com/entry/2023/07/08/173536)
 
 ### summary
 

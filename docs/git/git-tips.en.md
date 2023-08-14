@@ -353,7 +353,12 @@ $ git commit -t $HOME/.git_message_template/.docs_gt
 
 To undo a commit after a `git commit`, the `git reset` command is generally used. Be careful, however, as undoing a commit may affect your ability to work with other developers and remote repositories. The following describes how to undo a commit.
 
-### Undo the previous commit and return the changes to the staging area
+### Reference(Japanese)
+
+- [git resetでどのオプション(hard, mixed, soft)を指定すべきか、シチュエーション別に分けてみる](https://qiita.com/kmagai/items/6b4bfe3fddb00769aec4)
+- [【Git】git reset --soft、--mixed、--hardの違い](https://naomi-homma.hatenablog.com/entry/2020/08/11/170039)
+
+### Only HEAD is restored.
 
 ```bash
 git reset --soft HEAD^
@@ -361,7 +366,15 @@ git reset --soft HEAD^
 
 This command undoes the previous commit and returns the changes to the staging area, retaining the commit message. After this, the changes can be modified and re-committed.
 
-### Completely undo last commit and changes
+### HEAD, restore index
+
+```bash
+git reset --mixed HEAD^
+```
+
+This command undoes the commit, returns the changes to the working directory, and removes them from the staging area. The commit is not removed from the history, but the changes are retained as unstaged.
+
+### HEAD, index, and working tree all restored
 
 ```bash
 git reset --hard HEAD^
@@ -376,6 +389,19 @@ git revert <commit-hash>
 ```
 
 The `git revert` command creates a new commit that undoes the changes in a given commit. This not only undoes the changes, but also records them in the history. This is a way to undo changes while still keeping up with other developers.
+
+### Changing commit messages
+
+The following method overwrites the commit history with the changed commit message.
+
+```bash
+touch new_file.txt
+git add new_file.txt
+git commit -m "Add new_file.txt"
+# Change the contents of new_file.txt
+git add new_file.txt
+git commit --amend -m "Modify new_file.txt and update commit message"
+```
 
 ## 【GitHub】About Project Forking
 
