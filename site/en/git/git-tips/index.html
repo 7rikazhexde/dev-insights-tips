@@ -684,15 +684,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#undo-the-previous-commit-and-return-the-changes-to-the-staging-area" class="md-nav__link">
-    Undo the previous commit and return the changes to the staging area
+  <a href="#referencejapanese" class="md-nav__link">
+    Reference(Japanese)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#completely-undo-last-commit-and-changes" class="md-nav__link">
-    Completely undo last commit and changes
+  <a href="#only-head-is-restored" class="md-nav__link">
+    Only HEAD is restored.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-restore-index" class="md-nav__link">
+    HEAD, restore index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-index-and-working-tree-all-restored" class="md-nav__link">
+    HEAD, index, and working tree all restored
   </a>
   
 </li>
@@ -700,6 +714,13 @@
           <li class="md-nav__item">
   <a href="#undo-a-specific-commit" class="md-nav__link">
     Undo a specific commit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-commit-messages" class="md-nav__link">
+    Changing commit messages
   </a>
   
 </li>
@@ -1467,15 +1488,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#undo-the-previous-commit-and-return-the-changes-to-the-staging-area" class="md-nav__link">
-    Undo the previous commit and return the changes to the staging area
+  <a href="#referencejapanese" class="md-nav__link">
+    Reference(Japanese)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#completely-undo-last-commit-and-changes" class="md-nav__link">
-    Completely undo last commit and changes
+  <a href="#only-head-is-restored" class="md-nav__link">
+    Only HEAD is restored.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-restore-index" class="md-nav__link">
+    HEAD, restore index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-index-and-working-tree-all-restored" class="md-nav__link">
+    HEAD, index, and working tree all restored
   </a>
   
 </li>
@@ -1483,6 +1518,13 @@
           <li class="md-nav__item">
   <a href="#undo-a-specific-commit" class="md-nav__link">
     Undo a specific commit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-commit-messages" class="md-nav__link">
+    Changing commit messages
   </a>
   
 </li>
@@ -1843,11 +1885,20 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
 <p><a href="https://github.com/7rikazhexde/twitter-video-dl-for-sc/commit/08c13970a84804e48c80d589002189e452cb8183">参考</a></p>
 <h2 id="undo-a-commit-after-git-commit-git-reset-git-revert">Undo a commit after git commit (git reset / git revert)<a class="headerlink" href="#undo-a-commit-after-git-commit-git-reset-git-revert" title="Permanent link">&para;</a></h2>
 <p>To undo a commit after a <code>git commit</code>, the <code>git reset</code> command is generally used. Be careful, however, as undoing a commit may affect your ability to work with other developers and remote repositories. The following describes how to undo a commit.</p>
-<h3 id="undo-the-previous-commit-and-return-the-changes-to-the-staging-area">Undo the previous commit and return the changes to the staging area<a class="headerlink" href="#undo-the-previous-commit-and-return-the-changes-to-the-staging-area" title="Permanent link">&para;</a></h3>
+<h3 id="referencejapanese">Reference(Japanese)<a class="headerlink" href="#referencejapanese" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://qiita.com/kmagai/items/6b4bfe3fddb00769aec4">git resetでどのオプション(hard, mixed, soft)を指定すべきか、シチュエーション別に分けてみる</a></li>
+<li><a href="https://naomi-homma.hatenablog.com/entry/2020/08/11/170039">【Git】git reset --soft、--mixed、--hardの違い</a></li>
+</ul>
+<h3 id="only-head-is-restored">Only HEAD is restored.<a class="headerlink" href="#only-head-is-restored" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> </span>HEAD^
 </code></pre></div>
 <p>This command undoes the previous commit and returns the changes to the staging area, retaining the commit message. After this, the changes can be modified and re-committed.</p>
-<h3 id="completely-undo-last-commit-and-changes">Completely undo last commit and changes<a class="headerlink" href="#completely-undo-last-commit-and-changes" title="Permanent link">&para;</a></h3>
+<h3 id="head-restore-index">HEAD, restore index<a class="headerlink" href="#head-restore-index" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--mixed<span class="w"> </span>HEAD^
+</code></pre></div>
+<p>This command undoes the commit, returns the changes to the working directory, and removes them from the staging area. The commit is not removed from the history, but the changes are retained as unstaged.</p>
+<h3 id="head-index-and-working-tree-all-restored">HEAD, index, and working tree all restored<a class="headerlink" href="#head-index-and-working-tree-all-restored" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD^
 </code></pre></div>
 <p>This command completely undoes the previous commit and its changes, and also restores the working tree to its pre-modified state. Note that, once undone, commits and changes cannot be restored.</p>
@@ -1855,6 +1906,15 @@ $<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </spa
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>revert<span class="w"> </span>&lt;commit-hash&gt;
 </code></pre></div>
 <p>The <code>git revert</code> command creates a new commit that undoes the changes in a given commit. This not only undoes the changes, but also records them in the history. This is a way to undo changes while still keeping up with other developers.</p>
+<h3 id="changing-commit-messages">Changing commit messages<a class="headerlink" href="#changing-commit-messages" title="Permanent link">&para;</a></h3>
+<p>The following method overwrites the commit history with the changed commit message.</p>
+<div class="highlight"><pre><span></span><code>touch<span class="w"> </span>new_file.txt
+git<span class="w"> </span>add<span class="w"> </span>new_file.txt
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add new_file.txt&quot;</span>
+<span class="c1"># Change the contents of new_file.txt</span>
+git<span class="w"> </span>add<span class="w"> </span>new_file.txt
+git<span class="w"> </span>commit<span class="w"> </span>--amend<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Modify new_file.txt and update commit message&quot;</span>
+</code></pre></div>
 <h2 id="githubabout-project-forking">【GitHub】About Project Forking<a class="headerlink" href="#githubabout-project-forking" title="Permanent link">&para;</a></h2>
 <p>Forking a project on GitHub allows you to copy the original repository and bring it to your own GitHub account.<br />
 Below are the etiquette, precautions, and methods for forking.</p>

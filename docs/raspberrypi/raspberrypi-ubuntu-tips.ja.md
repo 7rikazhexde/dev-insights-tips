@@ -6,7 +6,7 @@ Raspberry Pi(Ubuntu OS)に関連する情報をまとめます。
 
 以下の内容について、はてなブログで手順をまとめたリンクを記載します。
 
-[https://7rikazhexde-techlog.hatenablog.com/](https://7rikazhexde-techlog.hatenablog.com/)
+[https://7rikazhexde-techlog.hatenablog.com/entry/2023/07/08/173536](https://7rikazhexde-techlog.hatenablog.com/entry/2023/07/08/173536)
 
 ### 概要
 
