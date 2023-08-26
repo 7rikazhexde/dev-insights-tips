@@ -55,7 +55,7 @@ chmod +x create_post-commit.sh
 ./create_post-commit.sh
 ```
 
-#### launch local website
+#### Launch local website
 
 Execute the following command to access the URL displayed.
 Check mkdocs for details.
@@ -64,7 +64,7 @@ Check mkdocs for details.
 - <https://squidfunk.github.io/mkdocs-material/>
 
 ```bash
-mkdocs serve
+poetry run mkdocs serve
 ```
 
 #### Update dpcuments
@@ -72,8 +72,8 @@ mkdocs serve
 Add or update content (.md) under docs. Then execute the following command.
 
 ```bash
-mkdocs build
-mkdocs serve
+poetry run mkdocs build -c
+poetry run mkdocs serve
 ```
 
 ### For remote (GitHub Pages)

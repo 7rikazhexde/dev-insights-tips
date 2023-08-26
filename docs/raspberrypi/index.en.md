@@ -1,5 +1,3 @@
-# git tips
-
-## Table of Contents
+# Raspberrypi tips
 
 - [raspberrypi ubuntu tips](./raspberrypi-ubuntu-tips.en.md)

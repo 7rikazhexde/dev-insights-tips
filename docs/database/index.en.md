@@ -1,5 +1,3 @@
-# database tips
-
-## Table of Contents
+# Database tips
 
 - [mariadb tips](./mariadb-tips.en.md)

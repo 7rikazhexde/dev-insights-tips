@@ -32,7 +32,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.top
-    - navigation.expand
+    #- navigation.expand
     - content.code.copy
 
 extra:
@@ -78,29 +78,44 @@ extra:
 nav:
   - Introduction:
       - index.md
+  - Application:
+      - application/index.ja.md
+      - VSCode:
+        - application/vscode/index.ja.md
+        - application/vscode/setting-tips.ja.md
+        - application/vscode/extention-tips.ja.md
+      - Obsidian:
+        - application/obsidian/obsidian-tips.ja.md
+      - Workflowly:
+        - application/workflowy/workflowy-tips.ja.md
+      - Inkscape:
+        - application/inkscape/inkscape-tips.ja.md
+  - Command line tool:
+      - command-line-tool/index.ja.md
+      - vi:
+        - command-line-tool/vi/vi-tips.ja.md
+      - Git:
+        - command-line-tool/git/git-tips.ja.md
+  - Programming language:
+      - programming-language/index.ja.md
+      - Python:
+        - programming-language/python/index.ja.md
+        - programming-language/python/dash-plotly-tips.ja.md
+        - programming-language/python/pre-commit-tips.ja.md
+        - programming-language/python/post-commit-tips.ja.md
+        - programming-language/python/pymysql-tips.ja.md
+        - programming-language/python/mdformat-tips.ja.md
+        - programming-language/python/mkdocs-tips.ja.md
+      - AppleScript:
+        - programming-language/applescript/index.ja.md
   - Database:
       - database/index.ja.md
       - database/mariadb-tips.ja.md
-  - Git:
-      - git/index.ja.md
-      - git/git-tips.ja.md
   - Markdown:
       - markdown/markdown-tips.ja.md
-  - Python:
-      - python/dash-plotly-tips.ja.md
-      - python/pre-commit-tips.ja.md
-      - python/post-commit-tips.ja.md
-      - python/pymysql-tips.ja.md
-      - python/mdformat-tips.ja.md
-      - python/mkdocs-tips.ja.md
   - Raspberry Pi:
+      - raspberrypi/index.ja.md
       - raspberrypi/raspberrypi-ubuntu-tips.ja.md
-  - Tools:
-      - tools/tools-tips.ja.md
-  - vi:
-      - vi/vi-tips.ja.md
-  - VSCode:
-      - vscode/vscode-tips.ja.md
 
 plugins:
   - search:
