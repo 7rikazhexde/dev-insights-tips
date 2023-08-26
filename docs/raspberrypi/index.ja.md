@@ -1,5 +1,3 @@
-# git tips
-
-## 目次
+# Raspberrypi tips
 
 - [raspberrypi ubuntu tips](./raspberrypi-ubuntu-tips.ja.md)

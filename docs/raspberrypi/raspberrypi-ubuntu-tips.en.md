@@ -8,7 +8,7 @@ The following is a link to a Hatena blog that summarizes the procedure for the f
 
 [https://7rikazhexde-techlog.hatenablog.com/entry/2023/07/08/173536](https://7rikazhexde-techlog.hatenablog.com/entry/2023/07/08/173536)
 
-### summary
+### Summary
 
 - Write `Ubuntu Server 22.04.2 LTS (64-bit)` on `Raspberry Pi 3 Model B+`.
 - Install MariaDB as MySQL database

@@ -1,5 +1,3 @@
-# database tips
-
-## 目次
+# Database tips
 
 - [mariadb tips](./mariadb-tips.ja.md)

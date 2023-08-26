@@ -1,5 +1,3 @@
-# git tips
-
-## Table of Contents
+# Markdown tips
 
 - [markdown tips](./markdown-tips.en.md)
