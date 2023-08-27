@@ -1,6 +1,8 @@
 # AppleScript tips
 
-!!! info "What Is AppleScript? (引用元: [AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html))"
+## AppleScriptとは?
+
+!!! info "Reference: [AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html)"
     - スクリプト可能なMacintoshアプリケーションやmacOSの一部を直接操作できます。
     - AppleScriptは、Appleが作成したスクリプト言語である。
     - スクリプト（記述された命令のセット）を作成して、繰り返し作業を自動化したり、複数のスクリプト可能なアプリケーションの機能を組み合わせたり、複雑なワークフローを作成したりできます。
