@@ -1,6 +1,6 @@
 # Python tips
 
-## パッケージ
+## Package
 
 - [dash plotly tips](./dash-plotly-tips.en.md)
 - [pre-commit tips](./pre-commit-tips.en.md)
@@ -8,6 +8,6 @@
 - [mdformat tips](./mdformat-tips.en.md)
 - [mkdocs tips](./mkdocs-tips.en.md)
 
-## スクリプト
+## Script
 
 - [post-commit tips](./post-commit-tips.en.md)

@@ -76,7 +76,7 @@ extra:
             <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
 
 nav:
-  - Introduction:
+  - Home:
       - index.md
   - Application:
       - application/index.ja.md
@@ -127,7 +127,7 @@ plugins:
       nav_translations:
         en:
           #site_name: Dev Insights Tips
-          Introduction: Introduction
+          Home: Home
           #Database: Database
 
 markdown_extensions:

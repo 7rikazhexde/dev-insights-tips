@@ -1,6 +1,8 @@
 # AppleScript tips
 
-!!! info "What Is AppleScript? (Reference: [AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html))"
+## What Is AppleScript?
+
+!!! info "Reference: [AppleScript Language Guide](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html)"
     - AppleScript is a scripting language created by Apple.
     - It allows users to directly control scriptable Macintosh applications, as well as parts of macOS itself.
     - You can create scripts—sets of written instructions—to automate repetitive tasks, combine features from multiple scriptable applications, and create complex workflows.
