@@ -57,6 +57,24 @@
     
     
     
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="スクリプト例 - Dev Insights Tips">
+<meta name="twitter:title" content="スクリプト例 - Dev Insights Tips">
+<meta property="og:description" content="None">
+<meta name="twitter:description" content="None">
+<meta property="og:image" content="Noneassets/x_twitter.png">
+<meta name="twitter:image" content="Noneassets/x_twitter.png">
+<meta property="og:url" content="None">
+
   </head>
   
   
@@ -1222,7 +1240,7 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  
+
                   
 
   
@@ -1284,14 +1302,14 @@
 
                 
 
-  <!-- Giscus -->
-  <h2 id="__comments">コメント</h2>
-  <!-- Replace with generated snippet -->
-  <!-- 参考1: MkDocsによるドキュメント作成 / コメント作成 -->
-  <!-- https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
-  <!-- 参考2: Adding a comment system -->
-  <!-- https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
-  <!--
+<!-- Giscus -->
+<h2 id="__comments">コメント</h2>
+<!-- Replace with generated snippet -->
+<!-- Reference1: MkDocsによるドキュメント作成 / コメント作成 -->
+<!-- URL: https://zenn.dev/mebiusbox/articles/81d977a72cee01#%F0%9F%93%8C-%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%A9%9F%E8%83%BD -->
+<!-- Reference2: Adding a comment system -->
+<!-- URL: https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/ -->
+<!--
   <script src="https://giscus.app/client.js"
         data-repo="7rikazhexde/dev-insights-tips"
         data-repo-id="R_kgDOJwRtyQ"
@@ -1309,50 +1327,40 @@
         async>
   </script>
   -->
-  <script src="https://giscus.app/client.js"
-        data-repo="7rikazhexde/dev-insights-tips"
-        data-repo-id="R_kgDOJwRtyQ"
-        data-category="[ENTER CATEGORY NAME HERE]"
-        data-category-id="[ENTER CATEGORY ID HERE]"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script src="https://giscus.app/client.js" data-repo="7rikazhexde/dev-insights-tips" data-repo-id="R_kgDOJwRtyQ"
+  data-category="[ENTER CATEGORY NAME HERE]" data-category-id="[ENTER CATEGORY ID HERE]" data-mapping="pathname"
+  data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+  data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
   </script>
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
+<!-- Synchronize Giscus theme with palette -->
+<script>
+  var giscus = document.querySelector("script[src*=giscus]")
 
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme)
-    }
+  /* Set palette on initial load */
+  var palette = __md_get("__palette")
+  if (palette && typeof palette.color === "object") {
+    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    giscus.setAttribute("data-theme", theme)
+  }
 
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function () {
+    var ref = document.querySelector("[data-md-component=palette]")
+    ref.addEventListener("change", function () {
+      var palette = __md_get("__palette")
+      if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
 
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
+        /* Instruct Giscus to change theme */
+        var frame = document.querySelector(".giscus-frame")
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          "https://giscus.app"
+        )
+      }
     })
-  </script>
+  })
+</script>
 
               </article>
             </div>
