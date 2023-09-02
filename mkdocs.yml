@@ -76,7 +76,8 @@ extra:
             <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
 
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
   - Application:
       - application/index.md
       - VSCode:
