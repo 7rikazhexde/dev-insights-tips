@@ -1,30 +1,30 @@
 {% extends "base.html" %}
 
-<!--Twitter Cards-->
-<!--Reference: コジオン: チェス / Twitter Cards-->
-<!--URL: https://kojion.github.io/chess/mkdocs/006/-->
+<!-- Twitter Cards -->
+<!-- Reference: mkdocsでブログを作ってみる -->
+<!-- URL: https://www.manj.io/blog/2021/mkdocs-as-blog/#meta -->
 {% block extrahead %}
-{% set title = config.site_name %}
-{% if page and page.title and not page.is_homepage %}
-{% set title = page.title ~ " - " ~ config.site_name | striptags %}
+<meta property="og:title" content="{{ page.title }} - 7rikazhexde.github.io">
+<meta name="twitter:title" content="{{ page.title }} - 7rikazhexde.github.io">
+{% if page and page.meta and page.meta.description %}
+<meta property="og:description" content="{{ page.meta.description }}">
 {% endif %}
-{% set description = config.site_description %}
-{% if page and page.meta.description %}
-{% set description = page.meta.description %}
+{% if page and page.meta and page.meta.image %}
+<meta property="og:image" content="{{ page.meta.image }}">
+<meta name="twitter:image" content="{{ page.meta.image }}">
+{% else %}
+<meta property="og:image" content="https://7rikazhexde.github.io/assets/img/site.jpg">
+<meta name="twitter:image" content="https://7rikazhexde.github.io/assets/img/site.jpg">
 {% endif %}
-{% set image = config.site_url ~ 'assets/x_twitter.png' %}
-{% if page and page.meta.image %}
-{% set image = config.site_url ~ page.meta.image %}
+{% if page and page.meta and page.meta.type %}
+<meta property="og:type" content="{{ page.meta.type }}">
+{% else %}
+<meta property="og:type" content="article">
 {% endif %}
-<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:title" content="{{ title }}">
-<meta name="twitter:title" content="{{ title }}">
-<meta property="og:description" content="{{ description }}">
-<meta name="twitter:description" content="{{ description }}">
-<meta property="og:image" content="{{ image }}">
-<meta name="twitter:image" content="{{ image }}">
-<meta property="og:url" content="{{ page.canonical_url }}">
+<meta name="twitter:site" content="@tw_7rikazhexde">
+<meta name="twitter:creator" content="@tw_7rikazhexde">
+<meta property="og:locale" content="ja_JP">
 {% endblock %}
 
 {% block content %}
