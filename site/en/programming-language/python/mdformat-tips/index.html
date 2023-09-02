@@ -183,14 +183,14 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="en" class="md-select__link">
-              English
+            <a href="../../../../programming-language/python/mdformat-tips/" hreflang="ja" class="md-select__link">
+              日本語
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../../../programming-language/python/mdformat-tips/" hreflang="ja" class="md-select__link">
-              日本語
+            <a href="./" hreflang="en" class="md-select__link">
+              English
             </a>
           </li>
         
@@ -1674,7 +1674,7 @@ The code is written in python.</p>
 \- test2
 </code></pre></div>
 <p>When "mkdocs serve" is executed, the display of admonitions is as follows.</p>
-<p><img alt="admonitions_ng" src="../../../../programming-language/python/images/example-mkdocs-admonitions-ng.png" /></p>
+<p><img alt="admonitions_ng" src="../images/example-mkdocs-admonitions-ng.png" /></p>
 <p>This was not the intended display. I used mdformat-admon to resolve this situation.</p>
 <p>Set up the hooks according to the official documentation.</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/executablebooks/mdformat</span>
@@ -1685,7 +1685,7 @@ The code is written in python.</p>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mdformat-admon</span>
 </code></pre></div>
 <p>As a result, the intended display was confirmed without conversion by mdformat.</p>
-<p><img alt="admonitions_ok" src="../../../../programming-language/python/images/example-mkdocs-admonitions-ok.png" /></p>
+<p><img alt="admonitions_ok" src="../images/example-mkdocs-admonitions-ok.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><a href="https://github.com/KyleKing/mdformat-admon#caveats">The project page states</a> that as of 2023/08/12, only mkdocs are supported as follows<br/>

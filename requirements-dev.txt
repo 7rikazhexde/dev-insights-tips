@@ -315,9 +315,8 @@ mkdocs-material-extensions==1.1.1 ; python_version >= "3.10" and python_version 
 mkdocs-material==9.2.6 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:3806c58dd112e7b9677225e2021035ddbe3220fbd29d9dc812aa7e01f70b5e0a \
     --hash=sha256:84bc7e79c1d0bae65a77123efd5ef74731b8c3671601c7962c5db8dba50a65ad
-mkdocs-static-i18n==1.0.2 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:a4e39a465378f68f92110b423116b937a929286441bdad4da068272db408f5fe \
-    --hash=sha256:a9c65c009f9108d9c155b691002ee8da0d0a14c379323de8c157cf79a4cc6aa5
+mkdocs-static-i18n==0.56 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:3ff92541630dd24d561841bbc0546b3c937bfecf4d6b2abb8649e57e023baaa0
 mkdocs==1.5.2 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:60a62538519c2e96fe8426654a67ee177350451616118a41596ae7c876bb7eac \
     --hash=sha256:70d0da09c26cff288852471be03c23f0f521fc15cf16ac89c7a3bfb9ae8d24f9
