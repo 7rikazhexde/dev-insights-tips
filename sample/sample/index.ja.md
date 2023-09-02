@@ -1,3 +1,3 @@
 # 目次
 
-- [ポータブルGluster](page1.ja.md)
+- [ポータブルGluster](page1.md)

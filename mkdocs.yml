@@ -78,56 +78,62 @@ extra:
 nav:
   - Home: index.md
   - Application:
-      - application/index.ja.md
+      - application/index.md
       - VSCode:
-        - application/vscode/index.ja.md
-        - application/vscode/setting-tips.ja.md
-        - application/vscode/extention-tips.ja.md
+        - application/vscode/index.md
+        - application/vscode/setting-tips.md
+        - application/vscode/extention-tips.md
       - Obsidian:
-        - application/obsidian/obsidian-tips.ja.md
+        - application/obsidian/obsidian-tips.md
       - Workflowly:
-        - application/workflowy/workflowy-tips.ja.md
+        - application/workflowy/workflowy-tips.md
       - Inkscape:
-        - application/inkscape/inkscape-tips.ja.md
+        - application/inkscape/inkscape-tips.md
   - Command line tool:
-      - command-line-tool/index.ja.md
+      - command-line-tool/index.md
       - vi:
-        - command-line-tool/vi/vi-tips.ja.md
+        - command-line-tool/vi/vi-tips.md
       - Git:
-        - command-line-tool/git/git-tips.ja.md
+        - command-line-tool/git/git-tips.md
   - Programming language:
-      - programming-language/index.ja.md
+      - programming-language/index.md
       - Python:
-        - programming-language/python/index.ja.md
-        - programming-language/python/dash-plotly-tips.ja.md
-        - programming-language/python/pre-commit-tips.ja.md
-        - programming-language/python/post-commit-tips.ja.md
-        - programming-language/python/pymysql-tips.ja.md
-        - programming-language/python/mdformat-tips.ja.md
-        - programming-language/python/mkdocs-tips.ja.md
+        - programming-language/python/index.md
+        - programming-language/python/dash-plotly-tips.md
+        - programming-language/python/pre-commit-tips.md
+        - programming-language/python/post-commit-tips.md
+        - programming-language/python/pymysql-tips.md
+        - programming-language/python/mdformat-tips.md
+        - programming-language/python/mkdocs-tips.md
       - AppleScript:
-        - programming-language/applescript/index.ja.md
+        - programming-language/applescript/index.md
   - Database:
-      - database/index.ja.md
-      - database/mariadb-tips.ja.md
+      - database/index.md
+      - database/mariadb-tips.md
   - Markdown:
-      - markdown/markdown-tips.ja.md
+      - markdown/markdown-tips.md
   - Raspberry Pi:
-      - raspberrypi/index.ja.md
-      - raspberrypi/raspberrypi-ubuntu-tips.ja.md
+      - raspberrypi/index.md
+      - raspberrypi/raspberrypi-ubuntu-tips.md
 
 plugins:
   - search:
   - i18n:
-      default_language: ja
+      docs_structure: suffix
+      fallback_to_default: true
       languages:
-        en: English
-        ja: 日本語
-      nav_translations:
-        en:
-          #site_name: Dev Insights Tips
-          Home: Home
-          #Database: Database
+        - build: true
+          default: false
+          locale: en
+          name: English
+          nav_translations:
+            Home: Home
+        - build: true
+          default: true
+          locale: ja
+          name: 日本語
+      reconfigure_material: true
+      reconfigure_search: true
 
 markdown_extensions:
   - footnotes
