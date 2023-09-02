@@ -5,6 +5,10 @@
     "markdown.extension.toc.updateOnSave": false,
     "editor.formatOnSave": true,
     "eslint.codeActionsOnSave.rules": null,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
     //"[markdown]": {
     //     "editor.formatOnSave": false
     //},
