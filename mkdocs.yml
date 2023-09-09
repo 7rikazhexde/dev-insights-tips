@@ -118,38 +118,32 @@ nav:
 
 plugins:
   - search:
-  #- i18n:
-  #    default_language: ja
-  #    languages:
-  #      en: English
-  #      ja: 日本語
-  #    nav_translations:
-  #      en:
-  #        #site_name: Dev Insights Tips
-  #        Home: Home
-  #        #Database: Database
   - i18n:
-      docs_structure: suffix
-      fallback_to_default: true
+      default_language: ja
       languages:
-        #- build: true
-        #  default: false
-        #  locale: fr
-        #  name: France
-        #  nav_translations:
-        #    Home: Home
-        - build: true
-          default: false
-          locale: en
-          name: English
-          nav_translations:
-            Home: Home
-        - build: true
-          default: true
-          locale: ja
-          name: 日本語
-      reconfigure_material: true
-      reconfigure_search: true
+        en: English
+        ja: 日本語
+      nav_translations:
+        en:
+          #site_name: Dev Insights Tips
+          Home: Home
+          #Database: Database
+  #- i18n:
+  #    docs_structure: suffix
+  #    fallback_to_default: true
+  #    languages:
+  #      - build: true
+  #        default: false
+  #        locale: en
+  #        name: English
+  #        nav_translations:
+  #          Home: Home
+  #      - build: true
+  #        default: true
+  #        locale: ja
+  #        name: 日本語
+  #    reconfigure_material: true
+  #    reconfigure_search: true
 
 markdown_extensions:
   - footnotes
