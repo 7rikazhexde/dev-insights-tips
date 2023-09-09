@@ -27,6 +27,17 @@ git clone https://github.com/7rikazhexde/dev-insights-tips.git
 poetry install
 ```
 
+> 🚨 **Note:**<br />
+> **When using the pip command, please create a virtual environment in the [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv#pyenv-virtualenv) environment and retrieve the package.**
+> **The pip command should also retrieve packages for development (requirements-dev.txt).**
+
+```bash
+pyenv virtualenv [version] [virtual environment name]
+pyenv local [virtual environment name]
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+```
+
 create `.git/hooks/pre-commit`
 
 > ℹ️ **Note:**<br />
