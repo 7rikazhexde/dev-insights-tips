@@ -4,12 +4,12 @@ description = "A repository that gathers insights and tips for development. It a
 license = "MIT"
 name = "dev-insights-tips"
 readme = "README.md"
-version = "0.1.40"
+version = "0.1.41"
 
 [tool.poetry.dependencies]
 mdformat = "^0.7.16"
 mkdocs-material = "^9.1.16"
-mkdocs-static-i18n = "^1.0.0"
+mkdocs-static-i18n = "^0.56"
 plantuml-markdown = "^3.9.2"
 pre-commit = "^3.3.3"
 pygments = "^2.16.1"

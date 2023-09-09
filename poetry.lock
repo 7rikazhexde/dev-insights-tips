@@ -519,20 +519,16 @@ files = [
 
 [[package]]
 name = "mkdocs-static-i18n"
-version = "1.0.3"
+version = "0.56"
 description = "MkDocs i18n plugin using static translation markdown files"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "mkdocs_static_i18n-1.0.3-py3-none-any.whl", hash = "sha256:5d0ad406c9a2ae40ebfccd6f23e01362214ad50b3f595281fe0763b273f2500c"},
-    {file = "mkdocs_static_i18n-1.0.3.tar.gz", hash = "sha256:c46615a01d5a099befd1b68d4c5f5988a7001efbc318825ba0a3e46a6624e403"},
+    {file = "mkdocs-static-i18n-0.56.tar.gz", hash = "sha256:3ff92541630dd24d561841bbc0546b3c937bfecf4d6b2abb8649e57e023baaa0"},
 ]
 
 [package.dependencies]
-mkdocs = ">=1.5.2"
-
-[package.extras]
-material = ["mkdocs-material (>=9.2.5)"]
+mkdocs = ">=1.4.2"
 
 [[package]]
 name = "mslex"
@@ -1191,4 +1187,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "d4124ba9a2dcf95c1e5bb5ee248458484966b6ea15cb149588b856eb0f2b5671"
+content-hash = "76b256c02174b7dadfdc192fc988e51396f1377755bedd2737b79d444ae83fcc"
