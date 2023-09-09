@@ -20,6 +20,8 @@ repos:
       - id: check-toml
       # yaml syntax check
       - id: check-yaml
+        # Exclude check for "could not determine a constructor for the tag 'tag:yaml.org,2002:python/name:materialx.emoji.twemoji'"
+        # args: [--unsafe]
 
   # https://python-poetry.org/docs/pre-commit-hooks/#usage
   - repo: https://github.com/python-poetry/poetry
