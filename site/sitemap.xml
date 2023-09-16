@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
          <loc>None./</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/"/>
@@ -10,7 +10,7 @@
     </url>
     <url>
          <loc>Noneapplication/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/"/>
@@ -18,7 +18,7 @@
     </url>
     <url>
          <loc>Noneapplication/inkscape/inkscape-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/inkscape/inkscape-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/inkscape/inkscape-tips/"/>
@@ -26,7 +26,7 @@
     </url>
     <url>
          <loc>Noneapplication/obsidian/obsidian-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/obsidian/obsidian-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/obsidian/obsidian-tips/"/>
@@ -34,7 +34,7 @@
     </url>
     <url>
          <loc>Noneapplication/vscode/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/vscode/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/vscode/"/>
@@ -42,7 +42,7 @@
     </url>
     <url>
          <loc>Noneapplication/vscode/extention-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/vscode/extention-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/vscode/extention-tips/"/>
@@ -50,7 +50,7 @@
     </url>
     <url>
          <loc>Noneapplication/vscode/setting-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/vscode/setting-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/vscode/setting-tips/"/>
@@ -58,7 +58,7 @@
     </url>
     <url>
          <loc>Noneapplication/workflowy/workflowy-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/application/workflowy/workflowy-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/application/workflowy/workflowy-tips/"/>
@@ -66,7 +66,7 @@
     </url>
     <url>
          <loc>Nonecommand-line-tool/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/command-line-tool/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/command-line-tool/"/>
@@ -74,7 +74,7 @@
     </url>
     <url>
          <loc>Nonecommand-line-tool/git/git-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/command-line-tool/git/git-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/command-line-tool/git/git-tips/"/>
@@ -82,7 +82,7 @@
     </url>
     <url>
          <loc>Nonecommand-line-tool/vi/vi-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/command-line-tool/vi/vi-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/command-line-tool/vi/vi-tips/"/>
@@ -90,7 +90,7 @@
     </url>
     <url>
          <loc>Nonedatabase/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/database/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/database/"/>
@@ -98,7 +98,7 @@
     </url>
     <url>
          <loc>Nonedatabase/mariadb-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/database/mariadb-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/database/mariadb-tips/"/>
@@ -106,7 +106,7 @@
     </url>
     <url>
          <loc>Nonemarkdown/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/markdown/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/markdown/"/>
@@ -114,7 +114,7 @@
     </url>
     <url>
          <loc>Nonemarkdown/markdown-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/markdown/markdown-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/markdown/markdown-tips/"/>
@@ -122,7 +122,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/"/>
@@ -130,7 +130,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/applescript/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/applescript/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/applescript/"/>
@@ -138,7 +138,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/applescript/example/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/applescript/example/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/applescript/example/"/>
@@ -146,7 +146,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/"/>
@@ -154,7 +154,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/dash-plotly-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/dash-plotly-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/dash-plotly-tips/"/>
@@ -162,7 +162,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/mdformat-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/mdformat-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/mdformat-tips/"/>
@@ -170,7 +170,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/mkdocs-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/mkdocs-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/mkdocs-tips/"/>
@@ -178,7 +178,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/post-commit-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/post-commit-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/post-commit-tips/"/>
@@ -186,7 +186,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/pre-commit-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/pre-commit-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/pre-commit-tips/"/>
@@ -194,7 +194,7 @@
     </url>
     <url>
          <loc>Noneprogramming-language/python/pymysql-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/programming-language/python/pymysql-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/programming-language/python/pymysql-tips/"/>
@@ -202,7 +202,7 @@
     </url>
     <url>
          <loc>Noneraspberrypi/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/raspberrypi/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/raspberrypi/"/>
@@ -210,7 +210,7 @@
     </url>
     <url>
          <loc>Noneraspberrypi/raspberrypi-ubuntu-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/raspberrypi/raspberrypi-ubuntu-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/raspberrypi/raspberrypi-ubuntu-tips/"/>
@@ -218,7 +218,7 @@
     </url>
     <url>
          <loc>Nonesample/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/sample/"/>
@@ -226,7 +226,7 @@
     </url>
     <url>
          <loc>Nonesample/sample-tips/</loc>
-         <lastmod>2023-09-09</lastmod>
+         <lastmod>2023-09-16</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/sample/sample-tips/"/>
          <xhtml:link rel="alternate" hreflang="ja" href="Noneja/sample/sample-tips/"/>
