@@ -1,3 +1,7 @@
+______________________________________________________________________
+
+## description: Inkscape tips image: application/inkscape/images/inkscape.png
+
 # Inkscape tips
 
 This section summarizes information related to Inkscape.

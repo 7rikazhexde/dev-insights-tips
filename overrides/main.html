@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
-<!--Twitter Cards-->
-<!--Reference: コジオン: チェス / Twitter Cards-->
-<!--URL: https://kojion.github.io/chess/mkdocs/006/-->
+<!-- Twitter Cards -->
+<!-- Reference: コジオン: チェス / Twitter Cards -->
+<!-- URL: https://kojion.github.io/chess/mkdocs/006/ -->
 {% block extrahead %}
 {% set title = config.site_name %}
 {% if page and page.title and not page.is_homepage %}
@@ -12,7 +12,7 @@
 {% if page and page.meta.description %}
 {% set description = page.meta.description %}
 {% endif %}
-{% set image = config.site_url ~ 'assets/img/site.jpg' %}
+{% set image = config.site_url ~ 'assets/img/site.png' %}
 {% if page and page.meta.image %}
 {% set image = config.site_url ~ page.meta.image %}
 {% endif %}
@@ -59,7 +59,7 @@
   data-category="[ENTER CATEGORY NAME HERE]" data-category-id="[ENTER CATEGORY ID HERE]" data-mapping="pathname"
   data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
   data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
-  </script>
+</script>
 <!-- Synchronize Giscus theme with palette -->
 <script>
   var giscus = document.querySelector("script[src*=giscus]")

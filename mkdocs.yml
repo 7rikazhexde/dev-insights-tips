@@ -1,4 +1,5 @@
 site_name: Dev Insights Tips
+site_description: "knowledge and tips on development"
 repo_name: 7rikazhexde/dev-insights-tips
 repo_url: https://github.com/7rikazhexde/dev-insights-tips
 copyright: "&copy; 2023 7rikazhexde"
@@ -80,33 +81,33 @@ nav:
   - Application:
       - application/index.md
       - VSCode:
-        - application/vscode/index.md
-        - application/vscode/setting-tips.md
-        - application/vscode/extention-tips.md
+          - application/vscode/index.md
+          - application/vscode/setting-tips.md
+          - application/vscode/extention-tips.md
       - Obsidian:
-        - application/obsidian/obsidian-tips.md
+          - application/obsidian/obsidian-tips.md
       - Workflowly:
-        - application/workflowy/workflowy-tips.md
+          - application/workflowy/workflowy-tips.md
       - Inkscape:
-        - application/inkscape/inkscape-tips.md
+          - application/inkscape/inkscape-tips.md
   - Command line tool:
       - command-line-tool/index.md
       - vi:
-        - command-line-tool/vi/vi-tips.md
+          - command-line-tool/vi/vi-tips.md
       - Git:
-        - command-line-tool/git/git-tips.md
+          - command-line-tool/git/git-tips.md
   - Programming language:
       - programming-language/index.md
       - Python:
-        - programming-language/python/index.md
-        - programming-language/python/dash-plotly-tips.md
-        - programming-language/python/pre-commit-tips.md
-        - programming-language/python/post-commit-tips.md
-        - programming-language/python/pymysql-tips.md
-        - programming-language/python/mdformat-tips.md
-        - programming-language/python/mkdocs-tips.md
+          - programming-language/python/index.md
+          - programming-language/python/dash-plotly-tips.md
+          - programming-language/python/pre-commit-tips.md
+          - programming-language/python/post-commit-tips.md
+          - programming-language/python/pymysql-tips.md
+          - programming-language/python/mdformat-tips.md
+          - programming-language/python/mkdocs-tips.md
       - AppleScript:
-        - programming-language/applescript/index.md
+          - programming-language/applescript/index.md
   - Database:
       - database/index.md
       - database/mariadb-tips.md
