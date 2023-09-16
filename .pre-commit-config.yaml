@@ -48,6 +48,7 @@ repos:
         additional_dependencies:
           - mdformat-admon
           - mdformat-footnote
+          - mdformat-frontmatter
 
   # Repository local hooks
   - repo: local

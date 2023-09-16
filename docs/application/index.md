@@ -11,4 +11,4 @@
 
 ## デザイン
 
-- [incspace](./inkscape/inkscape-tips.md)
+- [inkscape](./inkscape/inkscape-tips.md)
