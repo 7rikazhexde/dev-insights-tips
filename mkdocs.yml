@@ -145,6 +145,7 @@ plugins:
   #        name: 日本語
   #    reconfigure_material: true
   #    reconfigure_search: true
+  - glightbox
 
 markdown_extensions:
   - footnotes

@@ -1,6 +1,7 @@
-______________________________________________________________________
-
-## description: Inkscape tips image: application/inkscape/images/inkscape.png
+---
+description: Inkscape tips
+image: application/inkscape/images/inkscape.png
+---
 
 # Inkscape tips
 
