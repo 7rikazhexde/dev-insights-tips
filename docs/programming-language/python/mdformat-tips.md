@@ -72,5 +72,4 @@ mkdocs serveを実行すると、admonitionsの表示は下記のようになり
 !!! info
     2023/08/12時点では以下の通りサポート対象はmkdocsのみとのことです。<br/>
     将来的にはGitHubのadmonitionsにも対応予定とのことです。<br/>
-
     > This plugin currently only supports admonitions that start with !!! ... and won't modify admonitions for Github, which should cover most use cases. Future work is planned for other types.

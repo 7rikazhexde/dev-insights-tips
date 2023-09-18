@@ -72,5 +72,4 @@ As a result, the intended display was confirmed without conversion by mdformat.
 !!! info
     [The project page states](https://github.com/KyleKing/mdformat-admon#caveats) that as of 2023/08/12, only mkdocs are supported as follows<br/>
     In the future, they plan to support GitHub admonitions.<br/>
-
     > This plugin currently only supports admonitions that start with !!! ... and won't modify admonitions for Github, which should cover most use cases. Future work is planned for other types.
