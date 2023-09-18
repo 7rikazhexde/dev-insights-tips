@@ -7,8 +7,9 @@
   // ファイル保存時にフォーマットする
   "editor.formatOnSave": true,
   // フォーマット対象をファイルタイプで指定する
+  // Markdownファイルは無効
   "[markdown]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "eslint.codeActionsOnSave.rules": null
 }

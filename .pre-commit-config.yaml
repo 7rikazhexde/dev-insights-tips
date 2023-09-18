@@ -41,14 +41,32 @@ repos:
         verbose: true
         files: ^pyproject\.toml$
 
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.16
+  #- repo: https://github.com/executablebooks/mdformat
+  #  rev: 0.7.17
+  #  hooks:
+  #    - id: mdformat
+  #      additional_dependencies:
+  #        - mdformat-admon
+  #        - mdformat-footnote
+  #        - mdformat-frontmatter
+
+  # Reference: https://github.com/DavidAnson/markdownlint-cli2#overview
+  # > markdownlint-cli is a traditional command-line interface for markdownlint.
+  #- repo: https://github.com/igorshubovych/markdownlint-cli
+  #  rev: v0.36.0
+  #  hooks:
+  #    - id: markdownlint
+  #      args: ["--fix", "--config", ".markdownlint.jsonc"]
+
+  # Reference: https://github.com/DavidAnson/markdownlint-cli2#overview
+  # > markdownlint-cli2はmarkdownlint用の少し型破りなコマンドラインインターフェイスです。
+  # > markdownlint-cli2は設定ベースで、速度とシンプルさを優先しています。
+  # > markdownlint-cli2はmarkdownlint-cliのすべての機能をサポートしています（少し異なる場合もあります）。
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.10.0
     hooks:
-      - id: mdformat
-        additional_dependencies:
-          - mdformat-admon
-          - mdformat-footnote
-          - mdformat-frontmatter
+      - id: markdownlint-cli2
+        args: ["--fix", "--config", ".markdownlint.jsonc"]
 
   # Repository local hooks
   - repo: local
