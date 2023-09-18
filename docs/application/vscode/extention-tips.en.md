@@ -64,6 +64,24 @@ markdownlint is a VSCode extension that includes a library of rules that promote
 Enable Extensions > User > Markdownlint: Config (edit in settings.json)
 ```
 
+![markdown-defaultFormatter](./images/markdown-defaultFormatter.png)
+
+If the default settings succeed, the following will be reflected in the user-specified `setting.json`. (The same applies for other languages)
+
+```json
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+```
+
+If changed to `markdown-all-in-one` it will change.
+
+```json
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+```
+
 #### Disabled markdownlint Markdown check items (markdownlint.config)
 
 The settings used are as follows:
