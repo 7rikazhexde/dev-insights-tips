@@ -1784,6 +1784,17 @@ markdownlint is a VSCode extension that includes a library of rules that promote
 <h4 id="markdownlint-markdown-checklist-changes-settingsjson">markdownlint Markdown checklist changes (settings.json)<a class="headerlink" href="#markdownlint-markdown-checklist-changes-settingsjson" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>Enable Extensions &gt; User &gt; Markdownlint: Config (edit in settings.json)
 </code></pre></div>
+<p><a class="glightbox" href="../images/markdown-defaultFormatter.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="markdown-defaultFormatter" src="../images/markdown-defaultFormatter.png" /></a></p>
+<p>If the default settings succeed, the following will be reflected in the user-specified <code>setting.json</code>. (The same applies for other languages)</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;[markdown]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DavidAnson.vscode-markdownlint&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+</code></pre></div>
+<p>If changed to <code>markdown-all-in-one</code> it will change.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;[markdown]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;yzhang.markdown-all-in-one&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+</code></pre></div>
 <h4 id="disabled-markdownlint-markdown-check-items-markdownlintconfig">Disabled markdownlint Markdown check items (markdownlint.config)<a class="headerlink" href="#disabled-markdownlint-markdown-check-items-markdownlintconfig" title="Permanent link">&para;</a></h4>
 <p>The settings used are as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nt">&quot;markdownlint.config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>

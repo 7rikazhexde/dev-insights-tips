@@ -1,15 +1,14 @@
 {
-    "files.exclude": {
-        "**/.git": false
-    },
-    "markdown.extension.toc.updateOnSave": false,
-    "editor.formatOnSave": true,
-    "eslint.codeActionsOnSave.rules": null,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "python.formatting.provider": "none",
-    //"[markdown]": {
-    //     "editor.formatOnSave": false
-    //},
+  "files.exclude": {
+    "**/.git": false
+  },
+  // 保存時に目次（TOC）を自動更新するか
+  "markdown.extension.toc.updateOnSave": false,
+  // ファイル保存時にフォーマットする
+  "editor.formatOnSave": true,
+  // フォーマット対象をファイルタイプで指定する
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.codeActionsOnSave.rules": null
 }

@@ -1808,6 +1808,17 @@ markdownlintはMarkdownファイルの標準と一貫性を促進するルール
 <h3 id="_7">ファイル保存時に修正する<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>Markdownファイルを全て選択 &gt; 右クリック &gt; ドキュメントのフォーマット…(２つある内の下で「…」の方) &gt; 既定のフォーマッタ…変更
 </code></pre></div>
+<p><a class="glightbox" href="../images/markdown-defaultFormatter.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="markdown-defaultFormatter" src="../images/markdown-defaultFormatter.png" /></a></p>
+<p>デフォルト設定が成功するとユーザー指定の<code>setting.json</code>に以下が反映される。(他の言語の場合も同様)</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;[markdown]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;DavidAnson.vscode-markdownlint&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+</code></pre></div>
+<p>もし、<code>markdown-all-in-one</code>　に変更すると変更されます。</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;[markdown]&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;editor.defaultFormatter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;yzhang.markdown-all-in-one&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+</code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <ul>

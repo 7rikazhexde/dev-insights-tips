@@ -515,40 +515,48 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vscodesettingsjson" class="md-nav__link">
-    .vscode/settings.json
+  <a href="#file-path" class="md-nav__link">
+    File path
   </a>
   
-    <nav class="md-nav" aria-label=".vscode/settings.json">
+    <nav class="md-nav" aria-label="File path">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hidden-file-view" class="md-nav__link">
-    hidden file view
+  <a href="#_1" class="md-nav__link">
+    参考記事
   </a>
   
-    <nav class="md-nav" aria-label="hidden file view">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workspace" class="md-nav__link">
+    Workspace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     .git
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1550,40 +1558,48 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vscodesettingsjson" class="md-nav__link">
-    .vscode/settings.json
+  <a href="#file-path" class="md-nav__link">
+    File path
   </a>
   
-    <nav class="md-nav" aria-label=".vscode/settings.json">
+    <nav class="md-nav" aria-label="File path">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hidden-file-view" class="md-nav__link">
-    hidden file view
+  <a href="#_1" class="md-nav__link">
+    参考記事
   </a>
   
-    <nav class="md-nav" aria-label="hidden file view">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workspace" class="md-nav__link">
+    Workspace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     .git
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1609,9 +1625,40 @@
 <h1 id="setting">setting<a class="headerlink" href="#setting" title="Permanent link">&para;</a></h1>
 <p>This section summarizes information related to vscode / setting.</p>
 <h2 id="setting-fileuserworkspace">setting file(user/workspace)<a class="headerlink" href="#setting-fileuserworkspace" title="Permanent link">&para;</a></h2>
-<h3 id="vscodesettingsjson"><code>.vscode/settings.json</code><a class="headerlink" href="#vscodesettingsjson" title="Permanent link">&para;</a></h3>
-<h4 id="hidden-file-view">hidden file view<a class="headerlink" href="#hidden-file-view" title="Permanent link">&para;</a></h4>
-<h5 id="git">.git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h5>
+<p>Either of the following</p>
+<ul>
+<li>Search for <code>settings.json</code> in the command palette (Mac: Command + Shift + P / Windows: Ctrl + Shift + P) and press Open Settings (json).</li>
+<li>Open a user or workspace with the shortcut keys (Mac: Command + , / Windows: Ctrl + ,)</li>
+</ul>
+<h3 id="file-path">File path<a class="headerlink" href="#file-path" title="Permanent link">&para;</a></h3>
+<h4 id="_1">参考記事<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<p><a href="https://maku.blog/p/tfq2cnw/#%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E8%A8%AD%E5%AE%9A%E3%81%A8%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E8%A8%AD%E5%AE%9A">VS Code の設定ファイルの場所 (settings.json)</a></p>
+<h4 id="user">User<a class="headerlink" href="#user" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>User configuration file path(settings.json)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>%APPDATA%\Code\User\settings.json</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>$HOME/Library/Application Support/Code/User/settings.json</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>$HOME/.config/Code/User/settings.json</td>
+</tr>
+</tbody>
+</table>
+<h4 id="workspace">Workspace<a class="headerlink" href="#workspace" title="Permanent link">&para;</a></h4>
+<p><code>&lt;project root&gt;/.vscode/settings.json</code></p>
+<h2 id="git">.git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
 <p>Settings &gt; Workspace(Search:<code>Exclude</code>) &gt; Press <code>X</code>(remove excluded items) for <code>**/.git</code> from file</p>
 
 

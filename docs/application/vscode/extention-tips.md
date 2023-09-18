@@ -98,6 +98,24 @@ Markdownファイルを全て選択 > 右クリック > ドキュメントのフ
 Markdownファイルを全て選択 > 右クリック > ドキュメントのフォーマット…(２つある内の下で「…」の方) > 既定のフォーマッタ…変更
 ```
 
+![markdown-defaultFormatter](./images/markdown-defaultFormatter.png)
+
+デフォルト設定が成功するとユーザー指定の`setting.json`に以下が反映される。(他の言語の場合も同様)
+
+```json
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+```
+
+もし、`markdown-all-in-one`　に変更すると変更されます。
+
+```json
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+```
+
 !!! info
     - もし、実行されない場合は`Editor: Format On Save`が有効になっているか確認してください。
     - settigs.json: `"editor.formatOnSave": true,`
