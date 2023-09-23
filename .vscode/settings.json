@@ -9,7 +9,7 @@
   // フォーマット対象をファイルタイプで指定する
   // Markdownファイルは無効
   "[markdown]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "eslint.codeActionsOnSave.rules": null
 }
