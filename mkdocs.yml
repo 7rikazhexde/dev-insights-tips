@@ -92,6 +92,11 @@ nav:
           - ja/application/workflowy/workflowy-tips.md
       - Inkscape:
           - ja/application/inkscape/inkscape-tips.md
+  - AWS:
+      - ja/aws/index.md
+      - ja/aws/aws_cli-tips.md
+      - DynamoDB local:
+          - ja/aws/dynamodb/dynamodb-local-tips.md
   - Command line tool:
       - ja/command-line-tool/index.md
       - vi:
