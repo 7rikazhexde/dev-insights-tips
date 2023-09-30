@@ -12,29 +12,24 @@ For more information, please check the following:
 - [Official Documents](https://squidfunk.github.io/mkdocs-material/getting-started/)
 - [Reference](./mkdocs-tips.md/#reference)
 
+### Highlight notes, hints, and warnings in the text
+
+Reference: [admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+
+```yaml title="" linenums="1"
+markdown_extensions:
+  - admonition # (1)!
+  - pymdownx.details # (2)!
+  - pymdownx.superfences # (3)!
+```
+
+1. Highlight notes, hints, and warnings within sentences
+2. detail blocks (!!!! to ??? to be)
+3. code fences
+
 !!! tip
     If you are using a markdown formatter (e.g. mdformat), you should use [pre-commit-hooks](https://pre-commit.com/#pre-commit-configyaml---hooks) to set up the [mdformat-mkdocs](https://github.com/KyleKing/mdformat-mkdocs#usage) plugin is recommended.
     The reason is that [here](./mdformat-tips.md/#mdformat-admon).
-
-### mkdocs.yml
-
-```yaml
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.16
-    hooks:
-      - id: mdformat
-        additional_dependencies:
-          - mdformat-admon
-          - mdformat-beautysh
-          - mdformat-black
-          - mdformat-config
-          - mdformat-footnote
-          - mdformat-frontmatter
-          - mdformat-simple-breaks
-          - mdformat-tables
-          - mdformat-toc
-          - mdformat-web
-```
 
 ## Reference
 

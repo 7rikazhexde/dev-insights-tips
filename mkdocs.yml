@@ -33,10 +33,18 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    # Enable link setting on section
     - navigation.indexes
+    # Back-to-top button
     - navigation.top
+    # groups in the sidebar
+    #- navigation.sections
+    # expand all collapsible subsections
     #- navigation.expand
     - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    #- content.tabs.link
 
 extra:
   social:
@@ -108,11 +116,14 @@ nav:
       - Python:
           - ja/programming-language/python/index.md
           - ja/programming-language/python/dash-plotly-tips.md
+          - ja/programming-language/python/mdformat-tips.md
+          - Mkdocs tips:
+              - ja/programming-language/python/mkdocs/index.md
+              - ja/programming-language/python/mkdocs/doc_config-tips.md
+              - ja/programming-language/python/mkdocs/display-config_tips.md
           - ja/programming-language/python/pre-commit-tips.md
           - ja/programming-language/python/post-commit-tips.md
           - ja/programming-language/python/pymysql-tips.md
-          - ja/programming-language/python/mdformat-tips.md
-          - ja/programming-language/python/mkdocs-tips.md
       - AppleScript:
           - ja/programming-language/applescript/index.md
   - Database:
@@ -126,16 +137,6 @@ nav:
 
 plugins:
   - search:
-  #- i18n:
-  #    default_language: ja
-  #    languages:
-  #      en: English
-  #      ja: 日本語
-  #    nav_translations:
-  #      en:
-  #        #site_name: Dev Insights Tips
-  #        Home: Home
-  #        #Database: Database
   - i18n:
       docs_structure: folder
       fallback_to_default: true
@@ -156,21 +157,26 @@ plugins:
 
 markdown_extensions:
   - footnotes
-  - codehilite:
-      noclasses: true
-      pygments_style: colorful
-      linenums: true
   - plantuml_markdown:
       server: http://www.plantuml.com/plantuml
+  # For Admonition
   - admonition
-  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.details
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.tabbed
-  #- pymdownx.emoji:
-  #    emoji_index: !!python/name:materialx.emoji.twemoji
-  #    emoji_generator: !!python/name:materialx.emoji.to_svg
+  # For Code Blocks
+  - pymdownx.highlight:
+      #use_pygments: true
+      #noclasses: true
+      #pygments_style: monokai
+      linenums: true
+  #- pymdownx.inlinehilite
+  - pymdownx.superfences
+  # For Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
+  # For Meta Tag(Relate: Twitter Cards/OGP)
   - meta
