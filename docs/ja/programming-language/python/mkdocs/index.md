@@ -12,31 +12,13 @@ MkDocsは静的サイトジェネレータです。コンテンツは基本的�
 - [公式ドキュメント](https://squidfunk.github.io/mkdocs-material/getting-started/)
 - [参考記事](./mkdocs-tips.md/#_3)
 
-### プラグインの設定
+## 設定
 
-!!! tip
-    markdownフォーマッタ(例: mdformat)を使用している場合は、[pre-commit-hooks](https://pre-commit.com/#pre-commit-configyaml---hooks)で[mdformat-mkdocs](https://github.com/KyleKing/mdformat-mkdocs#usage)のプラグインを設定するのを推奨します。
-    理由は[こちらのページ](./mdformat-tips.md/#mdformat-admon)でも記載しています。
+コンテンツの各種設定は`mkdocs.yml`に記述します。
 
-### mkdocs.yml
+### [ドキュメント構成](./doc_config-tips.md)
 
-```yaml
-  - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.16
-    hooks:
-      - id: mdformat
-        additional_dependencies:
-          - mdformat-admon
-          - mdformat-beautysh
-          - mdformat-black
-          - mdformat-config
-          - mdformat-footnote
-          - mdformat-frontmatter
-          - mdformat-simple-breaks
-          - mdformat-tables
-          - mdformat-toc
-          - mdformat-web
-```
+### [表示](./display-config_tips.md)
 
 ## 参考記事
 

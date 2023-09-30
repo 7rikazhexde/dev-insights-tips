@@ -21,7 +21,7 @@ repos:
       # yaml syntax check
       - id: check-yaml
         # Exclude check for "could not determine a constructor for the tag 'tag:yaml.org,2002:python/name:materialx.emoji.twemoji'"
-        # args: [--unsafe]
+        args: [--unsafe]
 
   # https://python-poetry.org/docs/pre-commit-hooks/#usage
   - repo: https://github.com/python-poetry/poetry
@@ -116,14 +116,14 @@ repos:
       #  types: [markdown]
 
       # Original script
-      #- id: update-pyproject
-      #  name: mkdocs build
-      #  entry: poetry run python ci/run_mkdocs_cmd.py
-      #  language: system
-      #  verbose: true
-      #  pass_filenames: false
-      #  stages: [commit]
-      #  additional_dependencies: []
+      - id: update-pyproject
+        name: mkdocs build
+        entry: poetry run python ci/run_mkdocs_cmd.py
+        language: system
+        verbose: true
+        pass_filenames: false
+        stages: [commit]
+        additional_dependencies: []
 
       #- id: update-pyproject
       #  name: Update pyproject.toml version
