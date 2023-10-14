@@ -1,5 +1,21 @@
 # dynamodb-local tips
 
+Quote by ChatGPT (as of 10/14/2023).
+
+> DynamoDB Local is a downloadable DynamoDB implementation provided by AWS that allows you to build DynamoDB in a local environment [^1][^2][^3].
+> Available as an Apache Maven dependency or Docker image.
+>
+> Key features and usage of DynamoDB Local.
+>
+> - **Use in a local environment**: DynamoDB Local allows you to run DynamoDB in a local environment for development and testing.
+> - **Docker image**: You can build DynamoDB locally using the "dynamodb-local" Docker image provided by AWS to create tables, items, etc.
+> - **Data persistence**: If you want to persist data, you can use the `-v` option to mount the `/data` directory to your local `. /data` directory to mount and store the data.
+> - **dynamodb-admin**: There is a tool called "dynamodb-admin", which allows you to manipulate locally built DynamoDB via GUI.
+
+[^1]: [AWS] DynamoDB Local - Qiita. <https://qiita.com/to-fmak/items/3a6df367196ed216b1a4>.
+[^2]: DynamoDB local this and that - freee Developers Hub. <https://developers.freee.co.jp/entry/dynamodb-local>.
+[^3]: I tried connecting to DynamoDB local with Lambda (Python) | ramble .... <https://ramble.impl.co.jp/3718/>.
+
 !!! note
 
     The following information is required to use dynamodb-local.

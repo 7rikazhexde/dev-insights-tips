@@ -1,4 +1,20 @@
-# dynamodb-local tips
+# dynamodb-local
+
+ChatGPTによる引用(2023/10/14時点)
+
+> DynamoDB Localは、AWSが提供しているダウンロード可能なDynamoDBの実装で、ローカル環境でDynamoDBを構築することができます[^1][^2][^3]。
+> Apache Maven dependencyまたはDockerイメージとして使用できます。
+>
+> DynamoDB Localの主な特徴と使用方法
+>
+> - **ローカル環境での利用**：DynamoDB Localは、開発やテストのためにローカル環境でDynamoDBを動作させることが可能です。
+> - **Dockerイメージ**：AWSが提供している「dynamodb-local」というDockerイメージを使ってローカルでDynamoDBを構築し、テーブル作成やアイテム作成などを行うことができます。
+> - **データの永続化**：データを永続化したい場合は、`-v`オプションで`/data`ディレクトリをローカルの `./data` ディレクトリにマウントして、データを保存します。
+> - **dynamodb-admin**：「dynamodb-admin」というツールがあり、これを使うとローカルで構築したDynamoDBをGUIで操作することが可能です。
+
+[^1]: [AWS]DynamoDB Localを使ってみた - Qiita. <https://qiita.com/to-fmak/items/3a6df367196ed216b1a4>.
+[^2]: DynamoDB local のあれこれ - freee Developers Hub. <https://developers.freee.co.jp/entry/dynamodb-local>.
+[^3]: Lambda(Python)でDynamoDB localに接続してみた | ramble .... <https://ramble.impl.co.jp/3718/>.
 
 !!! note
 
@@ -9,11 +25,13 @@
 
     [環境変数(export)](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-configure-envvars.html)または、[AWS CLI](../aws_cli-tips.md)により設定してください。
 
+## Pythonによる操作例
+
 !!! tips
 
     プログラムを実行する場合は[boto3（AWS SDK for Python）](https://aws.amazon.com/jp/sdk-for-python/)をインストールしてください。
 
-## テーブル作成
+### テーブル作成
 
 ??? info "create_table.py"
 
@@ -65,7 +83,7 @@
         print("Table status:", table.table_status)
     ```
 
-## テーブルリスト取得
+### テーブルリスト取得
 
 ??? info "get_table_lists.py"
 
@@ -92,7 +110,7 @@
             print(table)
     ```
 
-## データ一括追加
+### データ一括追加
 
 以下のcsvファイルを一括追加します。
 

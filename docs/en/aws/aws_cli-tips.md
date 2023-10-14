@@ -1,4 +1,4 @@
-# AWS CLI tips
+# AWS CLI
 
 Reference: Official Site([https://aws.amazon.com/cli/?nc1=h_ls](https://aws.amazon.com/cli/?nc1=h_ls))
 
