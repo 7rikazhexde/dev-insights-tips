@@ -103,8 +103,8 @@ nav:
   - AWS:
       - ja/aws/index.md
       - ja/aws/aws_cli-tips.md
-      - DynamoDB local:
-          - ja/aws/dynamodb/dynamodb-local-tips.md
+      - DynamoDB:
+          - ja/aws/dynamodb/index.md
   - Command line tool:
       - ja/command-line-tool/index.md
       - vi:
@@ -128,7 +128,16 @@ nav:
           - ja/programming-language/applescript/index.md
   - Database:
       - ja/database/index.md
-      - ja/database/mariadb-tips.md
+      - MariaDB:
+          - ja/database/mariadb/index.md
+      - MongoDB:
+          - ja/database/mongodb/index.md
+          - ja/database/mongodb/install-mongodb.md
+          - ja/database/mongodb/mongodb-compass.md
+          - ja/database/mongodb/mongosh.md
+          - ja/database/mongodb/pymongo.md
+      - DynamoDB:
+          - ja/database/dynamodb/index.md
   - Markdown:
       - ja/markdown/markdown-tips.md
   - Raspberry Pi:

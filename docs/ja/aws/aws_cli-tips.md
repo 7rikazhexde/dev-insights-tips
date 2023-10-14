@@ -1,4 +1,4 @@
-# AWS CLI tips
+# AWS CLI
 
 公式サイト([https://aws.amazon.com/jp/cli/](https://aws.amazon.com/jp/cli/))引用:
 
