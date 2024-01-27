@@ -3,12 +3,12 @@
 ## Editor
 
 - [vscode](./vscode/index.md)
-- [obsidian](./obsidian/obsidian-tips.md)
+- [obsidian](./obsidian/index.md)
 
 ## Task management
 
-- [workflowy](./workflowy/workflowy-tips.md)
+- [workflowy](./workflowy/index.md)
 
 ## Design
 
-- [inkscape](./inkscape/inkscape-tips.md)
+- [inkscape](./inkscape/index.md)
