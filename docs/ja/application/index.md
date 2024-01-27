@@ -3,12 +3,12 @@
 ## エディター
 
 - [vscode](./vscode/index.md)
-- [obsidian](./obsidian/obsidian-tips.md)
+- [obsidian](./obsidian/index.md)
 
 ## タスク管理
 
-- [workflowy](./workflowy/workflowy-tips.md)
+- [workflowy](./workflowy/index.md)
 
 ## デザイン
 
-- [inkscape](./inkscape/inkscape-tips.md)
+- [inkscape](./inkscape/index.md)

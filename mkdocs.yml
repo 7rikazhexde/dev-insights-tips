@@ -95,11 +95,13 @@ nav:
           - ja/application/vscode/setting-tips.md
           - ja/application/vscode/extention-tips.md
       - Obsidian:
-          - ja/application/obsidian/obsidian-tips.md
+          - ja/application/obsidian/index.md
       - Workflowly:
-          - ja/application/workflowy/workflowy-tips.md
+          - ja/application/workflowy/index.md
       - Inkscape:
-          - ja/application/inkscape/inkscape-tips.md
+          - ja/application/inkscape/index.md
+      - Shortcuts:
+          - ja/application/shortcuts/index.md
   - AWS:
       - ja/aws/index.md
       - ja/aws/aws_cli-tips.md
