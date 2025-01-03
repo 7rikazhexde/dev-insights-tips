@@ -1,3 +1,10 @@
+---
+tags:
+  - mkdocs
+  - tips
+  - python
+---
+
 # MkDocs tips
 
 MkDocs is a static site generator. Contents are basically source files written in markdown format.

@@ -33,6 +33,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     # Enable link setting on section
     - navigation.indexes
     # Back-to-top button
@@ -86,8 +88,16 @@ extra:
             use the link below to provide feedback on this page.<br>
             <a href="https://github.com/7rikazhexde/dev-insights-tips/issues/new" target="_blank" rel="noopener">submit github new issue</a>
 
+extra_css:
+  # Ref: https://squidfunk.github.io/mkdocs-material/customization/#additional-css
+  # Ref: https://github.com/Shigezo32/MkDocs/
+  #- https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+  #- stylesheets/custom.css
+  #- stylesheets/extra.css
+
 nav:
-  - Home: index.md
+  - Home: ja/index.md
+  - Tag: ja/tags.md
   - Application:
       - ja/application/index.md
       - VSCode:
@@ -165,6 +175,8 @@ plugins:
       reconfigure_material: true
       reconfigure_search: true
   - glightbox
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - footnotes

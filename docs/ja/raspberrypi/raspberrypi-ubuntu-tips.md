@@ -1,4 +1,13 @@
-# Raspberry Pi Ubuntu tips
+---
+title: Raspberry Pi Ubuntu tips
+tags:
+  - Raspberry Pi
+  - Ubuntu
+description:
+---
+
+<!--# Raspberry Pi Ubuntu tips-->
+<!--上記を有効にするとnavに表示される-->
 
 Raspberry Pi(Ubuntu OS)に関連する情報をまとめます。
 

@@ -1,3 +1,10 @@
+---
+tags:
+  - python
+  - git
+  - pre-commit
+---
+
 # pre-commit tips
 
 pre-commit, a feature of `git hook`, is a tool available on PyPl to set up commands and scripts to be run automatically before committing in a Git repository. This tool is used to maintain code quality and ensure consistency.
