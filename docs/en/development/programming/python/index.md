@@ -1,6 +1,7 @@
 ---
 title: Python
-tags: Python
+tags: 
+  - Python
 description:
 ---
 

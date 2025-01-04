@@ -20,7 +20,7 @@ git clone https://github.com/7rikazhexde/dev-insights.git
 ```
 
 > 🚨 **Note:**<br />
-> **This project assumes that you have installed Poetry**
+> **This project assumes that you have installed Poetry.**\
 > **For Poetry installation, [check the official website](https://python-poetry.org/docs/#installing-with-the-official-installer).**
 
 ```bash
@@ -41,8 +41,8 @@ pip install -r requirements-dev.txt
 create `.git/hooks/pre-commit`
 
 > ℹ️ **Note:**<br />
-> **Create pre-commit and post-commit if you want to automate version updates of Pyproject.toml and tag.**
-> **[Reference](https://github.com/7rikazhexde/trial-test/issues/1)**
+> **Install pre-commit if you want to run static analysis before committing.**\
+> **For pre-commit installation, [check the official website](https://pre-commit.com/)**
 
 ```bash
 poetry run pre-commit install
@@ -57,13 +57,6 @@ poetry run pre-commit install
 
 ```bash
 poetry run python ci/set_pre-commit-hooks_exclude.py
-```
-
-create `.git/hooks/post-commit`
-
-```bash
-chmod +x create_post-commit.sh
-./create_post-commit.sh
 ```
 
 #### Launch local website
