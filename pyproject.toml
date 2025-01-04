@@ -5,7 +5,7 @@ license = "MIT"
 name = "dev-insights-tips"
 package-mode = false
 readme = "README.md"
-version = "0.1.50"
+version = "0.1.51"
 
 [tool.poetry.dependencies]
 mdformat = "^0.7.16"
