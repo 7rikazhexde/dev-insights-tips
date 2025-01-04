@@ -11,5 +11,7 @@
   "[markdown]": {
     "editor.formatOnSave": true
   },
-  "eslint.codeActionsOnSave.rules": null
+  "eslint.codeActionsOnSave.rules": null,
+  // ファイル保存時に改行を挿入する
+  "files.insertFinalNewline": true
 }

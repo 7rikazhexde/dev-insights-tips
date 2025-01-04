@@ -2,596 +2,974 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/tags/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/tags/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/tags/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/inkscape/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/inkscape/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/inkscape/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/cloud/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/community_plugins/auto_template_trigger/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/community_plugins/auto_template_trigger/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/community_plugins/auto_template_trigger/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/community_plugins/plantuml/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/aws-cli/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/community_plugins/plantuml/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/community_plugins/plantuml/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/aws-cli/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/aws-cli/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/shortcuts/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/dynamodb/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/shortcuts/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/dynamodb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/dynamodb/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/vscode/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/dynamodb/dynamodb-local/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/vscode/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/dynamodb/dynamodb-local/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/dynamodb/dynamodb-local/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/vscode/extention-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/vscode/extention-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/extention-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/vscode/setting-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/dynamodb/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/vscode/setting-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/setting-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/dynamodb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/dynamodb/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/application/workflowy/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/mariadb/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/workflowy/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/workflowy/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mariadb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mariadb/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/aws/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/aws/aws_cli-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/install-mongodb/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/aws_cli-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/aws_cli-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/install-mongodb/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/install-mongodb/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/aws/dynamodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/mongodb-compass/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/dynamodb/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/dynamodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/mongodb-compass/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/mongodb-compass/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/aws/dynamodb/dynamodb-local/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/mongosh/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/dynamodb/dynamodb-local/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/dynamodb/dynamodb-local/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/mongosh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/mongosh/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/pymongo/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/pymongo/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/pymongo/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/git/git-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/embedded/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/git/git-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/git/git-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/embedded/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/vi/vi-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/embedded/raspberrypi/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/vi/vi-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/vi/vi-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/embedded/raspberrypi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/raspberrypi/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/embedded/raspberrypi/raspberrypi-ubuntu/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/embedded/raspberrypi/raspberrypi-ubuntu/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/raspberrypi/raspberrypi-ubuntu/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/dynamodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/dynamodb/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/dynamodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/mariadb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/applescript/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mariadb/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mariadb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/applescript/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/applescript/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/applescript/example/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/applescript/example/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/applescript/example/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/install-mongodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/install-mongodb/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/install-mongodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/mongodb-compass/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/dash-plotly/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/mongodb-compass/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/mongodb-compass/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/dash-plotly/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/dash-plotly/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/mongosh/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/mdformat/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/mongosh/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/mongosh/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/mdformat/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/mdformat/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/pymongo/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/pymysql/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/pymongo/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/pymongo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/pymysql/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/pymysql/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/markdown/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/markdown/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/markdown/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/markdown/markdown-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/markdown/markdown-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/markdown/markdown-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/post-commit/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/post-commit/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/post-commit/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/applescript/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/pre-commit/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/applescript/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/applescript/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/pre-commit/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/pre-commit/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/applescript/example/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/design/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/applescript/example/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/applescript/example/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/design/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/design/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/design/inkscape/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/design/inkscape/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/design/inkscape/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/dash-plotly-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/dash-plotly-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/dash-plotly-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mdformat-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/markdown/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mdformat-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mdformat-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/markdown/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/markdown/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/post-commit-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/post-commit-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/post-commit-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/pre-commit-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/display-config/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/pre-commit-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/pre-commit-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/display-config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/display-config/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/pymysql-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/doc_config/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/pymysql-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/pymysql-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/doc_config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/doc_config/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/display-config_tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/display-config_tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/display-config_tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/doc_config-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/doc_config-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/doc_config-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/raspberrypi/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/raspberrypi/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/raspberrypi/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger/"/>
     </url>
     <url>
-        <loc>https://7rikazhexde.github.io/dev-insights-tips/raspberrypi/raspberrypi-ubuntu-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/plantuml/</loc>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/raspberrypi/raspberrypi-ubuntu-tips/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/raspberrypi/raspberrypi-ubuntu-tips/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/plantuml/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/plantuml/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/workflowy/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/workflowy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/workflowy/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vi/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vi/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/extention/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/extention/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/extention/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/setting/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/setting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/setting/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/shortcuts/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/shortcuts/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/version-control/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/version-control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/version-control/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/development/tools/version-control/git/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/version-control/git/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/version-control/git/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/"/>
     </url>
     <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/tags0/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/tags0/"/>
+    </url>
+    <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/inkscape/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/inkscape/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/inkscape/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/community_plugins/auto_template_trigger/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/community_plugins/auto_template_trigger/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/community_plugins/auto_template_trigger/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/community_plugins/plantuml/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/obsidian/community_plugins/plantuml/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/obsidian/community_plugins/plantuml/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/shortcuts/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/shortcuts/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/shortcuts/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/vscode/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/extention-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/extention-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/vscode/extention-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/setting-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/vscode/setting-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/vscode/setting-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/application/workflowy/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/application/workflowy/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/application/workflowy/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/aws/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/aws/aws_cli-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/aws_cli-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/aws_cli-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/aws/dynamodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/dynamodb/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/dynamodb/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/aws/dynamodb/dynamodb-local/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/aws/dynamodb/dynamodb-local/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/aws/dynamodb/dynamodb-local/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/git/git-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/git/git-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/git/git-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/vi/vi-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/command-line-tool/vi/vi-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/command-line-tool/vi/vi-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/dynamodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/dynamodb/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/dynamodb/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/mariadb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mariadb/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mariadb/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/install-mongodb/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/install-mongodb/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/install-mongodb/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/mongodb-compass/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/mongodb-compass/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/mongodb-compass/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/mongosh/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/mongosh/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/mongosh/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/pymongo/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/database/mongodb/pymongo/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/database/mongodb/pymongo/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/markdown/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/markdown/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/markdown/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/markdown/markdown-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/markdown/markdown-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/markdown/markdown-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/applescript/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/applescript/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/applescript/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/applescript/example/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/applescript/example/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/applescript/example/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/dash-plotly-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/dash-plotly-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/dash-plotly-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mdformat-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mdformat-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mdformat-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/post-commit-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/post-commit-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/post-commit-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/pre-commit-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/pre-commit-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/pre-commit-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/pymysql-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/pymysql-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/pymysql-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/display-config_tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/display-config_tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/display-config_tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/doc_config-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/programming-language/python/mkdocs/doc_config-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/programming-language/python/mkdocs/doc_config-tips/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/raspberrypi/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/raspberrypi/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/raspberrypi/"/>
     </url>
     <url>
         <loc>https://7rikazhexde.github.io/dev-insights-tips/en/raspberrypi/raspberrypi-ubuntu-tips/</loc>
-        <lastmod>2024-01-27</lastmod>
+        <lastmod>2025-01-04</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/raspberrypi/raspberrypi-ubuntu-tips/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/raspberrypi/raspberrypi-ubuntu-tips/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/tags/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/tags/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/tags/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/aws-cli/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/aws-cli/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/aws-cli/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/dynamodb/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/dynamodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/dynamodb/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/dynamodb/dynamodb-local/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/cloud/aws/dynamodb/dynamodb-local/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/cloud/aws/dynamodb/dynamodb-local/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/dynamodb/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/dynamodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/dynamodb/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mariadb/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mariadb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mariadb/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/install-mongodb/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/install-mongodb/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/install-mongodb/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/mongodb-compass/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/mongodb-compass/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/mongodb-compass/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/mongosh/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/mongosh/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/mongosh/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/pymongo/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/database/mongodb/pymongo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/database/mongodb/pymongo/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/embedded/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/raspberrypi/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/raspberrypi/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/embedded/raspberrypi/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/raspberrypi/raspberrypi-ubuntu/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/embedded/raspberrypi/raspberrypi-ubuntu/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/embedded/raspberrypi/raspberrypi-ubuntu/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/applescript/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/applescript/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/applescript/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/applescript/example/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/applescript/example/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/applescript/example/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/dash-plotly/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/dash-plotly/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/dash-plotly/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/mdformat/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/mdformat/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/mdformat/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/pymysql/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/programming/python/pymysql/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/programming/python/pymysql/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/post-commit/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/post-commit/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/post-commit/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/pre-commit/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/ci/pre-commit/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/ci/pre-commit/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/design/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/design/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/design/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/design/inkscape/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/design/inkscape/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/design/inkscape/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/markdown/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/markdown/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/markdown/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/display-config/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/display-config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/display-config/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/doc_config/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/mkdocs/doc_config/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/mkdocs/doc_config/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/plantuml/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/obsidian/community_plugins/plantuml/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/obsidian/community_plugins/plantuml/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/workflowy/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/document/pkm/workflowy/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/document/pkm/workflowy/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vi/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vi/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vi/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/extention/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/extention/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/extention/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/setting/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/editors/vscode/setting/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/editors/vscode/setting/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/shortcuts/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/shortcuts/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/shortcuts/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/version-control/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/version-control/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/version-control/"/>
+    </url>
+    <url>
+        <loc>https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/version-control/git/</loc>
+        <lastmod>2025-01-04</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://7rikazhexde.github.io/dev-insights-tips/en/development/tools/version-control/git/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://7rikazhexde.github.io/dev-insights-tips/development/tools/version-control/git/"/>
     </url>
 </urlset>

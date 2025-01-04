@@ -7,7 +7,7 @@ It aims to share information related to programming and development.
 
 Content(website) is managed by GitHub Pages.
 
-[https://7rikazhexde.github.io/dev-insights-tips/](https://7rikazhexde.github.io/dev-insights-tips/)
+[https://7rikazhexde.github.io/dev-insights/](https://7rikazhexde.github.io/dev-insights/)
 
 ## Usage
 
@@ -16,7 +16,7 @@ Content(website) is managed by GitHub Pages.
 If you want to launch website in a local repository, do the following.
 
 ```bash
-git clone https://github.com/7rikazhexde/dev-insights-tips.git
+git clone https://github.com/7rikazhexde/dev-insights.git
 ```
 
 > 🚨 **Note:**<br />

@@ -96,68 +96,160 @@ extra_css:
   #- stylesheets/extra.css
 
 nav:
+  #  - Home: index.md
+  #  - Tag: tags.md
+  #  - Development:
+  #      - development/index.md
+  #      - Cloud:
+  #          - development/cloud/index.md
+  #          - AWS:
+  #              - development/cloud/aws/index.md
+  #              - AWS CLI:
+  #                  - development/cloud/aws/aws-cli/index.md
+  #              - DynamoDB:
+  #                  - development/cloud/aws/dynamodb/index.md
+  #                  - DynamoDB Local: development/cloud/aws/dynamodb/dynamodb-local.md
+  #      - Database:
+  #          - development/database/index.md
+  #          - MariaDB: development/database/mariadb/index.md
+  #          - MongoDB:
+  #              - development/database/mongodb/index.md
+  #              - Install: development/database/mongodb/install-mongodb.md
+  #              - MongoDB Compass: development/database/mongodb/mongodb-compass.md
+  #              - Mongosh: development/database/mongodb/mongosh.md
+  #              - PyMongo: development/database/mongodb/pymongo.md
+  #          - DynamoDB: development/database/dynamodb/index.md
+  #      - Embedded:
+  #          - development/embedded/index.md
+  #          - RaspberryPi:
+  #              - development/embedded/raspberrypi/index.md
+  #              - Ubuntu: development/embedded/raspberrypi/raspberrypi-ubuntu.md
+  #      - Programming:
+  #          - development/programming/index.md
+  #          - AppleScript:
+  #              - development/programming/applescript/index.md
+  #              - Example: development/programming/applescript/example.md
+  #          - Python:
+  #              - development/programming/python/index.md
+  #              - Dash/Plotly: development/programming/python/dash-plotly.md
+  #              - mdformat: development/programming/python/mdformat.md
+  #              - PyMySQL: development/programming/python/pymysql.md
+  #      - Tools:
+  #          - development/tools/index.md
+  #          - CI:
+  #              - development/tools/ci/index.md
+  #              - pre-commit: development/tools/ci/pre-commit/index.md
+  #              - post-commit: development/tools/ci/post-commit/index.md
+  #          - Design:
+  #              - development/tools/design/index.md
+  #              - Inkscape: development/tools/design/inkscape/index.md
+  #          - Document:
+  #              - development/tools/document/index.md
+  #              - Markdown: development/tools/document/markdown/index.md
+  #              - MkDocs:
+  #                  - development/tools/document/mkdocs/index.md
+  #                  - 表示設定: development/tools/document/mkdocs/display-config.md
+  #                  - ドキュメント設定: development/tools/document/mkdocs/doc_config.md
+  #              - PKM:
+  #                  - development/tools/document/pkm/index.md
+  #                  - Obsidian:
+  #                      - development/tools/document/pkm/obsidian/index.md
+  #                      - Community Plugins:
+  #                          - development/tools/document/pkm/obsidian/community_plugins/index.md
+  #                          - Auto Template Trigger: development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger.md
+  #                          - PlantUML: development/tools/document/pkm/obsidian/community_plugins/plantuml.md
+  #                  - WorkFlowy: development/tools/document/pkm/workflowy/index.md
+  #          - Editors:
+  #              - development/tools/editors/index.md
+  #              - Vi: development/tools/editors/vi/index.md
+  #              - VSCode:
+  #                  - development/tools/editors/vscode/index.md
+  #                  - 拡張機能: development/tools/editors/vscode/extention.md
+  #                  - 設定: development/tools/editors/vscode/setting.md
+  #          - Shortcuts: development/tools/shortcuts/index.md
+  #          - Version Control:
+  #              - development/tools/version-control/index.md
+  #              - Git: development/tools/version-control/git/index.md
+  # For localize
   - Home: ja/index.md
   - Tag: ja/tags.md
-  - Application:
-      - ja/application/index.md
-      - VSCode:
-          - ja/application/vscode/index.md
-          - ja/application/vscode/setting-tips.md
-          - ja/application/vscode/extention-tips.md
-      - Obsidian:
-          - ja/application/obsidian/index.md
-      - Workflowly:
-          - ja/application/workflowy/index.md
-      - Inkscape:
-          - ja/application/inkscape/index.md
-      - Shortcuts:
-          - ja/application/shortcuts/index.md
-  - AWS:
-      - ja/aws/index.md
-      - ja/aws/aws_cli-tips.md
-      - DynamoDB:
-          - ja/aws/dynamodb/index.md
-  - Command line tool:
-      - ja/command-line-tool/index.md
-      - vi:
-          - ja/command-line-tool/vi/vi-tips.md
-      - Git:
-          - ja/command-line-tool/git/git-tips.md
-  - Programming language:
-      - ja/programming-language/index.md
-      - Python:
-          - ja/programming-language/python/index.md
-          - ja/programming-language/python/dash-plotly-tips.md
-          - ja/programming-language/python/mdformat-tips.md
-          - Mkdocs tips:
-              - ja/programming-language/python/mkdocs/index.md
-              - ja/programming-language/python/mkdocs/doc_config-tips.md
-              - ja/programming-language/python/mkdocs/display-config_tips.md
-          - ja/programming-language/python/pre-commit-tips.md
-          - ja/programming-language/python/post-commit-tips.md
-          - ja/programming-language/python/pymysql-tips.md
-      - AppleScript:
-          - ja/programming-language/applescript/index.md
-  - Database:
-      - ja/database/index.md
-      - MariaDB:
-          - ja/database/mariadb/index.md
-      - MongoDB:
-          - ja/database/mongodb/index.md
-          - ja/database/mongodb/install-mongodb.md
-          - ja/database/mongodb/mongodb-compass.md
-          - ja/database/mongodb/mongosh.md
-          - ja/database/mongodb/pymongo.md
-      - DynamoDB:
-          - ja/database/dynamodb/index.md
-  - Markdown:
-      - ja/markdown/markdown-tips.md
-  - Raspberry Pi:
-      - ja/raspberrypi/index.md
-      - ja/raspberrypi/raspberrypi-ubuntu-tips.md
+  - Development:
+      - ja/development/index.md
+      - Cloud:
+          - ja/development/cloud/index.md
+          - AWS:
+              - ja/development/cloud/aws/index.md
+              - AWS CLI:
+                  - ja/development/cloud/aws/aws-cli/index.md
+              - DynamoDB:
+                  - ja/development/cloud/aws/dynamodb/index.md
+                  - DynamoDB Local: ja/development/cloud/aws/dynamodb/dynamodb-local.md
+      - Database:
+          - ja/development/database/index.md
+          - MariaDB: ja/development/database/mariadb/index.md
+          - MongoDB:
+              - ja/development/database/mongodb/index.md
+              - Install: ja/development/database/mongodb/install-mongodb.md
+              - MongoDB Compass: ja/development/database/mongodb/mongodb-compass.md
+              - Mongosh: ja/development/database/mongodb/mongosh.md
+              - PyMongo: ja/development/database/mongodb/pymongo.md
+          - DynamoDB: ja/development/database/dynamodb/index.md
+      - Embedded:
+          - ja/development/embedded/index.md
+          - RaspberryPi:
+              - ja/development/embedded/raspberrypi/index.md
+              - Ubuntu: ja/development/embedded/raspberrypi/raspberrypi-ubuntu.md
+      - Programming:
+          - ja/development/programming/index.md
+          - AppleScript:
+              - ja/development/programming/applescript/index.md
+              - Example: ja/development/programming/applescript/example.md
+          - Python:
+              - ja/development/programming/python/index.md
+              - Dash/Plotly: ja/development/programming/python/dash-plotly.md
+              - mdformat: ja/development/programming/python/mdformat.md
+              - PyMySQL: ja/development/programming/python/pymysql.md
+      - Tools:
+          - ja/development/tools/index.md
+          - Design:
+              - ja/development/tools/design/index.md
+              - Inkscape: ja/development/tools/design/inkscape/index.md
+          - Document:
+              - ja/development/tools/document/index.md
+              - Markdown: ja/development/tools/document/markdown/index.md
+              - MkDocs:
+                  - ja/development/tools/document/mkdocs/index.md
+                  - Display settings: ja/development/tools/document/mkdocs/display-config.md
+                  - Document settings: ja/development/tools/document/mkdocs/doc_config.md
+              - PKM:
+                  - ja/development/tools/document/pkm/index.md
+                  - Obsidian:
+                      - ja/development/tools/document/pkm/obsidian/index.md
+                      - Community Plugins:
+                          - ja/development/tools/document/pkm/obsidian/community_plugins/index.md
+                          - Auto Template Trigger: ja/development/tools/document/pkm/obsidian/community_plugins/auto_template_trigger.md
+                          - PlantUML: ja/development/tools/document/pkm/obsidian/community_plugins/plantuml.md
+                  - WorkFlowy: ja/development/tools/document/pkm/workflowy/index.md
+          - Editors:
+              - ja/development/tools/editors/index.md
+              - Vi: ja/development/tools/editors/vi/index.md
+              - VSCode:
+                  - ja/development/tools/editors/vscode/index.md
+                  - Exxtension: ja/development/tools/editors/vscode/extention.md
+                  - Settings: ja/development/tools/editors/vscode/settings.md
+          - Shortcuts: ja/development/tools/shortcuts/index.md
+          - Version Control:
+              - ja/development/tools/version-control/index.md
+              - Git:
+                  - ja/development/tools/version-control/git/index.md
+                  - Git Hook:
+                      - ja/development/tools/version-control/git/git-hook/index.md
+                      - pre-commit: ja/development/tools/version-control/git/git-hook/index.md
+                      - post-commit: ja/development/tools/version-control/git/git-hook/index.md
 
 plugins:
   - search:
+  # For localize
   - i18n:
       docs_structure: folder
       fallback_to_default: true
@@ -177,6 +269,9 @@ plugins:
   - glightbox
   - tags:
       tags_file: tags.md
+      # For localize
+      # i18n設定でjaだけ有効にする場合はplugin/i18nをコメントアウトして以下有効にする必要がある
+      #tags_file: ja/tags.md
 
 markdown_extensions:
   - footnotes
@@ -198,7 +293,7 @@ markdown_extensions:
   # For Emoji
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
   # For Meta Tag(Relate: Twitter Cards/OGP)
