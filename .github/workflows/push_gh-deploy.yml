@@ -3,7 +3,17 @@
 
 name: ci
 on:
+  # 直接プッシュ時（[skip ci]がないもの）
   push:
+    branches:
+      - main
+  # 他のワークフローの完了時
+  workflow_run:
+    workflows:
+      - "Update pre-commit Hooks"
+      - "Update Requirements after Dependabot Merge"
+    types:
+      - completed
     branches:
       - main
 
@@ -15,6 +25,8 @@ permissions:
 
 jobs:
   deploy:
+    # 条件分岐の整理
+    if: (github.event_name == 'push' && !contains(github.event.head_commit.message, '[skip ci]')) || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,10 +46,3 @@ jobs:
         run: poetry install
       - name: Deploy GitHub Pages
         run: poetry run mkdocs gh-deploy --force
-      #- run: |
-      #    pip install mkdocs-material \
-      #                mkdocs-static-i18n \
-      #                pygments \
-      #                plantuml-markdown \
-      #                mkdocs-glightbox
-      #- run: mkdocs gh-deploy --force
