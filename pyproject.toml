@@ -17,6 +17,7 @@ pre-commit = "^4.0.1"
 pygments = "^2.19.1"
 python = "^3.10"
 tomlkit = "^0.13.2"
+poetry = "^2.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
