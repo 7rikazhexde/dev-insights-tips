@@ -987,13 +987,13 @@ files = [
 
 [[package]]
 name = "mkdocs-material"
-version = "9.6.2"
+version = "9.6.3"
 description = "Documentation that simply works"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "mkdocs_material-9.6.2-py3-none-any.whl", hash = "sha256:71d90dbd63b393ad11a4d90151dfe3dcbfcd802c0f29ce80bebd9bbac6abc753"},
-    {file = "mkdocs_material-9.6.2.tar.gz", hash = "sha256:a3de1c5d4c745f10afa78b1a02f917b9dce0808fb206adc0f5bb48b58c1ca21f"},
+    {file = "mkdocs_material-9.6.3-py3-none-any.whl", hash = "sha256:1125622067e26940806701219303b27c0933e04533560725d97ec26fd16a39cf"},
+    {file = "mkdocs_material-9.6.3.tar.gz", hash = "sha256:c87f7d1c39ce6326da5e10e232aed51bae46252e646755900f4b0fc9192fa832"},
 ]
 
 [package.dependencies]
@@ -1265,13 +1265,13 @@ testing = ["pytest", "pytest-cov", "wheel"]
 
 [[package]]
 name = "plantuml-markdown"
-version = "3.11.0"
+version = "3.11.1"
 description = "A PlantUML plugin for Markdown"
 optional = false
 python-versions = "*"
 files = [
-    {file = "plantuml_markdown-3.11.0-py3-none-any.whl", hash = "sha256:12ffce7c7e28d93f1356f61d51d3bfe8ccdc566870f2a09eba1059eceaceb8ba"},
-    {file = "plantuml_markdown-3.11.0.tar.gz", hash = "sha256:f113dc0a9f8ae5ee6b032266e7cf0c9ecf2e37ab6e04d7dcba47ee1130b6be10"},
+    {file = "plantuml_markdown-3.11.1-py3-none-any.whl", hash = "sha256:52c8507be5b4e5b57e3c4c1cfbe8894b6204f4b6bac2279896efb03d3b79bacf"},
+    {file = "plantuml_markdown-3.11.1.tar.gz", hash = "sha256:0ac39c5d13d3ea8b84ec88f57369a85d058ff15c0c225591dd649b327586142c"},
 ]
 
 [package.dependencies]
@@ -2231,4 +2231,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e2aad0a8fb38aecaa5581646a90bd4529ce58b7c85e566110d3d5dc1fb30f047"
+content-hash = "113ca2e52ec582cddf8156f83b737f6476e9075b14df641287a8b1c434946728"
