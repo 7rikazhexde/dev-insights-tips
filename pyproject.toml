@@ -17,11 +17,11 @@ pre-commit = "^4.1.0"
 pygments = "^2.19.1"
 python = "^3.10"
 tomlkit = "^0.13.2"
-poetry = "^2.0.1"
+poetry = "^2.1.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
-flake8 = "^7.1.1"
+flake8 = "^7.1.2"
 flake8-pyproject = "^1.2.3"
 isort = "^6.0.0"
 mypy = "^1.15.0"
