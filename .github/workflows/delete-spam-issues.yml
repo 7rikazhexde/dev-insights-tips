@@ -1,0 +1,32 @@
+name: Delete Spam Issues
+
+on:
+  schedule:
+    - cron: "0 */1 * * *" # 1時間ごとに実行
+  workflow_dispatch: # 手動実行も可能
+
+jobs:
+  delete-spam:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.3"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Setup GitHub CLI
+        uses: cli/cli-action@v2
+
+      - name: Run spam issue deleter
+        env:
+          SPAM_ISSUE_DELETER: ${{ secrets.SPAM_ISSUE_DELETER }}
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/spam_issue_deleter.py

@@ -31,24 +31,24 @@ repos:
       - id: poetry-lock
         verbose: true
 
-  - repo: local
-    hooks:
-      - id: poetry-export
-        name: Export requirements.txt
-        entry: poetry export -f requirements.txt -o requirements.txt --without-hashes
-        language: python
-        pass_filenames: false
-        additional_dependencies:
-          - "poetry"
-          - "poetry-plugin-export"
-      - id: poetry-export-dev
-        name: Export dev requirements.txt
-        entry: poetry export --with dev -f requirements.txt -o requirements-dev.txt --without-hashes
-        language: python
-        pass_filenames: false
-        additional_dependencies:
-          - "poetry"
-          - "poetry-plugin-export"
+  #- repo: local
+  #  hooks:
+  #    - id: poetry-export
+  #      name: Export requirements.txt
+  #      entry: poetry export -f requirements.txt -o requirements.txt --without-hashes
+  #      language: python
+  #      pass_filenames: false
+  #      additional_dependencies:
+  #        - "poetry"
+  #        - "poetry-plugin-export"
+  #    - id: poetry-export-dev
+  #      name: Export dev requirements.txt
+  #      entry: poetry export --with dev -f requirements.txt -o requirements-dev.txt --without-hashes
+  #      language: python
+  #      pass_filenames: false
+  #      additional_dependencies:
+  #        - "poetry"
+  #        - "poetry-plugin-export"
 
   # https://github.com/shellcheck-py/shellcheck-py?tab=readme-ov-file#usage
   - repo: https://github.com/shellcheck-py/shellcheck-py
