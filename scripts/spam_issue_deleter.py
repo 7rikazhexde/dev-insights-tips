@@ -1,7 +1,48 @@
 #!/usr/bin/env python3
 """
-GitHub スパムIssue削除スクリプト (Python 3.12.3 互換)
-特定のキーワードを含むタイトルのIssueを自動的に検出して削除（クローズ）します
+GitHub スパムIssue削除スクリプト (spam_issue_deleter.py)
+特定のキーワードを含むタイトルや本文のIssueを自動的に検出して削除（クローズまたは完全削除）します
+
+[概要]
+このスクリプトは、GitHubリポジトリのオープンIssueをスキャンし、事前定義されたキーワードパターンに
+一致するタイトルや本文を持つスパムIssueを自動的に検出して削除します。これにより、
+リポジトリ管理者はスパムIssueに対応する時間を節約し、リスク（特に悪意のあるリンクのクリック）を
+軽減できます。
+
+[主な機能]
+- GitHub APIを使用してオープンIssueを取得
+- 事前定義されたキーワードパターンでタイトルと本文をスキャン
+- スパムと判断されたIssueに対して以下のアクションを実行:
+  - 完全削除（デフォルト）またはクローズ
+  - クローズ理由のコメント追加（デフォルト有効）
+  - スパムラベルの追加（デフォルト無効）
+- ログファイルに詳細な実行記録を保存
+
+[設定方法]
+1. 環境変数の設定:
+   - SPAM_ISSUE_DELETER: GitHub Fine-Grained Personal Access Token
+   - REPO_OWNER, REPO_NAME: リポジトリの所有者と名前（オプション、自動検出も可能）
+
+2. 必要な権限（Fine-Grained PAT）:
+   - Repository permissions > Issues: Read and write
+   - Repository permissions > Metadata: Read-only
+   - Repository permissions > Administration: Read and write (削除機能を使用する場合)
+
+3. カスタマイズ:
+   - SPAM_KEYWORDS リストでスパムパターンを追加/変更可能
+   - process_issues() 呼び出し時のパラメータでラベル追加やコメント追加を制御可能
+
+[使用方法]
+- 手動実行: `python scripts/spam_issue_deleter.py`
+- GitHub Actionsでの自動実行: .github/workflows/delete-spam-issues.yml を参照
+
+[依存ライブラリ]
+- requests: HTTP通信用
+- GitHub CLI (gh): リポジトリ情報取得用（オプション）
+
+作成: 2025-03-16
+Python: 3.12.3
+ライセンス: MIT
 """
 
 import json
@@ -299,6 +340,82 @@ class GitHubSpamIssueDeleter:
                 logger.error(f"レスポンス: {e.response.text}")
             return False
 
+    def delete_issue(self, issue_number: int) -> bool:
+        """
+        Issueを完全に削除（GitHub GraphQL APIを使用）
+
+        Args:
+            issue_number: 削除するIssueの番号
+
+        Returns:
+            成功した場合はTrue
+        """
+        # GraphQL APIのエンドポイント
+        url = "https://api.github.com/graphql"
+
+        # まずIssueのIDを取得する必要があります（GraphQLはnode IDが必要）
+        query_id = """
+        query GetIssueID($owner: String!, $repo: String!, $number: Int!) {
+          repository(owner: $owner, name: $repo) {
+            issue(number: $number) {
+              id
+            }
+          }
+        }
+        """
+
+        variables_id = {"owner": self.owner, "repo": self.repo, "number": issue_number}
+
+        try:
+            # IssueのIDを取得
+            response = requests.post(
+                url,
+                headers=self.headers,
+                json={"query": query_id, "variables": variables_id},
+            )
+            response.raise_for_status()
+
+            data = response.json()
+            if "errors" in data:
+                logger.error(f"GraphQL エラー: {data['errors']}")
+                return False
+
+            issue_id = data["data"]["repository"]["issue"]["id"]
+
+            # DeleteIssueミューテーションを実行
+            mutation = """
+            mutation DeleteIssue($id: ID!) {
+              deleteIssue(input: {issueId: $id}) {
+                repository {
+                  id
+                }
+              }
+            }
+            """
+
+            variables = {"id": issue_id}
+
+            delete_response = requests.post(
+                url,
+                headers=self.headers,
+                json={"query": mutation, "variables": variables},
+            )
+            delete_response.raise_for_status()
+
+            delete_data = delete_response.json()
+            if "errors" in delete_data:
+                logger.error(f"GraphQL 削除エラー: {delete_data['errors']}")
+                return False
+
+            logger.info(f"Issue #{issue_number} を完全に削除しました")
+            return True
+
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Issue #{issue_number} の削除中にエラーが発生しました: {e}")
+            if hasattr(e, "response") and e.response is not None:
+                logger.error(f"レスポンス: {e.response.text}")
+            return False
+
     def add_spam_label(self, issue_number: int) -> bool:
         """
         Issueにスパムラベルを追加
@@ -356,13 +473,19 @@ class GitHubSpamIssueDeleter:
                 logger.error(f"レスポンス: {e.response.text}")
             return False
 
-    def process_issues(self, add_label: bool = False, add_comment: bool = True) -> int:
+    def process_issues(
+        self,
+        add_label: bool = False,
+        add_comment: bool = True,
+        delete_issue: bool = True,
+    ) -> int:
         """
         スパムIssueを検出して処理
 
         Args:
             add_label: スパムラベルを追加するかどうか
             add_comment: スパムコメントを追加するかどうか
+            delete_issue: Issueを完全に削除するかどうか (Trueの場合はクローズの代わりに削除)
 
         Returns:
             処理したスパムIssueの数
@@ -393,9 +516,15 @@ class GitHubSpamIssueDeleter:
                 if add_comment:
                     self.add_spam_comment(issue_number)
 
-                # Issueをクローズ
-                if self.close_issue(issue_number):
-                    processed_count += 1
+                # Issueを処理（削除またはクローズ）
+                if delete_issue:
+                    # Issueを削除
+                    if self.delete_issue(issue_number):
+                        processed_count += 1
+                else:
+                    # Issueをクローズ
+                    if self.close_issue(issue_number):
+                        processed_count += 1
 
         return processed_count
 
@@ -419,6 +548,7 @@ def main() -> None:
     processed_count = deleter.process_issues(
         add_label=False,  # スパムラベルを追加するかどうか
         add_comment=True,  # スパムコメントを追加するかどうか
+        delete_issue=True,  # Issueを完全に削除するかどうか
     )
 
     logger.info(f"処理完了: {processed_count}件のスパムIssueを削除しました")
