@@ -249,6 +249,11 @@ class GitHubSpamIssueDeleter:
             response.raise_for_status()
 
             issues: List[Any] = response.json()
+
+            # オープンIssueがない場合は早期リターン
+            if not issues:
+                return []
+
             logger.info(f"{len(issues)}件のオープンIssueを検出しました")
 
             # Pull Requestsは除外（GitHubのAPIではIssueに含まれる）
@@ -491,6 +496,11 @@ class GitHubSpamIssueDeleter:
             処理したスパムIssueの数
         """
         issues = self.fetch_open_issues()
+
+        # オープンIssueがない場合は早期リターン
+        if not issues:
+            return 0
+
         processed_count = 0
         spam_detected = False
 
@@ -528,7 +538,7 @@ class GitHubSpamIssueDeleter:
                     if self.close_issue(issue_number):
                         processed_count += 1
 
-        if not spam_detected:
+        if not spam_detected and issues:
             logger.info("スパムIssueは検出されませんでした。")
 
         return processed_count
@@ -548,6 +558,12 @@ def main() -> None:
         repo=repo,
         spam_patterns=SPAM_KEYWORDS,
     )
+
+    # オープンIssueの数を確認
+    issues = deleter.fetch_open_issues()
+    if not issues:
+        logger.info("処理完了: オープンIssueがありません")
+        return
 
     # 処理実行
     processed_count = deleter.process_issues(
