@@ -575,7 +575,7 @@ def main() -> None:
     if processed_count > 0:
         logger.info(f"処理完了: {processed_count}件のスパムIssueを削除しました")
     else:
-        logger.info("処理完了: スパムIssueは見つかりませんでした")
+        logger.info("処理完了: スパムIssueは検出されませんでした")
 
 
 if __name__ == "__main__":
