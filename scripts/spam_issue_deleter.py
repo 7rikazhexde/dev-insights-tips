@@ -492,12 +492,14 @@ class GitHubSpamIssueDeleter:
         """
         issues = self.fetch_open_issues()
         processed_count = 0
+        spam_detected = False
 
         for issue in issues:
             issue_number = issue["number"]
             title = issue["title"]
 
             if self.is_spam(issue):
+                spam_detected = True
                 # スパム元情報をログに記録
                 if "body" in issue and issue["body"]:
                     body_preview = issue["body"][:100] + (
@@ -526,6 +528,9 @@ class GitHubSpamIssueDeleter:
                     if self.close_issue(issue_number):
                         processed_count += 1
 
+        if not spam_detected:
+            logger.info("スパムIssueは検出されませんでした。")
+
         return processed_count
 
 
@@ -551,7 +556,10 @@ def main() -> None:
         delete_issue=True,  # Issueを完全に削除するかどうか
     )
 
-    logger.info(f"処理完了: {processed_count}件のスパムIssueを削除しました")
+    if processed_count > 0:
+        logger.info(f"処理完了: {processed_count}件のスパムIssueを削除しました")
+    else:
+        logger.info("処理完了: スパムIssueは見つかりませんでした")
 
 
 if __name__ == "__main__":
