@@ -29,7 +29,7 @@ ruamel-yaml = "^0.18.14"
 ruff = "^0.12.9"
 taskipy = "^1.11.0"
 poetry-plugin-export = "^1.9.0"
-requests = "^2.32.4"
+requests = "^2.32.5"
 
 [tool.taskipy.tasks]
 black = "poetry run black ci scripts"
