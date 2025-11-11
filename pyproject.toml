@@ -10,7 +10,7 @@ version = "0.1.51"
 [tool.poetry.dependencies]
 mdformat = "^1.0.0"
 mkdocs-glightbox = "^0.5.2"
-mkdocs-material = "^9.6.23"
+mkdocs-material = "^9.7.0"
 mkdocs-static-i18n = "^1.3.0"
 plantuml-markdown = "^3.11.1"
 pre-commit = "^4.4.0"
