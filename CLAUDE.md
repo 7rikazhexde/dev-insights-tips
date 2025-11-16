@@ -125,6 +125,11 @@ The site uses `mkdocs-static-i18n` plugin with folder-based structure:
 
 Each language has its own complete docs folder under `docs/en/` and `docs/ja/`.
 
+**Important**: mkdocs-static-i18n is not yet fully compatible with Zensical. Language switching must be done manually by accessing:
+
+- Japanese: `https://7rikazhexde.github.io/dev-insights-tips/ja/`
+- English: `https://7rikazhexde.github.io/dev-insights-tips/en/`
+
 ### Key Plugins
 
 - `zensical`: Modern static site generator (replaces mkdocs-material)

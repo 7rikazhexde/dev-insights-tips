@@ -7,7 +7,10 @@ It aims to share information related to programming and development.
 
 Content(website) is managed by GitHub Pages.
 
-[https://7rikazhexde.github.io/dev-insights-tips/](https://7rikazhexde.github.io/dev-insights-tips/)
+- Japanese (日本語): [https://7rikazhexde.github.io/dev-insights-tips/ja/](https://7rikazhexde.github.io/dev-insights-tips/ja/)
+- English: [https://7rikazhexde.github.io/dev-insights-tips/en/](https://7rikazhexde.github.io/dev-insights-tips/en/)
+
+> **Note**: Direct language switching is currently not supported because mkdocs-static-i18n is not yet compatible with Zensical. Please access the site by specifying `/ja/` or `/en/` in the URL.
 
 ## Usage
 
