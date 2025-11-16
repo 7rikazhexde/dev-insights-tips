@@ -35,11 +35,12 @@ black = "black ci scripts"
 flake8 = "flake8 ci scripts"
 isort = "isort ci scripts"
 mkdb = "zensical build --clean"
-mkddp = "zensical gh-deploy"
+mkddp = "zensical build --clean && ghp-import -npfm 'Deploy site' site"
 mkds = "zensical serve"
 mypy = "mypy"
 build = "zensical build"
 serve = "zensical serve"
+deploy = "zensical build --clean && ghp-import -npfm 'Deploy site' site"
 
 [build-system]
 requires = ["hatchling"]

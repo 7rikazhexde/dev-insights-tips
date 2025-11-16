@@ -48,7 +48,9 @@ uv run zensical serve
 uv run zensical build --clean
 
 # Deploy to GitHub Pages (manual - normally done via CI)
-uv run zensical gh-deploy
+uv run task deploy
+# or manually:
+# uv run zensical build --clean && uv run ghp-import -npfm "Deploy site" site
 ```
 
 ### Taskipy Shortcuts
@@ -73,7 +75,8 @@ uv run task serve   # zensical serve
 uv run task build   # zensical build
 uv run task mkds    # zensical serve (legacy alias)
 uv run task mkdb    # zensical build --clean (legacy alias)
-uv run task mkddp   # zensical gh-deploy (legacy alias)
+uv run task mkddp   # build and deploy to GitHub Pages (legacy alias)
+uv run task deploy  # build and deploy to GitHub Pages
 ```
 
 ## Code Quality
@@ -149,7 +152,8 @@ All workflows now use **uv** for dependency management instead of Poetry.
 1. **push_gh-deploy.yml**: Automatically builds and deploys to GitHub Pages
    - Triggers on: push to main (excluding `[skip ci]`), after other workflow completions
    - Uses `uv sync --all-extras` for dependency installation
-   - Uses `uv run zensical gh-deploy` for deployment
+   - Uses `uv run zensical build --clean` to build site
+   - Uses `uv run ghp-import` to deploy to gh-pages branch
    - Caches Zensical resources
 
 2. **update_pre-commit_hooks.yml**: Keeps pre-commit hooks updated
@@ -203,7 +207,7 @@ The site is automatically deployed to GitHub Pages via GitHub Actions when:
 - Commit message does not contain `[skip ci]`
 - After successful completion of pre-commit or requirements update workflows
 
-Manual deployment: `uv run zensical gh-deploy`
+Manual deployment: `uv run task deploy`
 
 ## Important Notes
 

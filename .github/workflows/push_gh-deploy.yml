@@ -51,5 +51,7 @@ jobs:
             zensical-
       - name: Install dependencies
         run: uv sync --all-extras
-      - name: Deploy GitHub Pages
-        run: uv run zensical gh-deploy --force
+      - name: Build site
+        run: uv run zensical build --clean
+      - name: Deploy to GitHub Pages
+        run: uv run ghp-import -npfm "Deploy site" site
