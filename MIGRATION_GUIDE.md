@@ -331,9 +331,8 @@ uv run zensical build --clean
 uv run task deploy
 ```
 
-```
-
 **For multilingual sites:**
+
 ```markdown
 ## Site URLs
 
