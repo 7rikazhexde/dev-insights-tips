@@ -23,7 +23,7 @@ markdown_extensions:
 
 !!! tip
     markdownフォーマッタ(例: mdformat)を使用している場合は、[pre-commit-hooks](https://pre-commit.com/#pre-commit-configyaml---hooks)で[mdformat-mkdocs](https://github.com/KyleKing/mdformat-mkdocs#usage)のプラグインを設定するのを推奨します。
-    理由は[こちらのページ](../../../programming/python/mdformat.md#mdformat-admon)でも記載しています。
+    理由は[mdformat-admonセクション](../../../programming/python/mdformat.md#mdformat-admon)でも記載しています。
 
 ## コードブロックを表示する
 

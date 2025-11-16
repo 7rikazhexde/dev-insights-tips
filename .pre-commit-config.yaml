@@ -22,33 +22,12 @@ repos:
         # Exclude check for "could not determine a constructor for the tag 'tag:yaml.org,2002:python/name:materialx.emoji.twemoji'"
         args: [--unsafe]
 
-  # https://python-poetry.org/docs/pre-commit-hooks/#usage
-  - repo: https://github.com/python-poetry/poetry
-    rev: 2.2.1
+  # Validate pyproject.toml structure
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.31.0
     hooks:
-      - id: poetry-check
-        verbose: true
-      - id: poetry-lock
-        verbose: true
-
-  #- repo: local
-  #  hooks:
-  #    - id: poetry-export
-  #      name: Export requirements.txt
-  #      entry: poetry export -f requirements.txt -o requirements.txt --without-hashes
-  #      language: python
-  #      pass_filenames: false
-  #      additional_dependencies:
-  #        - "poetry"
-  #        - "poetry-plugin-export"
-  #    - id: poetry-export-dev
-  #      name: Export dev requirements.txt
-  #      entry: poetry export --with dev -f requirements.txt -o requirements-dev.txt --without-hashes
-  #      language: python
-  #      pass_filenames: false
-  #      additional_dependencies:
-  #        - "poetry"
-  #        - "poetry-plugin-export"
+      - id: check-github-workflows
+      - id: check-github-actions
 
   # https://github.com/shellcheck-py/shellcheck-py?tab=readme-ov-file#usage
   - repo: https://github.com/shellcheck-py/shellcheck-py

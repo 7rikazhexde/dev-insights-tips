@@ -3,7 +3,7 @@ name: Version Update and Release
 # Workflow Process Flow:
 # 1. Trigger Conditions:
 #    - Manual execution (workflow_dispatch)
-# 2. Environment Setup (Ubuntu, Python, Poetry)
+# 2. Environment Setup (Ubuntu, Python, uv)
 # 3. Retrieve the current version
 # 4. Update to the new version (patch, minor, or major)
 # 5. Commit and push the changes
@@ -32,26 +32,35 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT_FOR_PUSHES }}
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
         with:
-          python-version: "3.13"
-      - name: Install poetry
-        run: |
-          python -m pip install --upgrade pip
-          pip install poetry
+          enable-cache: true
+          cache-dependency-glob: "pyproject.toml"
+      - name: Set up Python
+        run: uv python install 3.12
+      - name: Install dependencies
+        run: uv sync --all-extras
       - name: Configure Git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
       - name: Get current version
         id: current_version
-        run: echo "version=$(poetry version -s)" >> "$GITHUB_OUTPUT"
+        run: echo "version=$(grep -oP '(?<=^version = ")[^"]+' pyproject.toml)" >> "$GITHUB_OUTPUT"
       - name: Update version
         id: update_version
         run: |
-          poetry version ${{ github.event.inputs.update_type }}
-          echo "new_version=$(poetry version -s)" >> "$GITHUB_OUTPUT"
+          current_ver="${{ steps.current_version.outputs.version }}"
+          IFS='.' read -r major minor patch <<< "$current_ver"
+          case "${{ github.event.inputs.update_type }}" in
+            patch) patch=$((patch + 1)) ;;
+            minor) minor=$((minor + 1)); patch=0 ;;
+            major) major=$((major + 1)); minor=0; patch=0 ;;
+          esac
+          new_ver="$major.$minor.$patch"
+          sed -i "s/^version = \".*\"/version = \"$new_ver\"/" pyproject.toml
+          echo "new_version=$new_ver" >> "$GITHUB_OUTPUT"
       - name: Commit and push if changed
         run: |
           git add pyproject.toml

@@ -6,6 +6,9 @@
 *.pyc
 __pycache__/
 
+# Package build (hatchling placeholder)
+src/
+
 # static code analysis
 .mypy_cache/
 .pytest_cache/

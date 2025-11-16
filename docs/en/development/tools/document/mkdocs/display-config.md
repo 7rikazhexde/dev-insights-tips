@@ -23,7 +23,7 @@ markdown_extensions:
 
 !!! tip
     If you are using a markdown formatter (e.g. mdformat), you should use [pre-commit-hooks](https://pre-commit.com/#pre-commit-configyaml---hooks) to set up the [mdformat-mkdocs](https://github.com/KyleKing/mdformat-mkdocs#usage) plugin is recommended.
-    The reason is that [here](./mdformat.md/#mdformat-admon).
+    The reason is explained in the [mdformat-admon section](./mdformat.md/#mdformat-admon).
 
 ## Display code block
 
